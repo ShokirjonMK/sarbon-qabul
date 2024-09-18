@@ -39,7 +39,7 @@ $js = <<<JS
 $(document).ready(function() {
         $(".check-perevot-form #studentperevot-file_status").on('change', function () {
             var id = $(this).val();
-            var text2 = 'Tabriklaymiz! Sizning “TASHKENT PERFECT UNIVERSITY”ga o\'qishni ko\'chirish uchun topshirgan arizangiz qabul qilindi. Tizimdan shartnoma yuklab olishni unutmang. Shaxsiy hujjatlaringizni universitet binosiga olib kelib topshirishingiz mumkin. Aloqa markazi: 77 129 29 29';
+            var text2 = 'Tabriklaymiz! Sizning “SARBON UNIVERSITETI”ga o\'qishni ko\'chirish uchun topshirgan arizangiz qabul qilindi. Tizimdan shartnoma yuklab olishni unutmang. Shaxsiy hujjatlaringizni universitet binosiga olib kelib topshirishingiz mumkin. Aloqa markazi: 77 129 29 29';
             var text3 = 'Hurmatli abituriyent! Sizning arizangiz rad etildi. Ta\'lim yo\'nalishi, o\'quv kursi va transkript faylni to\'g\'ri tanlab qayta ariza yuborishingiz mumkin.  Manzil: Toshkent shahar, Yunusobod tumani, Bog’ishamol ko’chasi 220-uy. Aloqa markazi: 77 129 29 29.';
             if (id == 3) {
                 $(".check-perevot-form #studentperevot-sms_text").val(text3)

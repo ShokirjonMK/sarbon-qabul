@@ -149,7 +149,7 @@ class IkTestBotController extends Controller
 
     public function textStart()
     {
-        $text = "*TASHKENT PERFECT UNIVERSITY*\n\n🇺🇿\n_Telefon raqamingizni yuboring_\\.\n\n🇷🇺\n_Отправьте свой номер телефона_\\.";
+        $text = "*SARBON UNIVERSITETI*\n\n🇺🇿\n_Telefon raqamingizni yuboring_\\.\n\n🇷🇺\n_Отправьте свой номер телефона_\\.";
         return $text;
     }
 

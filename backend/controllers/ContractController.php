@@ -115,7 +115,7 @@ class ContractController extends Controller
                 ->andWhere(['<' , 'status' , 3])
             ])->all();
 
-        $text = "Hurmatli abituriyent! Sizga “TASHKENT PERFECT UNIVERSITY”da 24.07.2024y. soat 10:00da offline imtihon o'tkazilishini ma'lum qilamiz. Shaxsni tasdiqlovchi hujjat(pasport) bilan universitet binosiga kelishingizni so'raymiz. Manzil: Toshkent shahar, Yunusobod tumani, Bog’ishamol ko’chasi 220-uy. Aloqa markazi: 771292929";
+        $text = "Hurmatli abituriyent! Sizga “SARBON UNIVERSITETI”da 24.07.2024y. soat 10:00da offline imtihon o'tkazilishini ma'lum qilamiz. Shaxsni tasdiqlovchi hujjat(pasport) bilan universitet binosiga kelishingizni so'raymiz. Manzil: Toshkent shahar, Yunusobod tumani, Bog’ishamol ko’chasi 220-uy. Aloqa markazi: 771292929";
 
         if (count($students)) {
             foreach ($students as $student) {
@@ -167,7 +167,7 @@ class ContractController extends Controller
                 ->where(['file_status' => 2])
             ])->all();
 
-        $text = "Hurmatli abituriyent! Siz “TASHKENT PERFECT UNIVERSITY”ga talabalikka tavsiya etildingiz. To'lov shartnomasini https://qabul.tpu.uz qabul tizimi orqali yuklab olishingizni va 30-avgustgacha https://forms.gle/FcZ2n5bo6MDpse6BA havolada ko'rsatilgan hujjatlaringizni universitet qabul bo'limiga topshirishingizni so'raymiz. Manzil: Toshkent sh., Yunusobod t., Bog’ishamol ko’chasi 220-uy. Aloqa markazi: 77 129 29 29.";
+        $text = "Hurmatli abituriyent! Siz “SARBON UNIVERSITETI”ga talabalikka tavsiya etildingiz. To'lov shartnomasini https://qabul.tpu.uz qabul tizimi orqali yuklab olishingizni va 30-avgustgacha https://forms.gle/FcZ2n5bo6MDpse6BA havolada ko'rsatilgan hujjatlaringizni universitet qabul bo'limiga topshirishingizni so'raymiz. Manzil: Toshkent sh., Yunusobod t., Bog’ishamol ko’chasi 220-uy. Aloqa markazi: 77 129 29 29.";
 
         if (count($students) > 0) {
             foreach ($students as $student) {

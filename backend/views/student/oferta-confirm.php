@@ -40,8 +40,8 @@ $js = <<<JS
 $(document).ready(function() {
         $(".check-exam-form #studentoferta-file_status").on('change', function () {
             var id = $(this).val();
-            var text2 = 'Tabriklaymiz! Sizning “TASHKENT PERFECT UNIVERSITY”ga topshirgan 5 yillik staj faylingiz tasdiqlandi. Aloqa markazi: 77 129 29 29';
-            var text3 = 'Hurmatli abituriyent! Sizning “TASHKENT PERFECT UNIVERSITY”ga topshirgan  5 yillik staj faylingiz bekor qilindi. Qayta staj fayl yuklash uchun https://qabul.tpu.uz sayti orqali kabinetingizga kiring. Aloqa markazi: 77 129 29 29';
+            var text2 = 'Tabriklaymiz! Sizning “SARBON UNIVERSITETI”ga topshirgan 5 yillik staj faylingiz tasdiqlandi. Aloqa markazi: 77 129 29 29';
+            var text3 = 'Hurmatli abituriyent! Sizning “SARBON UNIVERSITETI”ga topshirgan  5 yillik staj faylingiz bekor qilindi. Qayta staj fayl yuklash uchun https://qabul.tpu.uz sayti orqali kabinetingizga kiring. Aloqa markazi: 77 129 29 29';
             if (id == 3) {
                 $(".check-exam-form #studentoferta-sms_text").val(text3)
             } else {

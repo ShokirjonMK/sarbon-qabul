@@ -1066,7 +1066,7 @@ $limg = $lqr->writeDataUri();
 
                     <tr>
                         <td colspan="2" style="vertical-align: top">
-                            <b>“PERFECT UNIVERSITY” oliy ta’lim tashkiloti</b> <br>
+                            <b>“SARBON UNIVERSITETI” oliy ta’lim tashkiloti</b> <br>
                             <b>Manzil:</b> Toshkent shahri, Yunusobod tumani, Posira MFY, Bog'ishamol ko'chasi, 220-uy <br>
                             <b>H/R:</b> <?= $cons->h_r ?> <br>
                             <b>Bank:</b> “KAPITALBANK” ATB Sirg’ali filiali <br>

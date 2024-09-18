@@ -175,7 +175,7 @@ class Test extends Model
         }
         $model->confirm_date = time();
         $model->save(false);
-        $text = "Tabriklaymiz! Siz “TASHKENT PERFECT UNIVERSITY”ga talabalikka tavsiya etildingiz. To'lov shartnomasini yuklab olishni unutmang. Shartnomangizni https://qabul.tpu.uz sayti orqali yuklab oling. Aloqa markazi: 77 129 29 29. Rasmiy telegram kanal: https://t.me/perfect_university";
+        $text = "Tabriklaymiz! Siz “SARBON UNIVERSITETI”ga talabalikka tavsiya etildingiz. To'lov shartnomasini yuklab olishni unutmang. Shartnomangizni https://qabul.tpu.uz sayti orqali yuklab oling. Aloqa markazi: 77 129 29 29. Rasmiy telegram kanal: https://t.me/perfect_university";
         $phone = $student->user->username;
         Message::sendedSms($phone , $text);
 
