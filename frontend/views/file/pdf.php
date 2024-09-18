@@ -65,7 +65,7 @@ $limg = $lqr->writeDataUri();
         </tr>
         <tr>
             <td colspan="2" style="padding-bottom: 10px">
-                <div><b>“PERFECT UNIVERSITY” </b>oliy ta’lim tashkiloti, keyingi o‘rinlarda “Universitet” deb ataluvchi
+                <div><b>“SARBON UNIVERSITETI” </b>oliy ta’lim tashkiloti, keyingi o‘rinlarda “Universitet” deb ataluvchi
                     nomidan buyruq asosida ish yurituvchi Universitetning rektori ASQARALIYEV ODILBEK ULUG‘BEK O‘G‘LI
                     bir tomondan, <br>
                     ____________________________________________________________________________________________________
@@ -621,7 +621,7 @@ $limg = $lqr->writeDataUri();
     <table style="width: 100%; border-collapse: collapse">
         <tr>
             <td style="width: 50%">
-                <div><b>“PERFECT UNIVERSITY” oliy ta’lim tashkiloti</b></div>
+                <div><b>“SARBON UNIVERSITETI” oliy ta’lim tashkiloti</b></div>
                 <br>
                 <p>
                 <div><b>Manzil: Toshkent shahri, Yunusobod tumani, <br> Posira MFY, Bog'ishamol ko'chasi, 220-uy</b>
@@ -729,7 +729,7 @@ $limg = $lqr->writeDataUri();
                 <table style="width:100%; border-collapse: collapse;" border="1">
                     <tr>
                         <td><b>Qabul qiluvchi tashkilot nomi: </b></td>
-                        <td><b>“PERFECT UNIVERSITY” MCHJ</b></td>
+                        <td><b>“SARBON UNIVERSITETI” MCHJ</b></td>
                     </tr>
                     <tr>
                         <td><b>Hisob raqami: </b></td>
@@ -770,7 +770,7 @@ $limg = $lqr->writeDataUri();
         </tr>
         <tr>
             <td colspan="2" style="padding-bottom: 10px">
-                <div>От имени организации высшего образования <b>«PERFECT UNIVERSITY» </b>(дальнейшем – «Университет»)
+                <div>От имени организации высшего образования <b>«SARBON UNIVERSITETI» </b>(дальнейшем – «Университет»)
                     ректор АСКАРАЛИЕВ ОДИЛБЕК УЛУГБЕК УГЛИ, действуя на основании Устава, с одной стороны,
                 </div>
             </td>
@@ -1279,7 +1279,7 @@ $limg = $lqr->writeDataUri();
     <table style="width: 100%; border-collapse: collapse">
         <tr>
             <td style="width: 50%">
-                <div><b>Высшее учебное заведение «PERFECT UNIVERSITY»</b></div>
+                <div><b>Высшее учебное заведение «SARBON UNIVERSITETI»</b></div>
 
                 <p>
                 <div><b>Адрес: город Ташкент, Юнусабадский район,  <br> Посира МСГ, ул. Богишамол, дом 220</b></div>
@@ -1387,7 +1387,7 @@ $limg = $lqr->writeDataUri();
                 <table style="width:100%; border-collapse: collapse;" border="1">
                     <tr>
                         <td><b>Наименование принимающей организации: </b></td>
-                        <td><b> OOO «PERFECT UNIVERSITY»</b></td>
+                        <td><b> OOO «SARBON UNIVERSITETI»</b></td>
                     </tr>
                     <tr>
                         <td><b>Расчётный счёт: </b></td>

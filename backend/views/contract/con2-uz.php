@@ -1194,7 +1194,7 @@ $limg = $lqr->writeDataUri();
                         <table width="100%" style="border-collapse: collapse; border: 1px solid;">
                             <tr>
                                 <td colspan="2" style="padding: 5px; border: 1px solid;"><b>Qabul qiluvchi tashkilot nomi:</b></td>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>“PERFECT UNIVERSITY” MCHJ</b></td>
+                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>“SARBON UNIVERSITETI” MCHJ</b></td>
                             </tr>
 
                             <tr>
