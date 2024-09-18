@@ -1,12 +1,14 @@
 <?php
+
 use yii\helpers\Html;
 use yii\helpers\Url;
 use common\models\Student;
 use common\models\Employee;
+
 $user = Yii::$app->user->identity;
 $logo = "/admin/edu-assets/image/home-image/logo.svg";
 $employee = Employee::findOne(['user_id' => $user->id]);
-$full_name = $employee->last_name. " ".$employee->first_name;
+$full_name = $employee->last_name . " " . $employee->first_name;
 $postion = $user->authItem->description;
 $cons = $user->cons;
 ?>
@@ -53,15 +55,15 @@ $cons = $user->cons;
                             <ul class="drop_m dropdown-menu dropdown-menu-end">
                                 <ul class="drop_m_ul">
                                     <li>
-                                        <a href="<?= Url::to(['employee/view' , 'id' => $employee->id]) ?>">
+                                        <a href="<?= Url::to(['employee/view', 'id' => $employee->id]) ?>">
                                             <span>Profil</span>
                                             <i class="fa-solid fa-user"></i>
                                         </a>
                                     </li>
 
                                     <li>
-                                        <form action = "#">
-                                            <button type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                        <form action="#">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <span>Chiqish</span>
                                                 <i class="fa-solid fa-right-from-bracket"></i>
                                             </button>
@@ -84,7 +86,7 @@ $cons = $user->cons;
         <div class="education-name">
             <h2>
                 <a href="/">
-                    Tashkent Perfect University ( <?= $cons->name ?> )
+                    Sarbon University ( <?= $cons->name ?> )
                 </a>
             </h2>
         </div>

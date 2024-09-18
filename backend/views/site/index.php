@@ -12,7 +12,7 @@ use common\models\Target;
 /** @var EduYearType $eduYearTypes */
 /** @var User $currentUser */
 
-$this->title = 'TASHKENT PERFECT UNIVERSITY';
+$this->title = 'SARBON UNIVERSITY';
 $baseQuery = Student::find()
     ->alias('s')
     ->innerJoin('user u', 's.user_id = u.id')

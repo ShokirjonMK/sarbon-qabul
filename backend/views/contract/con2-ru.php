@@ -1120,7 +1120,7 @@ $limg = $lqr->writeDataUri();
 
                     <tr>
                         <td colspan="2" style="vertical-align: top">
-                            <b>"PERFECT UNIVERSITY" высшая образовательная организация</b> <br>
+                            <b>"SARBON UNIVERSITY" высшая образовательная организация</b> <br>
                             <b>Адрес:</b> город Ташкент, Юнусабадский район,
                             МФУ Посира, улица Богишамол, 220 <br>
                             <b>Сч/Н:</b> <?= $cons->h_r ?> <br>
