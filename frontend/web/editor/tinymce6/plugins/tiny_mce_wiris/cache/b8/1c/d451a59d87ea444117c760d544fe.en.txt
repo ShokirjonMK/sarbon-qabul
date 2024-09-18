@@ -1,0 +1,1 @@
+{"result":{"text":"fraction numerator 2 q left parenthesis m plus 2 q right parenthesis over denominator 2 q minus m end fraction"},"status":"ok"}
