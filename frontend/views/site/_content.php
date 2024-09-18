@@ -17,7 +17,7 @@ $lang = Yii::$app->language;
         <div class="ik_content_direction">
             <div class="root-item">
                 <div class="ik_main_title" id="ik_direc">
-                    <p><?= Yii::t("app" , "a12") ?> 1111</p>
+                    <p><?= Yii::t("app" , "a12") ?></p>
                     <h4><?= Yii::t("app" , "a13") ?></h4>
                 </div>
 
