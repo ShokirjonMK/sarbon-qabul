@@ -145,21 +145,12 @@ $lang = Yii::$app->language;
                                         </div>
                                         <div class="down_content_box_right">
                                             <p><?= Yii::t("app" , "a105") ?></p>
-                                            <h6>+998(77) 129 29 29</h6>
+                                            <h6>+998(78) 888 22 88</h6>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <a href="tel:555000250" class="down_content_box">
-                                        <div class="down_content_box_left">
-                                            <i class="fa-solid fa-phone-volume"></i>
-                                        </div>
-                                        <div class="down_content_box_right">
-                                            <p><?= Yii::t("app" , "a106") ?></p>
-                                            <h6>+998(55) 500-02-50</h6>
-                                        </div>
-                                    </a>
-                                </div>
+
+
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <a href="https://maps.app.goo.gl/1aK5espkYi5Hvjde8" target="_blank" class="down_content_box">
                                         <div class="down_content_box_left">

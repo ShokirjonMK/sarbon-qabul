@@ -10,7 +10,7 @@ return [
     'a7' => 'Phone number 1:',
     'a8' => 'Phone number 2:',
     'a9' => 'Address:',
-    'a10' => '220 Bogishamol street, Yunusabad district, Tashkent city. Click to view location!',
+    'a10' => 'Tashkent city, Almazor district, Pakhta MFY, Sagbon street. Click to view location!',
     'a11' => 'Reception system',
     'a12' => 'Educational directions',
     'a13' => 'Directions accepted for the academic year 2024 - 2025',
@@ -107,7 +107,7 @@ return [
     'a103' => 'To confirm',
 
     'a104' => 'Contact',
-    'a105' => 'Hotline 1',
+    'a105' => 'Hotline',
     'a106' => 'Hotline 2',
 
     'a107' => 'Instagram',
