@@ -105,34 +105,4 @@ class ContractController extends Controller
 
         return $pdf->render();
     }
-
-   public function actionIk177()
-   {
-        $directions = Direction::find()
-            ->where([
-                'edu_type_id' => 1,
-                'status' => 1,
-                'is_deleted' => 0
-            ])->all();
-        foreach ($directions as $direction) {
-            $new = new Direction();
-            $new->name_uz = $direction->name_uz;
-            $new->name_ru = $direction->name_ru;
-            $new->name_en = $direction->name_en;
-            $new->edu_year_id = $direction->edu_year_id;
-            $new->language_id = $direction->language_id;
-            $new->edu_year_type_id = 3;
-            $new->edu_year_form_id = $direction->edu_year_form_id;
-            $new->edu_form_id = $direction->edu_form_id;
-            $new->edu_type_id = 3;
-            $new->contract = $direction->contract;
-            $new->code = $direction->code;
-            $new->course_json = $direction->course_json;
-            $new->oferta = $direction->oferta;
-            $new->edu_duration = $direction->edu_duration;
-            $new->status = 1;
-            $new->save(false);
-        }
-   }
-
 }
