@@ -33,7 +33,7 @@ class Message extends \yii\db\ActiveRecord
                         "recipient":'.$phone.',
                         "message-id":"abc000000001",
                             "sms":{
-                                "originator": "TPU",
+                                "originator": "3700",
                                 "content": {
                                     "text": "'.$text.'"
                                 }
@@ -52,7 +52,7 @@ class Message extends \yii\db\ActiveRecord
             CURLOPT_CUSTOMREQUEST => "POST",
             CURLOPT_POSTFIELDS => $data,
             CURLOPT_HTTPHEADER => array(
-                "Authorization: Basic ".base64_encode("perfectuniversity:i_A~87mSz8@H"),
+                "Authorization: Basic ".base64_encode("sarbonuniversiteti:3z3Q|X|w!a&^"),
                 "cache-control: no-cache",
                 "content-type: application/json",
             ),
@@ -74,7 +74,7 @@ class Message extends \yii\db\ActiveRecord
                         "recipient":'.$phone.',
                         "message-id":"abc000000001",
                             "sms":{
-                                "originator": "TPU",
+                                "originator": "3700",
                                 "content": {
                                     "text": "'.$text.'"
                                 }
@@ -93,7 +93,7 @@ class Message extends \yii\db\ActiveRecord
             CURLOPT_CUSTOMREQUEST => "POST",
             CURLOPT_POSTFIELDS => $data,
             CURLOPT_HTTPHEADER => array(
-                "Authorization: Basic ".base64_encode("perfectuniversity:i_A~87mSz8@H"),
+                "Authorization: Basic ".base64_encode("sarbonuniversiteti:3z3Q|X|w!a&^"),
                 "cache-control: no-cache",
                 "content-type: application/json",
             ),
