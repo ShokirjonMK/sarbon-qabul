@@ -293,7 +293,7 @@ p{
     font-weight: bold;
     text-transform: uppercase;
     background: rgb(219,231,255);
-    background: linear-gradient(0deg, rgba(219,231,255,1) 0%, rgba(20,65,118,1) 42%);
+    background: linear-gradient(0deg, rgba(219,231,255,1) 0%, rgba(45,66,85,1) 42%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
