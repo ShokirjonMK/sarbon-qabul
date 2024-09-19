@@ -20,8 +20,8 @@ use yii\helpers\Url;
                     <ul>
                         <li><a href="https://www.instagram.com/sarbonuniversiteti?igsh=MWRodnB0eG03MG1oOQ=="><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="https://t.me/sarbonuniversity"><i class="fa-brands fa-telegram"></i></a></li>
-<!--                        <li><a href="https://www.facebook.com/perfectuniversity.uz?mibextid=kFxxJD"><i class="fa-brands fa-facebook"></i></a></li>-->
-<!--                        <li><a href="https://youtube.com/@perfectuniversity4471?si=1hvUQR7t5bATWlcI"><i class="fa-brands fa-youtube"></i></a></li>-->
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                     </ul>
                 </div>
 
