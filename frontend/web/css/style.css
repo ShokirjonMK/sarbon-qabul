@@ -742,6 +742,9 @@
     width: 94%;
     padding-top: 60px;
 }
+.section_1_box_right_img1 h2 {
+    color: var(--color-text);
+}
 .section_1_box_right_img1 img {
     width: 100%;
     border-radius: 30px;

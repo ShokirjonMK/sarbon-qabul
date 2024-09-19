@@ -10,9 +10,9 @@ use yii\helpers\Url;
                 <div class="section_1_box_left">
                     <div class="section_1_box_right_img1">
                         <p>SARBON UNIVERSITETI</p>
-                        <h1>
+                        <h2>
                             Oʻzbekiston Respublikasi Vazirlar Mahkamasining tegishli qarori bilan tashkil etilgan hamda Oliy ta’lim, fan va innovatsiyalar vazirligi tomonidan berilgan litsenziyaga ega Sarbon Universiteti.
-                        </h1>
+                        </h2>
                         <div class="banner-link">
                             <a href="<?= Url::to(['#']) ?>">
                                 <?= Yii::t("app" , "Universitet haqida") ?>
