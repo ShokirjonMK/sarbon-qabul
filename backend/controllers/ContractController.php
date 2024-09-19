@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use common\models\Direction;
 use common\models\Exam;
 use common\models\Message;
 use common\models\StudentPerevot;
@@ -105,84 +106,34 @@ class ContractController extends Controller
         return $pdf->render();
     }
 
-    public function actionBug7()
-    {
-        $students = Student::find()
-            ->where(['exam_type' => 1])
-            ->andWhere(['in' , 'id' , Exam::find()
-                ->select('student_id')
-                ->andWhere(['is_deleted' => 0])
-                ->andWhere(['<' , 'status' , 3])
+   public function actionIk11()
+   {
+        $directions = Direction::find()
+            ->where([
+                'edu_type_id' => 1,
+                'status' => 1,
+                'is_deleted' => 0
             ])->all();
-
-        $text = "Hurmatli abituriyent! Sizga “SARBON UNIVERSITETI”da 24.07.2024y. soat 10:00da offline imtihon o'tkazilishini ma'lum qilamiz. Shaxsni tasdiqlovchi hujjat(pasport) bilan universitet binosiga kelishingizni so'raymiz. Manzil: Toshkent shahar, Yunusobod tumani, Bog’ishamol ko’chasi 220-uy. Aloqa markazi: 771292929";
-
-        if (count($students)) {
-            foreach ($students as $student) {
-                $phone = $student->username;
-                Message::sendedSms($phone , $text);
+        foreach ($directions as $direction) {
+            for ($i = 2; $i < 4; $i++) {
+                $new = new Direction();
+                $new->name_uz = $direction->name_uz;
+                $new->name_ru = $direction->name_ru;
+                $new->name_en = $direction->name_en;
+                $new->edu_year_id = $direction->edu_year_id;
+                $new->language_id = $i;
+                $new->edu_year_type_id = $direction->edu_year_type_id;
+                $new->edu_year_form_id = $direction->edu_year_form_id;
+                $new->edu_form_id = $direction->edu_form_id;
+                $new->edu_type_id = $direction->edu_type_id;
+                $new->contract = $direction->contract;
+                $new->code = $direction->code;
+                $new->course_json = $direction->course_json;
+                $new->oferta = $direction->oferta;
+                $new->edu_duration = $direction->edu_duration;
+                $new->save(false);
             }
         }
-        return $this->redirect(['site/index']);
-    }
+   }
 
-    public function actionBugik()
-    {
-        $transaction = Yii::$app->db->beginTransaction();
-        $errors = [];
-        $inputFileName = __DIR__ . '/excel/daDAczA (3).xlsx';
-        $spreadsheet = IOFactory::load($inputFileName);
-        $data = $spreadsheet->getActiveSheet()->toArray();
-
-//        $t = [];
-//        foreach ($data as $key => $row) {
-//            $number = $row[0];
-//            if ($number == null) {
-//                break;
-//            }
-//            $number = '+998 (' . substr($number, 0, 2) . ') ' . substr($number, 2, 3) . '-' . substr($number, 5, 2) . '-' . substr($number, 7, 2);
-//            $user = User::findOne(['username' => $number]);
-//            $user->status = 3;
-//            $user->save(false);
-//        }
-
-        if (count($errors) == 0) {
-            $transaction->commit();
-            echo "tugadi.";
-        } else {
-            $transaction->rollBack();
-            dd($errors);
-        }
-    }
-
-
-    public function actionSend()
-    {
-        $transaction = Yii::$app->db->beginTransaction();
-        $errors = [];
-
-        $students = Student::find()
-            ->where(['in' , 'id' , StudentPerevot::find()
-                ->select('student_id')
-                ->where(['file_status' => 2])
-            ])->all();
-
-        $text = "Hurmatli abituriyent! Siz “SARBON UNIVERSITETI”ga talabalikka tavsiya etildingiz. To'lov shartnomasini https://qabul.tpu.uz qabul tizimi orqali yuklab olishingizni va 30-avgustgacha https://forms.gle/FcZ2n5bo6MDpse6BA havolada ko'rsatilgan hujjatlaringizni universitet qabul bo'limiga topshirishingizni so'raymiz. Manzil: Toshkent sh., Yunusobod t., Bog’ishamol ko’chasi 220-uy. Aloqa markazi: 77 129 29 29.";
-
-        if (count($students) > 0) {
-            foreach ($students as $student) {
-                $phone = $student->username;
-                $result = Message::sendedSms($phone , $text);
-                echo $result."\n";
-            }
-        }
-
-        if (count($errors) == 0) {
-            $transaction->commit();
-            echo "tugadi.";
-        } else {
-            $transaction->rollBack();
-            echo "tugadi.";
-        }
-    }
 }
