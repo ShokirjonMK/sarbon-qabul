@@ -85,7 +85,7 @@ if (count($directions) > 0) {
             'pluginOptions' => [
                 'allowClear' => true
             ],
-        ])->label('Imtihon shakli <span>*</span>');; ?>
+        ])->label('Imtixon shakli <span>*</span>');; ?>
     </div>
 
     <div class="d-flex justify-content-center mb-3 mt-3">
