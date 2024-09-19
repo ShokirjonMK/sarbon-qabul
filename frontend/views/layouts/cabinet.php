@@ -23,8 +23,8 @@ $student = Student::findOne(['user_id' => $user->id]);
         <?php $this->registerCsrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
-        <link href="/admin/edu-assets/image/home-image/logo.svg" rel="icon">
-        <link href="/admin/edu-assets/image/home-image/logo.svg" rel="apple-touch-icon">
+        <link href="/frontend/web/images/sarbon_icon.svg" rel="icon">
+        <link href="/frontend/web/images/sarbon_icon.svg" rel="apple-touch-icon">
         <script src="https://www.wiris.net/demo/plugins/app/WIRISplugins.js?viewer=image"></script>
     </head>
     <body>

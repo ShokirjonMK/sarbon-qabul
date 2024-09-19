@@ -20,8 +20,8 @@ AppAsset::register($this);
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?= $this->render('_css'); ?>
-    <link href="/admin/edu-assets/image/home-image/logo.svg" rel="icon">
-    <link href="/admin/edu-assets/image/home-image/logo.svg" rel="apple-touch-icon">
+    <link href="/frontend/web/images/sarbon_icon.svg" rel="icon">
+    <link href="/frontend/web/images/sarbon_icon.svg" rel="apple-touch-icon">
     <?php $this->head() ?>
 </head>
 
