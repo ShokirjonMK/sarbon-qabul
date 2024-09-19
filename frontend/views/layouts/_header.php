@@ -71,7 +71,7 @@ if ($lang == 'ru') {
             <div class="mb_menu_list2 ik_sarbon_listensy">
                 <ul>
                     <li>
-                        <a href="<?= Url::to(['cabinet/index']) ?>">
+                        <a target="_blank" href="https://document.licenses.uz/certificate/uuid/57076f62-07b1-496f-8b2b-64789c3e7345/pdf?language=oz">
                             <i class="fa-solid fa-award"></i>
                             <span><?= Yii::t("app" , "Universitet Litsenziyasi") ?></span>
                         </a>

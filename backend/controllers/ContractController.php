@@ -105,17 +105,4 @@ class ContractController extends Controller
 
         return $pdf->render();
     }
-
-    public function actionIkd()
-    {
-        $directions = Direction::find()
-            ->where([
-                'is_deleted' => 0,
-                'language_id' => 2
-            ])
-            ->all();
-        foreach ($directions as $direction) {
-            $direction->delete();
-        }
-    }
 }

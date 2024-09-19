@@ -139,7 +139,7 @@ $lang = Yii::$app->language;
 
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <a href="tel:771292929" class="down_content_box">
+                                    <a href="tel:+998788882288" class="down_content_box">
                                         <div class="down_content_box_left">
                                             <i class="fa-solid fa-phone-volume"></i>
                                         </div>
@@ -150,21 +150,8 @@ $lang = Yii::$app->language;
                                     </a>
                                 </div>
 
-
                                 <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <a href="https://maps.app.goo.gl/1aK5espkYi5Hvjde8" target="_blank" class="down_content_box">
-                                        <div class="down_content_box_left">
-                                            <i class="fa-solid fa-location-dot"></i>
-                                        </div>
-                                        <div class="down_content_box_right">
-                                            <p><?= Yii::t("app" , "a9") ?></p>
-                                            <h6><?= Yii::t("app" , "a10") ?></h6>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <a href="https://www.instagram.com/perfect.university/" target="_blank" class="down_content_box">
+                                    <a href="https://www.instagram.com/sarbonuniversiteti?igsh=MWRodnB0eG03MG1oOQ==" target="_blank" class="down_content_box">
                                         <div class="down_content_box_left">
                                             <img src="/frontend/web/images/instagram.svg" alt="">
                                         </div>
@@ -175,20 +162,20 @@ $lang = Yii::$app->language;
                                     </a>
                                 </div>
 
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <a href="https://www.facebook.com/perfectuniversity.uz" target="_blank" class="down_content_box">
-                                        <div class="down_content_box_left">
-                                            <img src="/frontend/web/images/facebook.svg" alt="">
-                                        </div>
-                                        <div class="down_content_box_right">
-                                            <p>Facebook</p>
-                                            <h6><?= Yii::t("app" , "a108") ?></h6>
-                                        </div>
-                                    </a>
-                                </div>
+<!--                                <div class="col-lg-4 col-md-6 col-sm-12">-->
+<!--                                    <a href="https://www.facebook.com/perfectuniversity.uz" target="_blank" class="down_content_box">-->
+<!--                                        <div class="down_content_box_left">-->
+<!--                                            <img src="/frontend/web/images/facebook.svg" alt="">-->
+<!--                                        </div>-->
+<!--                                        <div class="down_content_box_right">-->
+<!--                                            <p>Facebook</p>-->
+<!--                                            <h6>--><?php //= Yii::t("app" , "a108") ?><!--</h6>-->
+<!--                                        </div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
 
                                 <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <a href="https://t.me/perfect_university" target="_blank" class="down_content_box">
+                                    <a href="https://t.me/sarbonuniversity" target="_blank" class="down_content_box">
                                         <div class="down_content_box_left">
                                             <img src="/frontend/web/images/telegram.svg" alt="">
                                         </div>
@@ -199,14 +186,26 @@ $lang = Yii::$app->language;
                                     </a>
                                 </div>
 
+<!--                                <div class="col-lg-4 col-md-6 col-sm-12">-->
+<!--                                    <a href="https://www.youtube.com/@perfectuniversity4471" target="_blank" class="down_content_box">-->
+<!--                                        <div class="down_content_box_left">-->
+<!--                                            <img src="/frontend/web/images/youtube.svg" alt="">-->
+<!--                                        </div>-->
+<!--                                        <div class="down_content_box_right">-->
+<!--                                            <p>YouTube</p>-->
+<!--                                            <h6>--><?php //= Yii::t("app" , "a108") ?><!--</h6>-->
+<!--                                        </div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+
                                 <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <a href="https://www.youtube.com/@perfectuniversity4471" target="_blank" class="down_content_box">
+                                    <a href="https://maps.app.goo.gl/9KPyvDf1pYwWpaYeA" target="_blank" class="down_content_box">
                                         <div class="down_content_box_left">
-                                            <img src="/frontend/web/images/youtube.svg" alt="">
+                                            <i class="fa-solid fa-location-dot"></i>
                                         </div>
                                         <div class="down_content_box_right">
-                                            <p>YouTube</p>
-                                            <h6><?= Yii::t("app" , "a108") ?></h6>
+                                            <p><?= Yii::t("app" , "a9") ?></p>
+                                            <h6><?= Yii::t("app" , "a10") ?></h6>
                                         </div>
                                     </a>
                                 </div>
