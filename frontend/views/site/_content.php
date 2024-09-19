@@ -91,7 +91,7 @@ $lang = Yii::$app->language;
                                                         ?>
                                                         <tr>
                                                             <td date-label="№"><?= $t ?></td>
-                                                            <td date-label="<?= Yii::t("app" , "a15") ?>"><?= '<span class="ik_color_red">'.$direction->code.'</span>'.' - '.$direction['name_'.$lang] ?></td>
+                                                            <td date-label="<?= Yii::t("app" , "a15") ?>"><?= '<span class="ik_color_red">'.str_replace('.', '', $direction->code).'</span>'.' - '.$direction['name_'.$lang] ?></td>
                                                             <td date-label="<?= Yii::t("app" , "a16") ?>"><?= $eduForm['name_'.$lang]; ?></td>
                                                             <td date-label="<?= Yii::t("app" , "a17") ?>">
                                                                 <?php if (count($languages) > 0): ?>
