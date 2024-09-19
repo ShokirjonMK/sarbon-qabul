@@ -131,9 +131,24 @@ class ContractController extends Controller
                 $new->course_json = $direction->course_json;
                 $new->oferta = $direction->oferta;
                 $new->edu_duration = $direction->edu_duration;
+                $new->status = 1;
                 $new->save(false);
             }
         }
    }
 
+   public function actionIk12()
+   {
+       $directions = Direction::find()
+           ->where([
+               'status' => 0,
+               'is_deleted' => 0
+           ])
+           ->andWhere(['<>' , 'language_id' , 1])
+           ->all();
+       foreach ($directions as $direction) {
+           $direction->status = 1;
+           $direction->save(false);
+       }
+   }
 }
