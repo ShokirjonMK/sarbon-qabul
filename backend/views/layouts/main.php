@@ -31,8 +31,16 @@ AppAsset::register($this);
     <div class="pageLoading">
         <div class="ik_loader">
             <div class="ik_load"></div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
-                <path d="M64 448H148.627V64H64V448ZM363.372 448H448V64H363.372V448ZM263.562 448H348.189V64H263.562V448ZM163.811 309.898H248.438V64H163.811V309.898Z" fill="#fff" />
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 68.95 68.95">
+             <defs>
+                 <style type="text/css">
+                     .fil0 {fill:#fff}
+                 </style>
+             </defs>
+                <g id="Слой_x0020_1">
+                    <metadata id="CorelCorpID_0Corel-Layer"/>
+                    <path class="fil0" d="M68.95 0l-68.95 0 0 0c0,37.92 31.03,68.95 68.95,68.95l0 0 0 -68.95zm-68.95 52.51l0 0 0 16.44 16.45 0 0 0c0,-9.04 -7.4,-16.44 -16.45,-16.44z"/>
+                </g>
             </svg>
         </div>
         <h5>SARBON <br> UNIVERSITY </h5>
