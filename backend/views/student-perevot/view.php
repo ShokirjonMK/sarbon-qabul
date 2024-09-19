@@ -84,7 +84,7 @@ if ($model->file_status == 0) {
                             <div class="col-md-4 col-12 mb-4">
                                 <div class="view-info-right">
                                     <p>Yo'nalish kodi</p>
-                                    <h6><?= $direction->code ?></h6>
+                                    <h6><?= str_replace('.', '', $direction->code) ?></h6>
                                 </div>
                             </div>
 

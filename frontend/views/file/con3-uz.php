@@ -80,7 +80,7 @@ $limg = $lqr->writeDataUri();
         <td colspan="4" style="text-align: center">
             <b>
                 2024-2025 o‘quv yilida to‘lov asosida ta’lim xizmatlarini ko‘rsatish bo‘yicha <br>
-                <?= $code ?>  &nbsp;  <?= $direction->code ?> &nbsp; | &nbsp; <?= $contract->id ?> – sonli SHARTNOMA
+                <?= $code ?>  &nbsp;  <?= str_replace('.', '', $direction->code) ?> &nbsp; | &nbsp; <?= $contract->id ?> – sonli SHARTNOMA
             </b>
         </td>
     </tr>
@@ -157,7 +157,7 @@ $limg = $lqr->writeDataUri();
             <table width="100%">
                 <tr>
                     <td>Ta’lim yo‘nalishi:</td>
-                    <td><b><?= $direction->code.' '.$direction->name_uz ?></b></td>
+                    <td><b><?= str_replace('.', '', $direction->code).' '.$direction->name_uz ?></b></td>
                 </tr>
                 <tr>
                     <td>Ta’lim shakli:</td>

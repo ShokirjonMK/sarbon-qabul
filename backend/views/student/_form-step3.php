@@ -33,7 +33,7 @@ $directions = Direction::find()
     ])->all();
 if (count($directions) > 0) {
     foreach ($directions as $direction) {
-        $data[$direction->id] = $direction->code. ' - '. $direction->name_uz. ' - '.$direction->eduType->name_uz;
+        $data[$direction->id] = str_replace('.', '', $direction->code). ' - '. $direction->name_uz. ' - '.$direction->eduType->name_uz;
     }
 }
 ?>

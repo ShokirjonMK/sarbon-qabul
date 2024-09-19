@@ -23,7 +23,7 @@ $oferta = StudentOferta::findOne(['student_id' => $student->id, 'direction_id' =
     <div class="iik_box btop">
         <div class="iik_box_item">
             <div class="down_title">
-                <h6><i class="fa-brands fa-slack"></i> &nbsp;&nbsp; <?= $direction->code." - ".$direction['name_'.$lang] ?></h6>
+                <h6><i class="fa-brands fa-slack"></i> &nbsp;&nbsp; <?= str_replace('.', '', $direction->code)." - ".$direction['name_'.$lang] ?></h6>
             </div>
 
             <div class="down_content">

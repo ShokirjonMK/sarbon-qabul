@@ -79,7 +79,7 @@ $limg = $lqr->writeDataUri();
     <tr>
         <td colspan="4" style="text-align: center">
             <b>
-                ДОГОВОР <?= $code ?>  &nbsp;  <?= $direction->code ?> &nbsp; | &nbsp; <?= $contract->id ?> <br>
+                ДОГОВОР <?= $code ?>  &nbsp;  <?= str_replace('.', '', $direction->code) ?> &nbsp; | &nbsp; <?= $contract->id ?> <br>
                 по оказанию образовательных услуг на платной основе
                 в 2024-2025 учебном году
             </b>
@@ -156,7 +156,7 @@ $limg = $lqr->writeDataUri();
             <table width="100%">
                 <tr>
                     <td>Образовательная направленность::</td>
-                    <td><b><?= $direction->code.' '.$direction->name_ru ?></b></td>
+                    <td><b><?= str_replace('.', '', $direction->code).' '.$direction->name_ru ?></b></td>
                 </tr>
                 <tr>
                     <td>Форма обучения:</td>

@@ -341,7 +341,7 @@ class IkBotController extends Controller
                         if (count($directions) > 0) {
                             $keyboard = [];
                             foreach ($directions as $dir) {
-                                $name = ($userOne->language_id == 1) ? $dir->code . ' - ' . $dir->name_uz : $dir->code . ' - ' . $dir->name_ru;
+                                $name = ($userOne->language_id == 1) ? str_replace('.', '', $dir->code) . ' - ' . $dir->name_uz : str_replace('.', '', $dir->code) . ' - ' . $dir->name_ru;
                                 $keyboard[] = [['text' => $name]];
                             }
                             $telegram->sendMessage([
@@ -863,7 +863,7 @@ class IkBotController extends Controller
         $direc = $userOne->direction;
 
         $d = "🔘 *Yo\\'nalish\\:* " . self::escapeMarkdownV2($direc->name_uz) . "\n";
-        $code = "🔸 *Yo\\'nalish kodi\\:* " . self::escapeMarkdownV2($direc->code) . "\n";
+        $code = "🔸 *Yo\\'nalish kodi\\:* " . self::escapeMarkdownV2(str_replace('.', '', $direc->code)) . "\n";
         $edTy = "♦️ *Qabul turi\\:* " . self::escapeMarkdownV2($direc->eduType->name_uz) . "\n";
         $edFo = "🔹 *Ta\\'lim shakli\\:* " . self::escapeMarkdownV2($direc->eduForm->name_uz) . "\n";
         $im_type = "▫️ *Imtixon turi\\:* ".$examType."\n";
@@ -897,7 +897,7 @@ class IkBotController extends Controller
             ])->all();
         if (count($directions) > 0) {
             foreach ($directions as $dir) {
-                $dir_name = ($userOne->language_id == 1) ? $dir->code . ' - ' . $dir->name_uz : $dir->code . ' - ' . $dir->name_ru;
+                $dir_name = ($userOne->language_id == 1) ? str_replace('.', '', $dir->code) . ' - ' . $dir->name_uz : str_replace('.', '', $dir->code) . ' - ' . $dir->name_ru;
                 if ($dir_name == $name) {
                     return ['is_ok' => true, 'direction' => $dir];
                 }

@@ -116,7 +116,7 @@ $limg = $lqr->writeDataUri();
                                     <div class="col-md-6">Ta'lim yo'nalishi:</div>
                                 </td>
                                 <td style="width: 70%">
-                                    <div class="col-md-6"><b><?= $direction->code . ' ' . $direction->name_uz ?></b></div>
+                                    <div class="col-md-6"><b><?= str_replace('.', '', $direction->code) . ' ' . $direction->name_uz ?></b></div>
                                 </td>
                             </tr>
                             <tr>
@@ -761,7 +761,7 @@ $limg = $lqr->writeDataUri();
     <table style="width: 100%; border-collapse: collapse; font-family: 'Times New Roman'">
         <tr>
             <td colspan="2" style="text-align: center;padding-bottom: 10px">
-                <div><b>HU <?= $direction->code ?> | Договор № T-<?=20000 + $id ?><br> на 2024 -2025 учебный год по оказанию образовательных услуг на платной основе</b></div>
+                <div><b>HU <?= str_replace('.', '', $direction->code) ?> | Договор № T-<?=20000 + $id ?><br> на 2024 -2025 учебный год по оказанию образовательных услуг на платной основе</b></div>
             </td>
         </tr>
         <tr>
@@ -814,7 +814,7 @@ $limg = $lqr->writeDataUri();
                                     <div class="col-md-6">Направление :</div>
                                 </td>
                                 <td style="width: 70%">
-                                    <div class="col-md-6"><b><?= $direction->code.' '.$direction->name_ru ?></b></div>
+                                    <div class="col-md-6"><b><?= str_replace('.', '', $direction->code).' '.$direction->name_ru ?></b></div>
                                 </td>
                             </tr>
                             <tr>

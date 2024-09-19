@@ -65,7 +65,7 @@ $breadcrumbs['item'][] = [
                 'format' => 'raw',
                 'value' => function($model) {
                     $direction = $model->direction;
-                    return $direction->code.' - '.$direction->name_uz;
+                    return str_replace('.', '', $direction->code).' - '.$direction->name_uz;
                 },
             ],
             [

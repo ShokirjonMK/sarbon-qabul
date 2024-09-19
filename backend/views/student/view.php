@@ -493,7 +493,7 @@ $cons = $model->user->cons;
                                 <div class="col-md-4 col-12 mb-4">
                                     <div class="view-info-right">
                                         <p>Yo'nalish nomi</p>
-                                        <h6><?= $direction->code.' - '.$direction->name_uz ?></h6>
+                                        <h6><?= str_replace('.', '', $direction->code).' - '.$direction->name_uz ?></h6>
                                     </div>
                                 </div>
 

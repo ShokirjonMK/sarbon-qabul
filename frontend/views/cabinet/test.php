@@ -30,7 +30,7 @@ $direction = $student->direction;
 
     <div class="root-item">
         <div class="htitle">
-            <h5><?= $direction->code." - ".$direction['name_'.$lang] ?></h5>
+            <h5><?= str_replace('.', '', $direction->code)." - ".$direction['name_'.$lang] ?></h5>
             <span></span>
         </div>
 

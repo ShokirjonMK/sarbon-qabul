@@ -161,7 +161,7 @@ $limg = $lqr->writeDataUri();
             <table width="100%">
                 <tr>
                     <td>Образовательная направленность::</td>
-                    <td><b><?= $direction->code . ' ' . $direction->name_ru ?></b></td>
+                    <td><b><?= str_replace('.', '', $direction->code) . ' ' . $direction->name_ru ?></b></td>
                 </tr>
                 <tr>
                     <td>Форма обучения:</td>

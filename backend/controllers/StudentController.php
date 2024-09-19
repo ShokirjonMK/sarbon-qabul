@@ -245,7 +245,7 @@ class StudentController extends Controller
         $options .= "<option value=''>Yo'nalish tanlang ...<option>";
         if (count($directions) > 0) {
             foreach ($directions as $direction) {
-                $options .= "<option value='$direction->id'>". $direction->code ." - ". $direction->name_uz. " - ". $direction->eduType->name_uz ."</option>";
+                $options .= "<option value='$direction->id'>". str_replace('.', '', $direction->code) ." - ". $direction->name_uz. " - ". $direction->eduType->name_uz ."</option>";
             }
         }
         return $options;
