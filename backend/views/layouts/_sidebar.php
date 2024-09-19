@@ -8,7 +8,7 @@ use common\models\EduYearType;
 
 $user = Yii::$app->user->identity;
 $role = $user->authItem;
-$logo = "/frontend/web/images/sarbon_wh_logo_icon.svg";
+$logo = "/frontend/web/images/sarbon_icon.svg";
 $eduYear = EduYear::find()->where(['is_deleted' => 0 , 'status' => 1])->one();
 $eduYearTypes = EduYearType::find()
     ->where(['edu_year_id' => $eduYear->id, 'status' => 1, 'is_deleted' => 0])->all();
