@@ -81,7 +81,8 @@
 .b-primary
 {
     /*background-color: rgba(53, 79, 149, 1);*/
-    background-color: var(--main-color);
+    background: rgb(1,89,101);
+    background: linear-gradient(345deg, rgba(1,89,101,1) 0%, rgba(45,66,85,1) 100%);
     color: var(--color-white);
 }
 .b-bgcolor
@@ -364,7 +365,8 @@
     width: 100%;
     outline: none;
     border: none;
-    background: var(--bg-color);
+    background: rgb(1,89,101);
+    background: linear-gradient(345deg, rgba(1,89,101,1) 0%, rgba(45,66,85,1) 100%);
     color: #fff;
     padding: 8px;
     border-radius: 4px;

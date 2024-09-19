@@ -167,7 +167,8 @@ ul {
 }
 
 .ik_sarbon_listensy a {
-    background: var(--red-color);
+    background: rgb(1,89,101);
+    background: linear-gradient(345deg, rgba(1,89,101,1) 0%, rgba(45,66,85,1) 100%);
     border-radius: 5px;
 }
 
@@ -179,7 +180,8 @@ ul {
     right: 0;
     width: 100%;
     height: 100%;
-    background: var(--main-color);
+    background: rgb(1,89,101);
+    background: linear-gradient(345deg, rgba(1,89,101,1) 0%, rgba(45,66,85,1) 100%);
     z-index: 99999999999999999999999;
     display: flex;
     justify-content: center;

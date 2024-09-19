@@ -242,18 +242,16 @@
 
 .banner-link {
     display: flex;
-    justify-content: center;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 .banner-link a {
-    padding: 10px 30px;
+    padding: 7px 30px;
     background: var(--red-color);
     border-radius: 10px;
     color: #fff;
     position: relative;
     display: flex;
     align-items: center;
-    font-family: var(--ft-int);
     gap: 40px;
     transition: all 0.2s linear;
 }
@@ -285,6 +283,10 @@
 .banner-link a:hover span svg:last-child {
     transform: translate(120%);
 }
+
+
+
+
 
 
 .banner-logo {
@@ -401,8 +403,8 @@
     /*background-position: top;*/
     /*background-size: cover;*/
     /*background-repeat: no-repeat;*/
-    background: rgb(110,15,39);
-    background: linear-gradient(0deg, rgba(110,15,39,1) 0%, rgba(45,66,85,1) 2%);
+    background: rgb(1,89,101);
+    background: linear-gradient(345deg, rgba(1,89,101,1) 0%, rgba(45,66,85,1) 100%);
 }
 .head_mobile:before {
     /*content: '';*/
@@ -479,14 +481,14 @@
 .mb_menu_list2 ul li {
     height: 30px;
     border-radius: 5px;
-    background: #2F5786;
+    background: #035f6b;
     transition: all 0.1s linear;
 }
 .mb_menu_list ul li {
     width: 32px;
     height: 30px;
     border-radius: 5px;
-    background: #2F5786;
+    background: #035f6b;
     transition: all 0.1s linear;
 }
 .mb_menu_list2 ul li a {
@@ -696,7 +698,8 @@
 
 
 .ik_footer {
-    background: var(--main-color);
+    background: rgb(1,89,101);
+    background: linear-gradient(345deg, rgba(1,89,101,1) 0%, rgba(45,66,85,1) 100%);
 }
 .ik_footer_box {
     padding: 30px 0;
@@ -706,8 +709,198 @@
 .ik_footer_box .mb_menu_list2 ul li {
     height: auto;
 }
-.ik_footer_box .mb_menu_list2 ul li a b {
+
+
+
+
+
+.ikb_main {
+    width: 100%;
+}
+
+.section_1 {
+    width: 100%;
+    background: #fff;
+    padding: 80px 0;
+}
+.section_1_box {
+    width: 100%;
+    display: flex;
+}
+.section_1_box_left {
+    width: 50%;
+    order: 2;
+}
+.section_1_box_right {
+    width: 50%;
+    order: 1;
+}
+
+
+.section_1_box_right_img1 {
+    width: 94%;
+    padding-top: 60px;
+}
+.section_1_box_right_img1 img {
+    width: 100%;
+    border-radius: 30px;
+}
+.section_1_box_right_img2 {
+    width: 80%;
+}
+.section_1_box_right_img2 img {
+    width: 100%;
+    border-radius: 30px;
+}
+.imgTop {
+    margin-top: 50px;
+}
+.section_1_box_right_img1 p {
     color: var(--red-color);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.section_banner_video {
+    width: 100%;
+    height: 300px;
+    background-image: url("/frontend/web/images/section4.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.section_banner_video a {
+    display: inline-block;
+    position: relative;
+}
+.section_banner_video a svg {
+    fill: var(--red-color);
+}
+.button.is-play {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.button.is-play .button-outer-circle {
+    background: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+.button.is-play .button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+}
+.button.is-play .button-icon .triangle {
+    -webkit-animation: fadeIn 7s ease;
+    animation: fadeIn 7s ease;
+}
+.button.is-play .button-icon .path {
+    stroke-dasharray: 90;
+    stroke-dashoffset: 0;
+    -webkit-animation: triangleStroke 3s;
+    animation: triangleStroke 3s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+.has-scale-animation {
+    -webkit-animation: smallScale 3s infinite;
+    animation: smallScale 3s infinite;
+}
+.has-delay-short {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes triangleStroke {
+    from {
+        stroke-dashoffset: 90;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes triangleStroke {
+    from {
+        stroke-dashoffset: 90;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-webkit-keyframes smallScale {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes smallScale {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+    .section_1_box {
+        display: block;
+    }
+    .section_1_box_left,
+    .section_1_box_right_img1,
+    .section_1_box_right,
+    .section_1_box_right_img2 {
+        width: 100%;
+    }
+    .section_1_box_right {
+        margin-top: 30px;
+    }
+    .section_1 {
+        padding: 30px 0;
+    }
 }
 
 
@@ -802,6 +995,20 @@
     }
 }
 
+
+@media screen and (max-width: 768px) {
+    .section_1_box_right_img2 {
+        margin-top: 30px;
+    }
+    .section_1_box_right_img1 {
+        padding-top: 0;
+    }
+    .imgTop,
+    .banner-link,
+    .top50 {
+        margin-top: 30px;
+    }
+}
 @media screen and (max-width: 700px) {
     .banner-center h1 {
         font-size: 6rem;

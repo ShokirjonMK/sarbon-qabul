@@ -8,4 +8,5 @@ $this->title = 'SARBON UNIVERSITETI';
 
 
 
+<?= $this->render('_main') ; ?>
 <?= $this->render('_content') ; ?>
