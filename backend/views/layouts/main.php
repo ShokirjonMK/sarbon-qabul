@@ -24,7 +24,6 @@ AppAsset::register($this);
     <link href="/frontend/web/images/sarbon_icon.svg" rel="apple-touch-icon">
     <?php $this->head() ?>
 </head>
-
 <body>
     <?php $this->beginBody() ?>
 
