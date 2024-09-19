@@ -361,7 +361,8 @@
     justify-content: space-between;
 }
 .cab_flag {
-    background: var(--col2);
+    background: rgb(1,89,101);
+    background: linear-gradient(345deg, rgba(1,89,101,1) 0%, rgba(45,66,85,1) 100%);
     border-radius: 5px;
 }
 .cstep_head_left img {

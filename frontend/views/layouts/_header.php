@@ -22,7 +22,7 @@ if ($lang == 'ru') {
                 </a>
             </div>
             <div class="mb_head_right">
-                <div class="translation cab_flag" style="background: #2F5786;">
+                <div class="translation cab_flag">
                     <div class="dropdown">
 
                         <button class="dropdown-toggle link-hover" style="background: none;" type="button" data-bs-toggle="dropdown" aria-expanded="true">

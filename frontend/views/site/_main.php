@@ -11,7 +11,7 @@ use yii\helpers\Url;
                     <div class="section_1_box_right_img1">
                         <p>SARBON UNIVERSITETI</p>
                         <h1>
-                            Vazirlar Mahkamasi ta`lim sifatini nazorat qilish davlat inspeksiya litseinziyasiga ega Toshkent shahrida joylashgan yangi nodavlat universitet!
+                            Oʻzbekiston Respublikasi Vazirlar Mahkamasining tegishli qarori bilan tashkil etilgan hamda Oliy ta’lim, fan va innovatsiyalar vazirligi tomonidan berilgan litsenziyaga ega Sarbon Universiteti.
                         </h1>
                         <div class="banner-link">
                             <a href="<?= Url::to(['#']) ?>">
