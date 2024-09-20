@@ -335,17 +335,9 @@ class FileController extends Controller
 
         $action = '';
         if ($type == 2) {
-            if ($student->language_id == 1) {
-                $action = 'con2-uz';
-            } elseif ($student->language_id == 3) {
-                $action = 'con2-ru';
-            }
+            $action = 'con2-uz';
         } elseif ($type == 3) {
-            if ($student->language_id == 1) {
-                $action = 'con3-uz';
-            } elseif ($student->language_id == 3) {
-                $action = 'con3-ru';
-            }
+            $action = 'con3-uz';
         } else {
             $errors[] = ['Type not\'g\'ri tanlandi!'];
             Yii::$app->session->setFlash('error' , $errors);
@@ -362,7 +354,11 @@ class FileController extends Controller
             'orientation' => Pdf::ORIENT_PORTRAIT,
             'destination' => Pdf::DEST_DOWNLOAD,
             'content' => $content,
-            'cssInline' => 'body { font-family: Times, "Times New Roman", serif; }',
+            'cssInline' => '
+                body {
+                    color: #000000;
+                }
+            ',
             'filename' => date('YmdHis') . ".pdf",
             'options' => [
                 'title' => 'Contract',

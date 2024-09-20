@@ -46,17 +46,9 @@ class ContractController extends Controller
         $student = Student::findOne(['id' => $id]);
         $action = '';
         if ($type == 2) {
-            if ($student->language_id == 1) {
-                $action = 'con2-uz';
-            } elseif ($student->language_id == 3) {
-                $action = 'con2-ru';
-            }
+            $action = 'con2-uz';
         } elseif ($type == 3) {
-            if ($student->language_id == 1) {
-                $action = 'con3-uz';
-            } elseif ($student->language_id == 3) {
-                $action = 'con3-ru';
-            }
+            $action = 'con3-uz';
         } else {
             $errors[] = ['Type not\'g\'ri tanlandi!'];
             Yii::$app->session->setFlash('error' , $errors);
