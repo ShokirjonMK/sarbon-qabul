@@ -90,12 +90,12 @@ $limg = $lqr->writeDataUri();
 
 ?>
 
-<table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
+<table width="100%" style="font-size: 14px; border-collapse: collapse;">
 
 
     <tr>
         <td colspan="4">
-            <table width="100%" style="border-bottom: 2px solid #000000; padding-bottom: 5px; font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
+            <table width="100%" style="border-bottom: 2px solid #000000; padding-bottom: 5px; font-size: 14px; border-collapse: collapse;">
                 <tr>
                     <td colspan="2">
                         <b>SARBON UNIVERSITETI</b>
@@ -161,7 +161,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4" style="padding: 5px;">
-            <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
+            <table width="100%" style="font-size: 14px; border-collapse: collapse;">
 
                 <tr>
                     <td colspan="2" style="padding-bottom: 13px;">Ta’lim bosqichi:<?= $joy ?></td>
@@ -604,7 +604,7 @@ $limg = $lqr->writeDataUri();
     <tr>
         <td colspan="4">
             <div>
-                <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
+                <table width="100%" style="font-size: 14px; border-collapse: collapse;">
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
@@ -703,7 +703,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4">
-            <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
+            <table width="100%" style="font-size: 14px; border-collapse: collapse;">
                 <tr>
                     <td colspan="4" style="border: 1px solid #000000; padding: 10px;">
                         <b>SANA: </b> &nbsp; <?= $date ?> <br>
