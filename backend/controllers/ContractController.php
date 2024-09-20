@@ -73,7 +73,7 @@ class ContractController extends Controller
             'orientation' => Pdf::ORIENT_PORTRAIT,
             'destination' => Pdf::DEST_DOWNLOAD,
             'content' => $content,
-            'cssInline' => 'body { font-family: Times, "Times New Roman", serif; }',
+            'cssInline' => 'body { font-family: Times, "Times New Roman"; }',
             'filename' => date('YmdHis') . ".pdf",
             'options' => [
                 'title' => 'Contract',
