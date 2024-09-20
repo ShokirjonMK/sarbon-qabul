@@ -738,78 +738,78 @@ $limg = $lqr->writeDataUri();
                     </tr>
 
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             <b>7.3. Buyurtmachi:</b>
                         </td>
                     </tr>
 
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             <b>Yuridik shaxs:</b>
                         </td>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             ________ _______ _______ _______
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             <b>Manzil:</b>
                         </td>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             ________ _______ _______ _______
                         </td>
                     </tr>
 
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             <b>H/r:</b>
                         </td>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             ________ _______ _______ _______
                         </td>
                     </tr>
 
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             <b>Bank:</b>
                         </td>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             ________ _______ _______ _______
                         </td>
                     </tr>
 
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             <b>MFO:</b>
                         </td>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             ________ _______ _______ _______
                         </td>
                     </tr>
 
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             <b>STIR:</b>
                         </td>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             ________ _______ _______ _______
                         </td>
                     </tr>
 
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             <b>Tel:</b>
                         </td>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             ________ _______ _______ _______
                         </td>
                     </tr>
 
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             <b>E-mail:</b>
                         </td>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             ________ _______ _______ _______
                         </td>
                     </tr>
@@ -819,10 +819,10 @@ $limg = $lqr->writeDataUri();
                     </tr>
 
                     <tr>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             <b>Rahbar:</b>
                         </td>
-                        <td colspan="2">
+                        <td colspan="2" style="padding-bottom: 13px;">
                             ________ _______ _______ _______
                         </td>
                     </tr>
