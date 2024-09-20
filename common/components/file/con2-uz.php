@@ -742,7 +742,7 @@ $limg = $lqr->writeDataUri();
 
                             <tr>
                                 <td colspan="4" style="text-align: justify; line-height: 23px;">
-                                    To‘lov maqsadi belgilangan tartibda to‘ldirilmagan taqdirda to‘lovni qabul qilishga doir muammolar kelib chiqishi
+                                    <?= $joy ?> To‘lov maqsadi belgilangan tartibda to‘ldirilmagan taqdirda to‘lovni qabul qilishga doir muammolar kelib chiqishi
                                     mumkin. Shu sababli to‘lov qilish jarayonida to‘lov maqsadini belgilangan tartibda ko‘rsatilishi shart!
                                 </td>
                             </tr>
