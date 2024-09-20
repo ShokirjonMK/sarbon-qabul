@@ -55,7 +55,7 @@ $user = Yii::$app->user->identity;
                 </div>
                 <div class="col-md-12 col-lg-6">
                     <?php
-                    $url2 = "https://qabul.tpu.uz/site/sign-up?id=".$model->id;
+                    $url2 = "https://qabul.sarbon.university/site/sign-up?id=".$model->id;
                     ?>
                     <h6 class="badge-table-div active"><?= $url2 ?></h6>
                     <div class="mt-3">
