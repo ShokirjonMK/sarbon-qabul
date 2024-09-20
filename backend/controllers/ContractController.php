@@ -76,6 +76,7 @@ class ContractController extends Controller
             'cssInline' => '
                 body { 
                     font-family: "Times New Roman"; 
+                    src: url("/path/to/times-new-roman.ttf") format("truetype");
                     color: #000000;
                 }
             ',
