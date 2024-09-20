@@ -73,17 +73,25 @@ class ContractController extends Controller
             'orientation' => Pdf::ORIENT_PORTRAIT,
             'destination' => Pdf::DEST_DOWNLOAD,
             'content' => $content,
-            'cssInline' => 'body { font-family: Times, "Times New Roman"; }',
+            'cssInline' => '
+                body { 
+                    font-family: "Times New Roman", Times, serif; 
+                    color: #000000; 
+                }
+            ',
             'filename' => date('YmdHis') . ".pdf",
             'options' => [
                 'title' => 'Contract',
                 'subject' => 'Student Contract',
                 'keywords' => 'pdf, contract, student',
             ],
-            'SetHeader' => ['<div style="width: 100%; display: flex; justify-content: space-between;">
-                            <span>SARBON</span>
-                            <span style="font-style: italic;">'. date('Y-m-d') . '</span>
-                        </div>'],
+            'methods' => [
+                'SetHTMLHeader' => '
+            <div style="font-style: italic; width: 100%; display: flex; justify-content: space-between;">
+                <span>SARBON</span>
+                <span>' . date('Y-m-d') . '</span>
+            </div>',
+            ],
             'SetHeaderOnAllPages' => false,
         ]);
 
