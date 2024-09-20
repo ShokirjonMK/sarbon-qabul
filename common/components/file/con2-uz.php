@@ -621,9 +621,9 @@ $limg = $lqr->writeDataUri();
                             <b>Tel:</b> +998 78 888 22 88 <br>
                         </td>
                         <td colspan="2" style="vertical-align: top">
-                            <b>F.I.Sh.:</b> <?= $full_name ?> <br>
-                            <b>Pasport ma’lumotlari:</b> <?= $student->passport_serial.' '.$student->passport_number ?> <br>
-                            <b>JShShIR:</b> <?= $student->passport_pin ?> <br>
+                            <b>F.I.Sh.:</b> <?= $full_name ?> <br><br>
+                            <b>Pasport ma’lumotlari:</b> <?= $student->passport_serial.' '.$student->passport_number ?> <br><br>
+                            <b>JShShIR:</b> <?= $student->passport_pin ?> <br><br>
                             <b>Tеlefon raqami: </b> <?= $student->user->username ?> <br>
                         </td>
                     </tr>
@@ -633,7 +633,7 @@ $limg = $lqr->writeDataUri();
                     </tr>
 
                     <tr>
-                        <td colspan="2" style="vertical-align: top; padding-left: 40px">
+                        <td colspan="2" style="vertical-align: top;">
                             <img src="<?= $img ?>" width="120px">
                         </td>
                         <td colspan="2" style="vertical-align: top">
