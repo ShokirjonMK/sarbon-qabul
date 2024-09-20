@@ -176,6 +176,7 @@ return [
     'a156' => 'PINFL',
     'a157' => 'Contract search',
     'a158' => 'Fill out the form below to search for a contract!',
+    'a159' => 'Test pass score',
 ];
 
 

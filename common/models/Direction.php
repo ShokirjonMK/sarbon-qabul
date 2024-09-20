@@ -28,6 +28,7 @@ use Yii;
  * @property int $created_by
  * @property int $updated_by
  * @property int $is_deleted
+ * @property int $access_ball
  *
  * @property DirectionSubject[] $directionSubjects
  * @property EduForm $eduForm
@@ -56,7 +57,7 @@ class Direction extends \yii\db\ActiveRecord
     {
         return [
             [['name_uz', 'name_ru', 'name_en', 'language_id', 'edu_year_type_id', 'edu_year_form_id', 'code' , 'contract' , 'edu_duration'], 'required'],
-            [['edu_year_id', 'language_id', 'edu_year_type_id', 'edu_year_form_id', 'edu_form_id', 'edu_type_id', 'contract', 'oferta', 'status', 'created_at', 'updated_at', 'created_by', 'updated_by', 'is_deleted'], 'integer'],
+            [['edu_year_id', 'language_id', 'edu_year_type_id', 'edu_year_form_id', 'edu_form_id', 'edu_type_id', 'contract', 'oferta', 'status', 'created_at', 'updated_at', 'created_by', 'updated_by', 'is_deleted' , 'access_ball'], 'integer'],
             [['name_uz', 'name_ru', 'name_en', 'code', 'course_json'], 'string', 'max' => 255],
             [['edu_duration'], 'number'],
             [['edu_form_id'], 'exist', 'skipOnError' => true, 'targetClass' => EduForm::class, 'targetAttribute' => ['edu_form_id' => 'id']],

@@ -175,6 +175,7 @@ return [
     'a156' => 'JSHSHIR',
     'a157' => 'Shartnoma izlash',
     'a158' => 'Shartnoma izlash uchun pastdagi formani to\'ldiring!',
+    'a159' => 'Testdan o\'tish bal',
 ];
 
 

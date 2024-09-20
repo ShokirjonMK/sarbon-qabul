@@ -93,6 +93,10 @@ if ($direction->oferta == 1) {
                     </div>
                 </div>
             </div>
+        <?php else: ?>
+
+        
+
         <?php endif; ?>
 
         <div class="iik_box btop">
@@ -159,6 +163,18 @@ if ($direction->oferta == 1) {
                                     <div class="down_content_box_right">
                                         <p><?= Yii::t("app" , "a121") ?></p>
                                         <h6><?= Yii::t("app" , "a122") ?></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="down_content_box">
+                                    <div class="down_content_box_left">
+                                        <i class="bi bi-patch-check"></i>
+                                    </div>
+                                    <div class="down_content_box_right">
+                                        <p><?= Yii::t("app" , "a159") ?></p>
+                                        <h6><?= $direction->access_ball." ".Yii::t("app" , "a99") ?></h6>
                                     </div>
                                 </div>
                             </div>
@@ -241,7 +257,7 @@ if ($direction->oferta == 1) {
                                             </div>
 
                                             <?php if ($student->exam_type == 0) : ?>
-                                                <?php if ($exam->status == 3 && $exam->ball > 65 && count($questions) > 0) : ?>
+                                                <?php if ($exam->status == 3 && $exam->ball > ($direction->access_ball + 5) && count($questions) > 0) : ?>
                                                     <div class="cfile_box_head_left_info">
                                                         <div class="cfile_box_head_left_info_left">
                                                             <p><?= Yii::t("app" , "a98") ?> </p>

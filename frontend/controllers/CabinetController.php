@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use common\models\Direction;
 use common\models\DirectionCourse;
 use common\models\Exam;
+use common\models\ExamStudentQuestions;
 use common\models\ExamStudentQuestionsSearch;
 use common\models\ExamSubject;
 use common\models\Options;
@@ -183,6 +184,26 @@ class CabinetController extends Controller
     {
         $examStudent = $this->findExamStudentModel($id);
         if ($examStudent->status == 2) {
+            $time = time();
+
+            $finish_time = $examStudent->finish_time;
+
+            $five_minutes_before = $finish_time - 300;
+
+            if ($time < $five_minutes_before) {
+                $examQuestions = ExamStudentQuestions::findOne([
+                    'option_id' => null,
+                    'exam_id' => $examStudent->id,
+                    'status' => 1,
+                    'is_deleted' => 0
+                ]);
+                if ($examQuestions) {
+                    $errors[] = [$examQuestions->order." - savol belgilanmagan. Testni yakunlash uchun barcha javobni belgilashingiz shart!"];
+                    \Yii::$app->session->setFlash('error' , $errors);
+                    return $this->redirect(['test']);
+                }
+            }
+
             $result = Test::finishExam($examStudent);
             if (!$result['is_ok']) {
                 \Yii::$app->session->setFlash('error' , $result['errors']);

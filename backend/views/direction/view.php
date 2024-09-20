@@ -59,6 +59,7 @@ $breadcrumbs['item'][] = [
                 'name_ru',
                 'name_en',
                 'code',
+                'access_ball',
                 [
                     'attribute' => 'edu_year_id',
                     'format' => 'raw',

@@ -162,22 +162,27 @@ class Test extends Model
             $examSubject->save(false);
         }
 
-        if ($model->ball < 56.7 && $model->ball >= 10) {
-            $model->ball = rand(57 , 65);
+        if ($model->ball >= $direction->access_ball) {
             $model->contract_type = 1;
             $model->contract_price = $direction->contract;
-        } elseif ($model->ball < 10) {
-            $model->contract_type = 1.5;
-            $model->contract_price = $direction->contract * 1.5;
-        } elseif ($model->ball >= 56.7) {
+            $model->confirm_date = time();
+        } elseif ($model->ball >= 30 && $model->ball < $direction->access_ball) {
+            $maxBall = $direction->access_ball + 5;
+            $model->ball = rand($direction->access_ball , $maxBall);
             $model->contract_type = 1;
             $model->contract_price = $direction->contract;
+            $model->confirm_date = time();
+        } else {
+            $model->status = 4;
         }
-        $model->confirm_date = time();
+
         $model->save(false);
-        $text = "Tabriklaymiz! Siz “SARBON UNIVERSITETI”ga talabalikka tavsiya etildingiz. To'lov shartnomasini yuklab olishni unutmang. Shartnomangizni https://sarbon.university sayti orqali yuklab oling. Aloqa markazi: 78 888 22 88. Rasmiy telegram kanal: https://t.me/sarbonuniversity";
-        $phone = $student->user->username;
-        Message::sendedSms($phone , $text);
+
+        if ($model->status == 3) {
+            $text = "Tabriklaymiz! Siz “SARBON UNIVERSITETI”ga talabalikka tavsiya etildingiz. To'lov shartnomasini yuklab olishni unutmang. Shartnomangizni https://sarbon.university sayti orqali yuklab oling. Aloqa markazi: 78 888 22 88. Rasmiy telegram kanal: https://t.me/sarbonuniversity";
+            $phone = $student->user->username;
+            Message::sendedSms($phone , $text);
+        }
 
         return $model;
     }

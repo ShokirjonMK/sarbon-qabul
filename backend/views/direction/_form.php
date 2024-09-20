@@ -49,6 +49,12 @@ $eduYearForms = EduYearForm::getEduFormName($eduYear);
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="form-group">
+                        <?= $form->field($model, 'access_ball')->textInput(['maxlength' => true]) ?>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="form-group">
                         <?= $form->field($model, 'contract')->textInput() ?>
                     </div>
                 </div>
