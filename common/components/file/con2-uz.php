@@ -181,14 +181,8 @@ $limg = $lqr->writeDataUri();
     </tr>
 
     <tr>
-        <td colspan="4">
-            <?= $joy ?> Talaba esa Universitet tomonidan belgilangan tartib qoidalarga rioya qilgan holda ta’lim olish va ta’lim olganlik uchun haq to‘lash majburiyatini oladi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 1.2. Universitetda shartnoma asosida o‘qitishning to‘lovi (keyingi o‘rinlarda – shartnoma to‘lovi) miqdori ta’lim yo‘nalishi, ta’lim shakli kunduzgi, kechki va sirtqi, o‘qishni ko‘chirish bilan bog‘liq fanlarning farqini o‘qitish hamda to‘plagan ballidan kelib chiqib, har bir o‘quv yili uchun alohida belgilanadi.
+        <td colspan="4" style="text-align: justify">
+            1.2. <?= $joy ?> 1.2.	“Ta’lim muassasasi”ga o‘qishga qabul qilingan “Ta’lim oluvchi”lar O‘zbekiston Respublikasining “Ta’lim to‘g‘risida”gi Qonuni va davlat ta’lim standartlarga muvofiq ishlab chiqilgan o‘quv rejalar va fan dasturlari asosida ta’lim oladilar.
         </td>
     </tr>
 
@@ -198,7 +192,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4" style="text-align: center">
-            <b>II. TOMONLARNING HUQUQ VA MAJBURIYATLARI</b>
+            <b>II. TA’LIM XIZMATINI KO‘RSATISH NARXI, TO‘LASH MUDDATI VA TARTIBI</b>
         </td>
     </tr>
 
@@ -207,398 +201,30 @@ $limg = $lqr->writeDataUri();
     </tr>
 
     <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.1. Universitetning huquqlari:
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.1.1. Talaba tomonidan o‘z majburiyatlarini bajarishini doimiy nazorat qilish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.1.2. Talabadan shartnoma majburiyatlarining bajarilishini, ichki tartib qoidalariga rioya etilishini, shartnoma bo‘yicha to‘lovlarni o‘z vaqtida to‘lashni talab qilish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.1.3. Shartnoma to‘lovini amalga oshirish tartibini, ichki tartib va ta’lim dasturi qoidalarini buzganligi, semestr davomida uzrli sababsiz Universitetda belgilangan akademik soat miqdoridan ortiq dars qoldirgani uchun talabani talabalar safidan ogohlantirmasdan chiqarish (chetlashtirish) yoki tegishli kursda qoldirish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.1.4. Talabadan o‘rnatilgan tartibda tegishli hujjatlarni talab qilish va ular taqdim etilmagan holda shartnoma to‘lovi amalga oshirilganidan qat’i nazar, Talabani o‘qishga qabul qilish yoki keyingi kursga o‘tkazish to‘g‘risidagi Universitet rektorining buyrug‘iga kiritmaslik.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.1.5. Universitetning ichki hujjatlarida belgilangan hollarda Talabani imtixonga kiritmaslik.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.1.6. Talaba quyidagi qilmishlardan birini sodir etgan taqdirda Universitet Buyurtmachini xabardor qilgan holda shartnomani bir tomonlama bekor qilish huquqiga ega:
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> a) ijtimoiy tarmoqlarda Universitet faoliyati to‘g‘risida ataylab yolg‘on ma’lumotlar tarqatganda, shuningdek, professor-o‘qituvchilar va ma’muriy xodimlarga hurmatsizlik bilan munosabatda bo‘lganda;
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> b) hujjatlarni qalbakilashtirish, shu jumladan, imtixon savollariga javoblarni hamda shu kabi boshqa materiallarni imtixonga olib kirish, imtixon paytida ulardan foydalanish yoki boshqa talabalarga tarqatish;
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> c) Universitet tovar belgisi/logotipidan Universitetning yozma ruxsatisiz (turli xil buyumlar, kiyim-kechaklar tayyorlash uchun va hokazo) foydalanish;
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> d) Universitet talabalari, o‘qituvchilari va xodimlariga nisbatan jinsiy, irqiy, diniy, millatlararo xarakterdagi kamsituvchi harakatlar sodir etish, odob-ahloq qoidalarini buzish, jismoniy va/yoki ruhiy bosim o‘tkazish;
-        </td>
-    </tr>
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> e) Universitet ichki tartib qoidalariga, ichki hujjatlari talablariga rioya qilish talablarini muntazam (2 va undan ortiq marta) qasddan buzish, o‘ziga oshkor bo‘lgan Universitetga yoki boshqa talabalarga tegishli maxfiy ma’lumotni tarqatish;
-        </td>
-    </tr>
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> f) o‘qish jarayonida Universitetning yozma roziligisiz xorijga ketish;
-        </td>
-    </tr>
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> g) bir semestr davomida 36 akademik soat dars qoldirganligi yoki ma’lumoti haqidagi hujjatning asl nusxasini Universitetga o‘z vaqtida taqdim etmaganligi;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> h) boshqa oliy ta’lim tashkilotidan, jumladan xorijiy oliy ta’lim tashkilotidan o‘qishini ko‘chirish uchun murojaat qilib Universitetga o‘qishga qabul qilinishida soxta hujjatlardan foydalanganligi yoki o‘qishni ko‘chirish bilan bog‘liq hujjatlarida yolg‘on va haqqoniy bo‘lmagan ma’lumotlar mavjudligi;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> i) Universitetning ichki hujjatlarida nazarda tutilgan boshqa hollarda;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> j) O‘zbekiston Respublikasining amaldagi qonun hujjatlarida nazarda tutilgan boshqa normalarni buzganlikda aybdor deb topilganida.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.1.7. Ko‘rsatilayotgan ta’lim xizmatlarining miqdori va sifatini pasaytirmagan holda tasdiqlangan dars jadvaliga o‘zgartirishlar kiritish, O‘zbekiston Respublikasining amaldagi qonunchiligiga muvofiq va fors-major holatlariga qarab, ushbu shartnoma shartlarida belgilangan ta’lim xizmatlari xarajatlarini kamaytirmasdan o‘qitish rejimini masofaviy shaklga o‘tkazish to‘g‘risida qaror qabul qilish.
-        </td>
-    </tr>
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.1.8. Mehnatga haq to‘lashning eng kam miqdori yoki bazaviy hisoblash miqdori o‘zgarganda, shartnoma to‘lovi miqdorini o‘zgartirish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  2.1.9. Shartnoma to‘lovi muddatlarini uzaytirish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  2.1.10. O‘zbekiston Respublikasining amaldagi qonunchiligiga muvofiq va fors-major holatlariga qarab, ushbu shartnoma shartlarida belgilangan ta’lim xizmatlari xarajatlarini kamaytirmasdan o‘qitish rejimini masofaviy shaklga o‘tkazish to‘g‘risida qaror qabul qilish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  2.2. Universitetning majburiyatlari:
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.2.1. Talabani davlat ta’lim standartlari, ta’lim sohasidagi qonunchilik talablari, o‘quv dasturlari hamda ushbu shartnoma shartlariga muvofiq o‘qitish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.2.2. Talabaning qonunchilikda belgilangan huquqlarini ta’minlash.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.2.3. O‘quv jarayonini yuqori malakali professor-o‘qituvchilarni jalb qilgan holda tashkil etish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.2.4. O‘quv yili davomida elektron hisob fakturalar yuborish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  2.2.5. Universitet quyidagilarni o‘z zimmasiga olmaydi:
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.2.5.1. Talabaning stipendiya va moddiy jihatdan ta’minoti;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.2.5.2. Talabaning hayoti, sog‘ligi va uning shaxsiy mulki uchun javobgarlik;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.2.5.3. Talaba va Buyurtmachining o‘zaro majburiyatlari uchun javobgarlik.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.3. Buyurtmachining huquqlari:
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.3.1. Universitet va Talabadan shartnoma majburiyatlari bajarilishini talab qilish.
+        <td colspan="4" style="text-align: justify">
+            2.1. <?= $joy ?> “Ta’lim muassasasi”da o‘qish davrida ta’lim xizmatini ko‘rsatish narxi Respublikada belgilangan Bazaviy hisoblash miqdori o’zgarishiga bog‘liq holda hisoblanadi.
         </td>
     </tr>
 
     <tr>
         <td colspan="4">
-            <?= $joy ?> 2.3.2. Talabaning Universitet o‘quv reja va dasturlariga muvofiq ta’lim olishini nazorat qilish.
+            2.2. <?= $joy ?> Ushbu shartnoma bo‘yicha ta’lim oluvchini bir yillik o‘qitish uchun to‘lov 8,219,893.00 (sakkiz million ikki yuz o`n to`qqiz ming sakkiz yuz to`qson uch so'm) soʻmni tashkil etadi va quyidagi muddatlarda amalga oshiriladi: Choraklarga bo‘lib to‘langanda quyidagi muddatlarda:
+            <br>
+            <ul>
+                <li>
+                    belgilangan to‘lov miqdorining kamida 25.00 foizini talabalikka tavsiya etilgan abiturientlar uchun 15.10.2024 gacha, ikkinchi va undan yuqori bosqich talabalar uchun 01.11.2024 gacha;
+                </li>
+                <li>
+                    belgilangan to‘lov miqdorining kamida 50.00 foizini 01.01.2025 gacha, 75.00 foizini 01.04.2025 gacha va
+                    100.00 foizini 01.06.2025 gacha.
+                </li>
+            </ul>
         </td>
     </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.3.3. Talabaning fanlarni o‘zlashtirish darajasiga oid ma’lumotlarni Universitetdan belgilangan tartibda so‘rash va olish.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.3.4. Universitetdan Talabaga sifatli ta’lim berilishini talab qilish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.3.5. Universitetning ta’lim jarayonlarini yaxshilashga doir takliflar berish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.4. Buyurtmachining majburiyatlari:
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.4.1. Shartnoma to‘lovini mazkur shartnomada belgilangan muddatlarda to‘lash.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.4.2. Universitet Ustavi va ichki tartib-qoidalariga qat’iy rioya qilishni hamda o‘quv reja va dasturlarga muvofiq ta’lim olishni Talabadan talab qilish;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  2.4.3. Mehnatga haq to‘lashning eng kam miqdori yoki bazaviy hisoblash miqdori o‘zgarganda, mos ravishda shartnoma to‘lovi miqdoriga mutanosib ravishda to‘lovni o‘z vaqtida amalga oshirish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.5. Talabaning huquqlari:
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.5.1. Universitetdan shartnoma bo‘yicha o‘z majburiyatlarini bajarishni talab qilish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.5.2. Universitet tomonidan tasdiqlangan o‘quv reja va dasturlarga muvofiq davlat standarti talablari darajasida ta’lim olish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.5.3. Universitetning moddiy-texnik bazasidan, jumladan laboratoriya jihozlari, asbob-uskunalar, axborot-resurs markazi va Wi-Fi hududidan foydalanish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  2.5.4. Universitetning o‘quv jarayonlarini takomillashtirish bo‘yicha takliflar kiritish.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.5.5. Shartnoma to‘lovini shartnoma shartlariga muvofiq to‘lash.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.5.6. Bilim va ko‘nikmalarini rivojlantirish, takomillashtirish, Universitet taqdim etayotgan barcha imkoniyatlaridan foydalanish, shuningdek, dars va o‘qishdan bo‘sh vaqtlarida jamiyat hayotida faol ishtirok etish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  2.5.7. Quyidagi hollarda Universitet ruxsati bilan 1 (bir) yilgacha akademik ta’til olish:
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> a) salomatlik holati davlat sog‘liqni saqlash tizimiga kiruvchi tibbiyot muassasalarining davolovchi shifokorlari tomonidan hujjatlar bilan tasdiqlangan sezilarli darajada yomonlashganda;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> b) homiladorlik va tug‘ish, shuningdek bola ikki yoshga to‘lgunga qadar parvarishlash bo‘yicha ta’tilga bog‘liq hollarda;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  v) yaqin qarindoshining vafoti munosabati bilan bu holda akademik ta’til berish Universitet rahbariyati tomonidan har bir holat alohida ko‘rib chiqiladi va qaror qabul qilinadi;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  g) harbiy xizmatni o‘tash uchun safarbar etilishi munosabati bilan;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> d) boshqa hollarda Universitet rahbariyatining qaroriga ko‘ra.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.5.8. O‘qishning barcha bosqichlarini muvaffaqiyatli tamomlagandan so‘ng O‘zbekiston Respublikasida oliy ma’lumot to‘g‘risidagi hujjat bo‘lgan Universitetning oliy ma’lumot to‘g‘risidagi diplomini olish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  2.6. Talabaning majburiyatlari:
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.6.1. Ushbu shartnoma Universitet va Talaba o‘rtasida (Buyurtmachisiz) tuzilgan taqdirda shartnoma to‘lovi bo‘yicha barcha majburiyatlarni o‘z zimmasiga olish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.6.2. O‘zbekiston Respublikasi qonunchiligida, shuningdek Universitetning o‘quv jarayoni va faoliyatini tartibga soluvchi normativ-huquqiy hujjatlarida belgilangan oliy ta’lim muassasalari talabalariga qo‘yiladigan talablarga muvofiq ta’lim olish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  2.6.3. Univesitet ichki hujjatlariga muvofiq talab etiladigan barcha hujjatni taqdim etish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.6.4. Universitet ichki tartib qoidalari, Universitetga kirish-chiqish, shaxsiy va yong‘in xavfsizligi qoidalari talablariga qat’iy rioya qilish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  2.6.5. O‘zbekiston Respublikasi qonunchiligiga zid harakatlar va qilmishlarni sodir etmaslik.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.6.6. Universitetning texnik va boshqa o‘quv qurollari, shuningdek asbob-uskuna/jihozlari va boshqa mol-mulkidan oqilona foydalanish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.6.7. Pasport ma’lumotlari, yashash manzili va telefon raqami o‘zgarganligi to‘g‘risida ular o‘zgartirilgan kundan e’tiboran besh kun ichida Universitetni xabardor qilish.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  2.6.8. O‘zbekiston Respublikasi hududini Universitetning yozma ruxsati asosida tark etish.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 2.6.9. O‘zlashtirish darajasi, fanlar/darslar bo‘yicha davomat foizi, Universitet oldidagi moliyaviy majburiyatlarning bajarilishi ustidan doimiy nazorat olib borish.
-        </td>
-    </tr>
-
 
     <tr>
         <td colspan="4">
-            <?= $joy ?> 2.6.10. Talaba ushbu shartnomada ko‘zda tutilmagan qo‘shimcha xizmatlarni olganida xizmat haqini to‘lash. Universitetning ichki hujjatlari talablarini buzganda jarima nazarda tutilgan hollarda mazkur jarima(lar)ni o‘z vaqtida to‘lash.
+            2.3. <?= $joy ?> Ushbu shartnomaning 2.2-bandida ko‘zda tutilgan to‘lov muddatlari Tomonlarning o’zaro kelishuvi bilan o’zgartrilishi mumkin.
         </td>
     </tr>
 
