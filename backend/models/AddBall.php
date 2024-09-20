@@ -74,14 +74,21 @@ class AddBall extends Model
                     $ball = $ball + $subject->ball;
                 }
                 $exam->ball = $ball;
-                $exam->status = 3;
-                $exam->confirm_date = time();
-                if ($exam->ball < 56.7) {
-                    $exam->contract_type = 1.5;
-                    $exam->contract_price = $exam->direction->contract;
-                } else {
+                $direction = $exam->direction;
+                if ($exam->ball >= $direction->access_ball) {
                     $exam->contract_type = 1;
-                    $exam->contract_price = $exam->direction->contract;
+                    $exam->contract_price = $direction->contract;
+                    $exam->confirm_date = time();
+                    $exam->status = 3;
+                } elseif ($exam->ball >= 30 && $exam->ball < $direction->access_ball) {
+                    $maxBall = $direction->access_ball + 5;
+                    $exam->ball = rand($direction->access_ball , $maxBall);
+                    $exam->contract_type = 1;
+                    $exam->contract_price = $direction->contract;
+                    $exam->confirm_date = time();
+                    $exam->status = 3;
+                } else {
+                    $exam->status = 4;
                 }
                 $exam->save(false);
             }

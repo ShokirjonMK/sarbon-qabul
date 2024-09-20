@@ -601,11 +601,13 @@ $cons = $model->user->cons;
                                                     Test ishlamoqda
                                                 <?php elseif ($exam->status == 3): ?>
                                                     Testni yakunladi
+                                                <?php elseif ($exam->status == 4): ?>
+                                                    Testdan o'tolmadi
                                                 <?php endif; ?>
                                             </h6>
                                         </div>
                                     </div>
-                                    <?php if ($exam->status == 3) : ?>
+                                    <?php if ($exam->status > 3) : ?>
                                         <div class="col-md-4 col-12">
                                             <div class="view-info-right">
                                                 <p>To'plangan ball</p>

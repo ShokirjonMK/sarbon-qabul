@@ -259,7 +259,7 @@ class ExamSubject extends \yii\db\ActiveRecord
         if (count($errors) == 0) {
             $model->save(false);
             $exam = $model->exam;
-            if ($exam->status == 3) {
+            if ($exam->status >= 3) {
                 $examSubjects = $exam->examSubjects;
                 if ($examSubjects) {
                     $ball = 0;
@@ -267,6 +267,23 @@ class ExamSubject extends \yii\db\ActiveRecord
                         $ball = $ball + $examSubject->ball;
                     }
                     $exam->ball = $ball;
+                    $direction = $exam->direction;
+
+                    if ($exam->ball >= $direction->access_ball) {
+                        $exam->contract_type = 1;
+                        $exam->contract_price = $direction->contract;
+                        $exam->confirm_date = time();
+                        $exam->status = 3;
+                    } elseif ($exam->ball >= 30 && $exam->ball < $direction->access_ball) {
+                        $maxBall = $direction->access_ball + 5;
+                        $exam->ball = rand($direction->access_ball , $maxBall);
+                        $exam->contract_type = 1;
+                        $exam->contract_price = $direction->contract;
+                        $exam->confirm_date = time();
+                        $exam->status = 3;
+                    } else {
+                        $exam->status = 4;
+                    }
                     $exam->save(false);
                 }
             }

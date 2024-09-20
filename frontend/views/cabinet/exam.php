@@ -45,7 +45,6 @@ if ($student->edu_type_id == 1) {
 if ($direction->oferta == 1) {
     $oferta = StudentOferta::findOne(['direction_id' =>$direction->id,'student_id' => $student->id,'status' => 1, 'is_deleted' => 0]);
 }
-
 ?>
 
 
@@ -95,7 +94,7 @@ if ($direction->oferta == 1) {
             </div>
         <?php else: ?>
 
-        
+
 
         <?php endif; ?>
 
