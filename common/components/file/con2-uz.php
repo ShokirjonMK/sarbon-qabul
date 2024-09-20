@@ -142,22 +142,22 @@ $limg = $lqr->writeDataUri();
         <td colspan="4" style="padding: 5px;">
             <table width="100%">
 
-                <tr style="padding-bottom: 12.5px">
+                <tr style="padding-bottom: 15px">
                     <td>Ta’lim bosqichi:<?= $joy ?></td>
                     <td><b>Bakalavr</b></td>
                 </tr>
 
-                <tr style="padding-bottom: 12.5px">
+                <tr style="padding-bottom: 15px">
                     <td>Ta’lim shakli:<?= $joy ?></td>
                     <td><b><?= $direction->eduForm->name_uz ?></b></td>
                 </tr>
 
-                <tr style="padding-bottom: 12.5px">
+                <tr style="padding-bottom: 15px">
                     <td>O‘qish muddati:<?= $joy ?></td>
                     <td><b><?= ikYear($direction->edu_duration) ?></b></td>
                 </tr>
 
-                <tr style="padding-bottom: 12.5px">
+                <tr style="padding-bottom: 15px">
                     <td>O‘quv kursi:<?= $joy ?></td>
                     <?php if ($student->edu_type_id == 2) : ?>
                         <td><b><?= Course::findOne(['id' => ($student->course_id + 1)])->name_uz ?></b></td>
@@ -617,20 +617,20 @@ $limg = $lqr->writeDataUri();
 
                     <tr>
                         <td colspan="2" style="vertical-align: top">
-                            <b>“SARBON UNIVERSITETI” oliy ta’lim tashkiloti</b> <br>
-                            <b>Manzil:</b> Toshkent shahar, Olmazor tumani, Paxta MFY, Sag'bon ko'chasi. <br>
-                            <b>H/R:</b> <?= $cons->h_r ?> <br>
-                            <b>Bank:</b> “Trastbank” xususiy aksiyadorlik bankining “Raqamli” bank xizmatlari ofisi <br>
-                            <b>Bank kodi (MFO):</b> 00491  <br>
-                            <b>IFUT (OKED):</b> 64190  <br>
-                            <b>STIR (INN):</b> 309341614 <br>
-                            <b>Tel:</b> +998 78 888 22 88 <br>
+                            <b  style="padding-bottom: 15px">“SARBON UNIVERSITETI” oliy ta’lim tashkiloti</b> <br>
+                            <b  style="padding-bottom: 15px">Manzil:</b> Toshkent shahar, Olmazor tumani, Paxta MFY, Sag'bon ko'chasi. <br>
+                            <b  style="padding-bottom: 15px">H/R:</b> <?= $cons->h_r ?> <br>
+                            <b  style="padding-bottom: 15px">Bank:</b> “Trastbank” xususiy aksiyadorlik bankining “Raqamli” bank xizmatlari ofisi <br>
+                            <b  style="padding-bottom: 15px">Bank kodi (MFO):</b> 00491  <br>
+                            <b  style="padding-bottom: 15px">IFUT (OKED):</b> 64190  <br>
+                            <b  style="padding-bottom: 15px">STIR (INN):</b> 309341614 <br>
+                            <b  style="padding-bottom: 15px">Tel:</b> +998 78 888 22 88 <br>
                         </td>
                         <td colspan="2" style="vertical-align: top">
-                            <b>F.I.Sh.:</b> <?= $full_name ?> <br>
-                            <b>Pasport ma’lumotlari:</b> <?= $student->passport_serial.' '.$student->passport_number ?> <br>
-                            <b>JShShIR:</b> <?= $student->passport_pin ?> <br>
-                            <b>Tеlefon raqami: </b> <?= $student->user->username ?> <br>
+                            <b  style="padding-bottom: 15px">F.I.Sh.:</b> <?= $full_name ?> <br>
+                            <b  style="padding-bottom: 15px">Pasport ma’lumotlari:</b> <?= $student->passport_serial.' '.$student->passport_number ?> <br>
+                            <b  style="padding-bottom: 15px">JShShIR:</b> <?= $student->passport_pin ?> <br>
+                            <b  style="padding-bottom: 15px">Tеlefon raqami: </b> <?= $student->user->username ?> <br>
                         </td>
                     </tr>
 
