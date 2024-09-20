@@ -30,7 +30,7 @@ if ($student->edu_type_id == 1) {
         'status' => 3,
         'is_deleted' => 0
     ]);
-    $code = $cons->code.'-Q2UZ';
+    $code = $cons->code.'-Q3';
     $date = date("Y-m-d H:i:s" , $contract->confirm_date);
     $link = $contract->contract_link;
     $con2 = $contract->contract_third;
@@ -43,7 +43,7 @@ if ($student->edu_type_id == 1) {
         'file_status' => 2,
         'is_deleted' => 0
     ]);
-    $code = $cons->code.'-P3UZ';
+    $code = $cons->code.'-P3';
     $date = date("Y-m-d H:i:s" , $contract->confirm_date);
     $link = $contract->contract_link;
     $con2 = $contract->contract_third;
@@ -56,7 +56,7 @@ if ($student->edu_type_id == 1) {
         'file_status' => 2,
         'is_deleted' => 0
     ]);
-    $code = $cons->code.'-D3UZ';
+    $code = $cons->code.'-D3';
     $date = date("Y-m-d H:i:s" , $contract->confirm_date);
     $link = $contract->contract_link;
     $con2 = $contract->contract_third;
@@ -64,7 +64,7 @@ if ($student->edu_type_id == 1) {
     $contract->save(false);
 }
 
-$qr = (new QrCode('https://qabul.sarbon.university/site/contract?key=' . $link.'&type=2'))
+$qr = (new QrCode('https://qabul.sarbon.university/site/contract?key=' . $link.'&type=3'))
     ->setSize(120, 120)
     ->setMargin(10)
     ->setForegroundColor(1, 89, 101);
