@@ -95,9 +95,9 @@ $limg = $lqr->writeDataUri();
             <table width="100%" style="border-bottom: 2px solid #000000; padding-bottom: 5px;">
                 <tr>
                     <td colspan="2">
-                        SARBON UNIVERSITETI
+                        <b>SARBON UNIVERSITETI</b>
                     </td>
-                    <td colspan="2" style="font-style: italic; font-size: 11px;">
+                    <td colspan="2" style="font-style: italic; font-size: 11px; text-align: right;">
                         <?= $date ?>
                     </td>
                 </tr>
@@ -109,7 +109,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4" style="text-align: center">
-            <b>
+            <b style="line-height: 23px;">
                 To‘lov-kontrakt (Ikki tomonlama) asosida mutaxassis tayyorlashga <br>
                 KONTRAKT № <?= $code ?>/<?= str_replace('.', '', $direction->code) ?>/<?= $contract->id ?>
             </b>
