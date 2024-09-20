@@ -89,12 +89,12 @@ $limg = $lqr->writeDataUri();
 
 ?>
 
-<table width="100%" style="font-size: 14px; border-collapse: collapse;">
+<table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
 
 
     <tr>
         <td colspan="4">
-            <table width="100%" style="border-bottom: 2px solid #000000; padding-bottom: 5px; font-size: 14px; border-collapse: collapse;">
+            <table width="100%" style="font-family: 'Times New Roman'; border-bottom: 2px solid #000000; padding-bottom: 5px; font-size: 14px; border-collapse: collapse;">
                 <tr>
                     <td colspan="2">
                         <b>SARBON UNIVERSITETI</b>
@@ -160,7 +160,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4" style="padding: 5px;">
-            <table width="100%" style="font-size: 14px; border-collapse: collapse;">
+            <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
 
                 <tr>
                     <td colspan="2" style="padding-bottom: 13px;">Ta’lim bosqichi:<?= $joy ?></td>
@@ -603,7 +603,7 @@ $limg = $lqr->writeDataUri();
     <tr>
         <td colspan="4">
             <div>
-                <table width="100%" style="font-size: 14px; border-collapse: collapse;">
+                <table width="100%" style=" font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
@@ -702,13 +702,13 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4">
-            <table width="100%" style="font-size: 14px; border-collapse: collapse;">
+            <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
                 <tr>
                     <td colspan="4" style="border: 1px solid #000000; padding: 10px;">
                         <b>SANA: </b> &nbsp; <?= $date ?> <br>
                         <b>INVOYS RAQAMI: &nbsp; </b> <?= $con2 ?> <br>
                         <b>KONTRAKT TO‘LOV MIQDORI: &nbsp; </b> <?= number_format((int)$contract->contract_price, 0, '', ' ') . ' (' . Contract::numUzStr($contract->contract_price) . ')' ?> <br>
-                        <table width="100%">
+                        <table width="100%" style="font-family: 'Times New Roman';">
                             <tr>
                                 <td colspan="4">To‘lovni amalga oshirish usullari:</td>
                             </tr>
@@ -724,8 +724,8 @@ $limg = $lqr->writeDataUri();
                             </tr>
 
                             <tr>
-                                <td colspan="4" style="padding: 5px; border: 2px solid red;">
-                                    <table width="100%">
+                                <td colspan="4" style="font-family: 'Times New Roman'; padding: 5px; border: 2px solid red;">
+                                    <table width="100%" style="font-family: 'Times New Roman';">
                                         <tr>
                                             <td><?= $con2 ?> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;</td>
                                             <td><?= $student->passport_pin ?> &nbsp;&nbsp;&nbsp; |</td>
@@ -768,7 +768,7 @@ $limg = $lqr->writeDataUri();
 
                             <tr>
                                 <td colspan="4">
-                                    <table width="100%" style="border-collapse: collapse; border: 1px solid;">
+                                    <table width="100%" style="font-family: 'Times New Roman'; border-collapse: collapse; border: 1px solid;">
                                         <tr>
                                             <td colspan="2" style="padding: 5px; border: 1px solid;"><b>Qabul qiluvchi tashkilot nomi:</b></td>
                                             <td colspan="2" style="padding: 5px; border: 1px solid;"><b>“SARBON UNIVERSITETI” MCHJ</b></td>
