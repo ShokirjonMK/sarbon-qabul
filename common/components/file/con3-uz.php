@@ -700,7 +700,7 @@ $limg = $lqr->writeDataUri();
                     <tr>
                         <td colspan="2" style="vertical-align: top; line-height: 25px;">
                             <b>“SARBON UNIVERSITETI” oliy ta’lim tashkiloti</b> <br>
-                            <b>Manzil:</b> Toshkent shahar, Olmazor tumani, Paxta MFY, Sag'bon ko'chasi. <br>
+                            <b>Manzil:</b> Toshkent shahar, Olmazor tumani, Paxta MFY, Sag'bon ko'chasi, 290-uy.<br>
                             <b>H/R:</b> <?= $cons->h_r ?> <br>
                             <b>Bank:</b> “Trastbank” xususiy aksiyadorlik bankining “Raqamli” bank xizmatlari ofisi <br>
                             <b>Bank kodi (MFO):</b> 00491  <br>
