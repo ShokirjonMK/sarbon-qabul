@@ -266,8 +266,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: url("/frontend/web/images/ban.jpg");
-    background-position: center;
+    background-image: url("/frontend/web/images/login_banner.jpg");
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
