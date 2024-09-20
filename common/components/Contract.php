@@ -4,9 +4,9 @@ namespace common\components;
 
 class Contract
 {
-    public function contract($student)
+    public function contract($student, $action)
     {
-        $file = __DIR__ . '/file/pdf_uz.php';
+        $file = __DIR__ . '/file/'.$action.'.php';
         if (file_exists($file)) {
             // Bu bufferga natijani yozish uchun
             ob_start();

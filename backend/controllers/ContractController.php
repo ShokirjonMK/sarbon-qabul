@@ -42,9 +42,8 @@ class ContractController extends Controller
 
     public function actionIndex($id , $type)
     {
+        $errors = [];
         $student = Student::findOne(['id' => $id]);
-        $user = $student->user;
-
         $action = '';
         if ($type == 2) {
             if ($student->language_id == 1) {
@@ -58,13 +57,14 @@ class ContractController extends Controller
             } elseif ($student->language_id == 3) {
                 $action = 'con3-ru';
             }
+        } else {
+            $errors[] = ['Type not\'g\'ri tanlandi!'];
+            Yii::$app->session->setFlash('error' , $errors);
+            return $this->redirect(Yii::$app->request->referrer);
         }
 
-        $content = $this->renderPartial($action, [
-            'student' => $student,
-            'type' => $type,
-            'user' => $user
-        ]);
+        $pdf = Yii::$app->ikPdf;
+        $content = $pdf->contract($student , $action);
 
         $pdf = new Pdf([
             'mode' => Pdf::MODE_UTF8,
@@ -81,27 +81,6 @@ class ContractController extends Controller
                 'keywords' => 'pdf, contract, student',
             ],
         ]);
-
-        if ($student->lead_id != null) {
-            try {
-                $amoCrmClient = Yii::$app->ikAmoCrm;
-                $leadId = $student->lead_id;
-                $tags = [];
-                $message = '';
-                $customFields = [];
-
-                $updatedFields = [
-                    'pipelineId' => $student->pipeline_id,
-                    'statusId' => User::STEP_STATUS_7
-                ];
-
-                $updatedLead = $amoCrmClient->updateLead($leadId, $updatedFields, $tags, $message, $customFields);
-            } catch (\Exception $e) {
-                $errors[] = ['Ma\'lumot uzatishda xatolik STEP 2: ' . $e->getMessage()];
-                Yii::$app->session->setFlash('error' , $errors);
-                return $this->redirect(['site/index']);
-            }
-        }
 
         return $pdf->render();
     }
