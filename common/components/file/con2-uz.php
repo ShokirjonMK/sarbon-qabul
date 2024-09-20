@@ -225,102 +225,215 @@ $limg = $lqr->writeDataUri();
         <td>&nbsp;</td>
     </tr>
 
-    <div>
-        <table width="100%">
-            <tr>
-                <td colspan="4" style="text-align: center">
-                    <b>III. TA’LIM TO‘LOVINING MIQDORI, TARTIBI VA TO‘LOV SHARTLARI</b>
-                </td>
-            </tr>
+    <tr>
+        <td colspan="4">
+            <div>
+                <table width="100%">
+                    <tr>
+                        <td colspan="4" style="text-align: center">
+                            <b>III. TA’LIM TO‘LOVINING MIQDORI, TARTIBI VA TO‘LOV SHARTLARI</b>
+                        </td>
+                    </tr>
 
-            <tr>
-                <td>&nbsp;</td>
-            </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
 
-            <tr>
-                <td colspan="4">
-                    <?= $joy ?> 3.1. <b>Ta’lim muassasasi majburiyatlari:</b>
-                </td>
-            </tr>
+                    <tr>
+                        <td colspan="4">
+                            <?= $joy ?> 3.1. <b>Ta’lim muassasasi majburiyatlari:</b>
+                        </td>
+                    </tr>
 
-            <tr>
-                <td  colspan="4" style="text-align: justify">
-                    •	O‘qitish uchun belgilangan to‘lov o‘z vaqtida amalga oshirgandan so‘ng, “Ta’lim oluvchi”ni buyruq asosida talabalikka qabul qilish.
-                </td>
-            </tr>
+                    <tr>
+                        <td  colspan="4" style="text-align: justify">
+                            •	O‘qitish uchun belgilangan to‘lov o‘z vaqtida amalga oshirgandan so‘ng, “Ta’lim oluvchi”ni buyruq asosida talabalikka qabul qilish.
+                        </td>
+                    </tr>
 
-            <tr>
-                <td  colspan="4" style="text-align: justify">
-                    •	Ta’lim oluvchiga o‘qishi uchun O‘zbekiston Respublikasining “Ta’lim to‘g‘risida”gi Qonuni va “Ta’lim muassasasi” Ustavida nazarda tutilgan zarur shart-sharoitlarga muvofiq sharoitlarni yaratib berish.
-                </td>
-            </tr>
+                    <tr>
+                        <td  colspan="4" style="text-align: justify">
+                            •	Ta’lim oluvchiga o‘qishi uchun O‘zbekiston Respublikasining “Ta’lim to‘g‘risida”gi Qonuni va “Ta’lim muassasasi” Ustavida nazarda tutilgan zarur shart-sharoitlarga muvofiq sharoitlarni yaratib berish.
+                        </td>
+                    </tr>
 
-            <tr>
-                <td  colspan="4" style="text-align: justify">
-                    •	Ta’lim oluvchining huquq va erkinliklari, qonuniy manfaatlari hamda ta’lim muassasasi Ustaviga muvofiq professor-o‘qituvchilar tomonidan o‘zlarining funksional vazifalarini to‘laqonli bajarishini ta’minlash.
-                </td>
-            </tr>
+                    <tr>
+                        <td  colspan="4" style="text-align: justify">
+                            •	Ta’lim oluvchining huquq va erkinliklari, qonuniy manfaatlari hamda ta’lim muassasasi Ustaviga muvofiq professor-o‘qituvchilar tomonidan o‘zlarining funksional vazifalarini to‘laqonli bajarishini ta’minlash.
+                        </td>
+                    </tr>
 
-            <tr>
-                <td  colspan="4" style="text-align: justify">
-                    •	Ta’lim oluvchini tahsil olayotgan ta’lim yo‘nalishi (mutaxassisligi) bo‘yicha tasdiqlangan o‘quv rejasi va dasturlariga muvofiq davlat ta’lim standarti talablari darajasida tayyorlash.
-                </td>
-            </tr>
+                    <tr>
+                        <td  colspan="4" style="text-align: justify">
+                            •	Ta’lim oluvchini tahsil olayotgan ta’lim yo‘nalishi (mutaxassisligi) bo‘yicha tasdiqlangan o‘quv rejasi va dasturlariga muvofiq davlat ta’lim standarti talablari darajasida tayyorlash.
+                        </td>
+                    </tr>
 
-            <tr>
-                <td  colspan="4" style="text-align: justify">
-                    •	O‘quv yili boshlanishida ta’lim oluvchini yangi o‘quv yili uchun belgilangan to‘lov miqdori to‘g‘risida o‘quv jarayoni boshlanishidan oldin xabardor qilish.
-                </td>
-            </tr>
+                    <tr>
+                        <td  colspan="4" style="text-align: justify">
+                            •	O‘quv yili boshlanishida ta’lim oluvchini yangi o‘quv yili uchun belgilangan to‘lov miqdori to‘g‘risida o‘quv jarayoni boshlanishidan oldin xabardor qilish.
+                        </td>
+                    </tr>
 
-            <tr>
-                <td  colspan="4" style="text-align: justify">
-                    •	Respublikada belgilangan Mehnatga haq to‘lashning eng kam miqdori yoki tariflar o‘zgarishi natijasida o‘qitish uchun belgilangan to‘lov miqdori o‘zgargan taqdirda ta’lim oluvchiga ta’limning qolgan muddati uchun to‘lov miqdori haqida xabar berish.
-                </td>
-            </tr>
+                    <tr>
+                        <td  colspan="4" style="text-align: justify">
+                            •	Respublikada belgilangan Mehnatga haq to‘lashning eng kam miqdori yoki tariflar o‘zgarishi natijasida o‘qitish uchun belgilangan to‘lov miqdori o‘zgargan taqdirda ta’lim oluvchiga ta’limning qolgan muddati uchun to‘lov miqdori haqida xabar berish.
+                        </td>
+                    </tr>
 
-            <tr>
-                <td>&nbsp;</td>
-            </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
 
-            <tr>
-                <td colspan="4">
-                    <?= $joy ?> 3.2. <b>Ta’lim oluvchining majburiyatlari:</b>
-                </td>
-            </tr>
+                    <tr>
+                        <td colspan="4">
+                            <?= $joy ?> 3.2. <b>Ta’lim oluvchining majburiyatlari:</b>
+                        </td>
+                    </tr>
 
-            <tr>
-                <td  colspan="4" style="text-align: justify">
-                    •	Shartnomaning 2.2. bandida belgilangan to‘lov summasini shu bandda ko‘rsatilgan muddatlarda to‘lab borish.
-                </td>
-            </tr>
+                    <tr>
+                        <td  colspan="4" style="text-align: justify">
+                            •	Shartnomaning 2.2. bandida belgilangan to‘lov summasini shu bandda ko‘rsatilgan muddatlarda to‘lab borish.
+                        </td>
+                    </tr>
 
-            <tr>
-                <td  colspan="4" style="text-align: justify">
-                    •	Respublikada belgilangan Mehnatga haq to‘lashning eng kam miqdori yoki tariflar o‘zgarishi natijasida o‘qitish uchun belgilangan to‘lov miqdori o‘zgargan taqdirda, o‘qishning qolgan muddati uchun ta’lim muassasasiga haq to‘lash bo‘yicha bir oy muddat ichida shartnomaga qo‘shimcha bitim rasmiylashtirish va to‘lov farqini to‘lash.
-                </td>
-            </tr>
+                    <tr>
+                        <td  colspan="4" style="text-align: justify">
+                            •	Respublikada belgilangan Mehnatga haq to‘lashning eng kam miqdori yoki tariflar o‘zgarishi natijasida o‘qitish uchun belgilangan to‘lov miqdori o‘zgargan taqdirda, o‘qishning qolgan muddati uchun ta’lim muassasasiga haq to‘lash bo‘yicha bir oy muddat ichida shartnomaga qo‘shimcha bitim rasmiylashtirish va to‘lov farqini to‘lash.
+                        </td>
+                    </tr>
 
-            <tr>
-                <td  colspan="4" style="text-align: justify">
-                    •	Ta’lim oluvchi o‘qitish uchun belgilangan to‘lov miqdorini to‘laganlik to‘g‘risidagi bank tasdiqnomasi va shartnomaning bir nusxasini o‘z vaqtida hujjatlarni rasmiylashtirish uchun ta’lim muassasasiga topshirish.
-                </td>
-            </tr>
+                    <tr>
+                        <td  colspan="4" style="text-align: justify">
+                            •	Ta’lim oluvchi o‘qitish uchun belgilangan to‘lov miqdorini to‘laganlik to‘g‘risidagi bank tasdiqnomasi va shartnomaning bir nusxasini o‘z vaqtida hujjatlarni rasmiylashtirish uchun ta’lim muassasasiga topshirish.
+                        </td>
+                    </tr>
 
-            <tr>
-                <td  colspan="4" style="text-align: justify">
-                    •	Tahsil olayotgan ta’lim yo‘nalishining (mutaxassisligining) tegishli malaka tavsifnomasiga muvofiq kelajakda mustaqil faoliyat yuritishga zarur bo‘lgan barcha bilimlarni egallash, dars va mashg‘ulotlarga to‘liq qatnashish.
-                </td>
-            </tr>
+                    <tr>
+                        <td  colspan="4" style="text-align: justify">
+                            •	Tahsil olayotgan ta’lim yo‘nalishining (mutaxassisligining) tegishli malaka tavsifnomasiga muvofiq kelajakda mustaqil faoliyat yuritishga zarur bo‘lgan barcha bilimlarni egallash, dars va mashg‘ulotlarga to‘liq qatnashish.
+                        </td>
+                    </tr>
 
-            <tr>
-                <td  colspan="4" style="text-align: justify">
-                    •	Ta’lim muassasasi va talabalar turar joyining ichki nizomlariga qa’tiy rioya qilish, professoro‘ qituvchilar va xodimlarga hurmat bilan qarash, “Ta’lim muassasasi” obro‘siga putur yetkazadigan harakatlar qilmaslik, moddiy bazasini asrash, ziyon keltirmaslik, ziyon keltirganda o‘rnini qoplash.
-                </td>
-            </tr>
-        </table>
-    </div>
+                    <tr>
+                        <td  colspan="4" style="text-align: justify">
+                            •	Ta’lim muassasasi va talabalar turar joyining ichki nizomlariga qa’tiy rioya qilish, professoro‘ qituvchilar va xodimlarga hurmat bilan qarash, “Ta’lim muassasasi” obro‘siga putur yetkazadigan harakatlar qilmaslik, moddiy bazasini asrash, ziyon keltirmaslik, ziyon keltirganda o‘rnini qoplash.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
 
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: center">
+            <b>IV. TOMONLARNING HUQUQLARI</b>
+        </td>
+    </tr>
+
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="4">
+            <?= $joy ?> 4.1. <b>Ta’lim muassasasi huquqlari:</b>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	O‘quv jarayonini mustaqil ravishda amalga oshirish, “Ta’lim oluvchi”ning oraliq va yakuniy nazoratlarni topshirish, qayta topshirish tartibi hamda vaqtlarini belgilash.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	O‘zbekiston Respublikasi qonunlari, “Ta’lim muassasasi” nizomi hamda mahalliy normativ-huquqiy hujjatlarga muvofiq “Ta’lim oluvchi”ga rag‘batlantiruvchi yoki intizomiy choralarni qo‘llash.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	Agar “Ta’lim oluvchi” o‘quv yili semestrlarida yakuniy nazoratlarni topshirish, qayta topshirish natijalariga ko‘ra akademik qarzdor bo‘lib qolsa uni kursdan-kursga qoldirish huquqiga ega.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	“Ta’lim muassasasi” “Ta’lim oluvchi”ning qobiliyati, darslarga sababsiz 36 akademik soat qatnashmaslik, intizomni buzish, “Ta’lim muassasasi”ning ichki tartib qoidalariga amal qilmaganda, respublikaning normativ-huquqiy hujjatlarida nazarda tutilgan boshqa sabablarga ko‘ra hamda o‘qitish uchun belgilangan to‘lov o‘z vaqtida amalga oshirilmaganda “Ta’lim oluvchi”ni talabalar safidan chetlashtirish huquqiga ega.
+        </td>
+    </tr>
+
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="4">
+            <?= $joy ?> 4.2. <b>Ta’lim oluvchining huquqlari:</b>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	O‘quv yili uchun shartnoma summasini semestrlarga yoki choraklarga bo‘lmasdan bir yo‘la to‘liqligicha to‘lash mumkin.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	Ta’lim oluvchi mazkur shartnoma bo‘yicha naqd pul, bank plastik kartasi, bankdagi omonat hisob raqami orqali, ish joyidan arizasiga asosan oylik maoshini o‘tkazishi yoki banklardan ta’lim krediti olish orqali to‘lovni amalga oshirishi mumkin.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	Professor-o‘qituvchilarning o‘z funksional vazifalarini bajarishidan yoki ta’lim muassasasidagi shart-sharoitlardan norozi bo‘lgan taqdirda ta’lim muassasasi rahbariyatiga yozma shaklda murojaat qilish.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	Quyidagi hollarda Ta’lim muassasasi ruxsati bilan 1 (bir) yilgacha akademik ta’til olish:
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            a) salomatlik holati davlat sog‘liqni saqlash tizimiga kiruvchi tibbiyot muassasalarining davolovchi shifokorlari tomonidan hujjatlar bilan tasdiqlangan sezilarli darajada yomonlashganda;
+        </td>
+    </tr>
+
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            b) homiladorlik va tug‘ish, shuningdek bola ikki yoshga to‘lgunga qadar parvarishlash bo‘yicha ta’tilga bog‘liq hollarda;
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            v) yaqin qarindoshining vafoti munosabati bilan bu holda akademik ta’til berish Ta’lim muassasasi rahbariyati tomonidan har bir holat alohida ko‘rib chiqiladi va qaror qabul qilinadi;
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            g) harbiy xizmatni o‘tash uchun safarbar etilishi munosabati bilan;
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            d) boshqa hollarda Ta’lim muassasasi rahbariyatining qaroriga ko‘ra.
+        </td>
+    </tr>
 
 
 
