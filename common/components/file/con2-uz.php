@@ -42,7 +42,7 @@ if ($student->edu_type_id == 1) {
         'status' => 3,
         'is_deleted' => 0
     ]);
-    $code = $cons->code.'-Q2UZ';
+    $code = $cons->code.'Q2';
     $date = date("Y-m-d H:i:s" , $contract->confirm_date);
     $link = $contract->contract_link;
     $con2 = $contract->contract_second;
@@ -55,7 +55,7 @@ if ($student->edu_type_id == 1) {
         'file_status' => 2,
         'is_deleted' => 0
     ]);
-    $code = $cons->code.'-P2UZ';
+    $code = $cons->code.'P2';
     $date = date("Y-m-d H:i:s" , $contract->confirm_date);
     $link = $contract->contract_link;
     $con2 = $contract->contract_second;
@@ -68,7 +68,7 @@ if ($student->edu_type_id == 1) {
         'file_status' => 2,
         'is_deleted' => 0
     ]);
-    $code = $cons->code.'-D2UZ';
+    $code = $cons->code.'D2';
     $date = date("Y-m-d H:i:s" , $contract->confirm_date);
     $link = $contract->contract_link;
     $con2 = $contract->contract_second;
@@ -87,13 +87,31 @@ $limg = $lqr->writeDataUri();
 
 ?>
 
-<table width="100%" style="font-family: 'Times New Roman'; font-size: 13px; border-collapse: collapse;">
+<table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
+
+
+    <tr>
+        <td colspan="4">
+            <table width="100%" style="border-bottom: 2px solid #000000; padding-bottom: 5px;">
+                <tr>
+                    <td colspan="2">
+                        SARBON UNIVERSITETI
+                    </td>
+                    <td colspan="2" style="font-style: italic; font-size: 11px;">
+                        <?= $date ?>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr><td>&nbsp;</td></tr>
 
     <tr>
         <td colspan="4" style="text-align: center">
             <b>
                 To‘lov-kontrakt (Ikki tomonlama) asosida mutaxassis tayyorlashga <br>
-                <?= $code ?>  &nbsp;  <?= str_replace('.', '', $direction->code) ?> &nbsp; | &nbsp; <?= $contract->id ?> – sonli SHARTNOMA
+                KONTRAKT № <?= $code ?>/<?= str_replace('.', '', $direction->code) ?>/<?= $contract->id ?>
             </b>
         </td>
     </tr>

@@ -76,7 +76,7 @@ class ContractController extends Controller
             'cssInline' => '
                 body { 
                     font-family: "Times New Roman", Times, serif; 
-                    color: #000000; 
+                    color: #000000;
                 }
             ',
             'filename' => date('YmdHis') . ".pdf",
@@ -84,13 +84,6 @@ class ContractController extends Controller
                 'title' => 'Contract',
                 'subject' => 'Student Contract',
                 'keywords' => 'pdf, contract, student',
-            ],
-            'methods' => [
-                'SetHTMLHeader' => '
-            <div style="font-style: italic; width: 100%; display: flex; justify-content: space-between;">
-                <span>SARBON</span>
-                <span>' . date('Y-m-d') . '</span>
-            </div>',
             ],
         ]);
 
