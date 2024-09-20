@@ -14,6 +14,18 @@ use common\models\Constalting;
 /** @var Direction $direction */
 /** @var User $user */
 
+function ikYear($number) {
+    $years = floor($number);
+
+    $months = round(($number - $years) * 12);
+
+    if ($months == 12) {
+        $years++;
+        $months = 0;
+    }
+
+    return "$years yil $months oy";
+}
 $user = $student->user;
 $cons = Constalting::findOne($user->cons_id);
 $direction = $student->direction;
@@ -98,7 +110,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4" style="text-align: justify">
-            Vazirlar Mahkamasining “Oliy ta’lim muassasalariga o‘qishga qabul qilish, talabalar o‘qishini ko‘chirish, qayta tiklash va o‘qishdan chetlashtirish tartibi to‘g‘risidagi nizomlarni tasdiqlash haqida” 2017-yil 20-iyundagi 393-son qarori, O‘zbekiston Respublikasi oliy va o‘rta maxsus ta’lim vazirining 2012-yil 28-dekabrdagi 508-son buyrug‘i (ro‘yxat raqami 2431, 2013-yil 26-fevral) bilan tasdiqlangan Oliy va o‘rta maxsus, kasb-hunar ta’limi muassasalarida o‘qitishning to‘lov-shartnoma shakli va undan tushgan mablag‘larni taqsimlash tartibi to‘g‘risidagi Nizomga muvofiq, <b>SARBON UNIVERSITETI</b> oliy ta’lim tashkiloti (keyingi o‘rinlarda “Ta’lim muassasasi”) nomidan Ustav asosida ish yurituvchi direktor <b>SOBIRJONOV NODIRJON QODIRJONOVICH</b> birinchi tomondan, <b><?= $full_name ?></b> (keyingi o‘rinlarda “Ta’lim oluvchi”) ikkinchi tomondan, keyingi o‘rinlarda birgalikda “Tomonlar” deb ataluvchilar o‘rtasida mazkur shartnoma quyidagilar haqida tuzildi:
+            <?= $joy ?> Vazirlar Mahkamasining “Oliy ta’lim muassasalariga o‘qishga qabul qilish, talabalar o‘qishini ko‘chirish, qayta tiklash va o‘qishdan chetlashtirish tartibi to‘g‘risidagi nizomlarni tasdiqlash haqida” 2017-yil 20-iyundagi 393-son qarori, O‘zbekiston Respublikasi oliy va o‘rta maxsus ta’lim vazirining 2012-yil 28-dekabrdagi 508-son buyrug‘i (ro‘yxat raqami 2431, 2013-yil 26-fevral) bilan tasdiqlangan Oliy va o‘rta maxsus, kasb-hunar ta’limi muassasalarida o‘qitishning to‘lov-shartnoma shakli va undan tushgan mablag‘larni taqsimlash tartibi to‘g‘risidagi Nizomga muvofiq, <b>SARBON UNIVERSITETI</b> oliy ta’lim tashkiloti (keyingi o‘rinlarda “Ta’lim muassasasi”) nomidan Ustav asosida ish yurituvchi direktor <b>SOBIRJONOV NODIRJON QODIRJONOVICH</b> birinchi tomondan, <b><?= $full_name ?></b> (keyingi o‘rinlarda “Ta’lim oluvchi”) ikkinchi tomondan, keyingi o‘rinlarda birgalikda “Tomonlar” deb ataluvchilar o‘rtasida mazkur shartnoma quyidagilar haqida tuzildi:
         </td>
     </tr>
 
@@ -119,7 +131,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4">
-            <?= $joy ?> 1.1. 1.1.	Ta’lim muassasasi ta’lim xizmatini ko‘rsatishni, Ta’lim oluvchi o‘qish uchun belgilangan to‘lovni o‘z vaqtida amalga oshirishni va tasdiqlangan o‘quv reja bo‘yicha darslarga to‘liq qatnashish va ta’lim olishni o‘z zimmalariga oladi. Ta’lim oluvchining ta’lim ma’lumotlari quyidagicha:
+            1.1. <?= $joy ?> Ta’lim muassasasi ta’lim xizmatini ko‘rsatishni, Ta’lim oluvchi o‘qish uchun belgilangan to‘lovni o‘z vaqtida amalga oshirishni va tasdiqlangan o‘quv reja bo‘yicha darslarga to‘liq qatnashish va ta’lim olishni o‘z zimmalariga oladi. Ta’lim oluvchining ta’lim ma’lumotlari quyidagicha:
         </td>
     </tr>
 
@@ -130,30 +142,36 @@ $limg = $lqr->writeDataUri();
     <tr>
         <td colspan="4" style="padding: 5px;">
             <table width="100%">
+
                 <tr>
-                    <td>Ta’lim yo‘nalishi:</td>
-                    <td><b><?= str_replace('.', '', $direction->code).' '.$direction->name_uz ?></b></td>
+                    <td>Ta’lim bosqichi:<?= $joy ?></td>
+                    <td><b>Bakalavr</b></td>
                 </tr>
+
                 <tr>
-                    <td>Ta’lim shakli:</td>
+                    <td>Ta’lim shakli:<?= $joy ?></td>
                     <td><b><?= $direction->eduForm->name_uz ?></b></td>
                 </tr>
+
                 <tr>
-                    <td>Ta’lim yo‘nalishi bo‘yicha o‘qish muddati:</td>
-                    <td><b><?= $direction->edu_duration .' yil' ?></b></td>
+                    <td>O‘qish muddati:<?= $joy ?></td>
+                    <td><b><?= ikYear($direction->edu_duration) ?></b></td>
                 </tr>
+
                 <tr>
-                    <td>O‘quv kursi:</td>
+                    <td>O‘quv kursi:<?= $joy ?></td>
                     <?php if ($student->edu_type_id == 2) : ?>
                         <td><b><?= Course::findOne(['id' => ($student->course_id + 1)])->name_uz ?></b></td>
                     <?php else: ?>
                         <td><b>1 kurs</b></td>
                     <?php endif; ?>
                 </tr>
+
                 <tr>
-                    <td>Shartnomaning umumiy narxi (bir o‘quv yili uchun):</td>
-                    <td><b><?= number_format((int)$contract->contract_price, 0, '', ' ') .' so‘m'?></b></td>
+                    <td>Ta’lim yo‘nalishi:<?= $joy ?></td>
+                    <td><b><?= str_replace('.', '', $direction->code).' '.$direction->name_uz ?></b></td>
                 </tr>
+
             </table>
         </td>
     </tr>
