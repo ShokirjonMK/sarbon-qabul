@@ -164,32 +164,48 @@ $limg = $lqr->writeDataUri();
             <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
 
                 <tr>
-                    <td colspan="2" style="margin-bottom: 15px;">Ta’lim bosqichi:<?= $joy ?></td>
-                    <td colspan="2" style="margin-bottom: 15px;"><b>Bakalavr</b></td>
+                    <td colspan="2">Ta’lim bosqichi:<?= $joy ?></td>
+                    <td colspan="2"><b>Bakalavr</b></td>
                 </tr>
 
                 <tr>
-                    <td colspan="2" style="margin-bottom: 15px;">Ta’lim shakli:<?= $joy ?></td>
-                    <td colspan="2" style="margin-bottom: 15px;"><b><?= $direction->eduForm->name_uz ?></b></td>
+                    <td>&nbsp;</td>
                 </tr>
 
                 <tr>
-                    <td colspan="2" style="margin-bottom: 15px;">O‘qish muddati:<?= $joy ?></td>
-                    <td colspan="2" style="margin-bottom: 15px;"><b><?= ikYear($direction->edu_duration) ?></b></td>
+                    <td colspan="2">Ta’lim shakli:<?= $joy ?></td>
+                    <td colspan="2"><b><?= $direction->eduForm->name_uz ?></b></td>
                 </tr>
 
                 <tr>
-                    <td colspan="2" style="margin-bottom: 15px;">O‘quv kursi:<?= $joy ?></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">O‘qish muddati:<?= $joy ?></td>
+                    <td colspan="2"><b><?= ikYear($direction->edu_duration) ?></b></td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">O‘quv kursi:<?= $joy ?></td>
                     <?php if ($student->edu_type_id == 2) : ?>
-                        <td colspan="2" style="margin-bottom: 15px;"><b><?= Course::findOne(['id' => ($student->course_id + 1)])->name_uz ?></b></td>
+                        <td colspan="2"><b><?= Course::findOne(['id' => ($student->course_id + 1)])->name_uz ?></b></td>
                     <?php else: ?>
-                        <td colspan="2" style="margin-bottom: 15px;"><b>1 kurs</b></td>
+                        <td colspan="2"><b>1 kurs</b></td>
                     <?php endif; ?>
                 </tr>
 
                 <tr>
-                    <td colspan="2" style="margin-bottom: 15px;">Ta’lim yo‘nalishi:<?= $joy ?></td>
-                    <td colspan="2" style="margin-bottom: 15px;"><b><?= str_replace('.', '', $direction->code).' '.$direction->name_uz ?></b></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">Ta’lim yo‘nalishi:<?= $joy ?></td>
+                    <td colspan="2"><b><?= str_replace('.', '', $direction->code).' '.$direction->name_uz ?></b></td>
                 </tr>
 
             </table>
