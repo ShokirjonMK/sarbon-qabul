@@ -76,12 +76,15 @@ if ($student->edu_type_id == 1) {
     $contract->save(false);
 }
 
-$qr = (new QrCode('https://qabul.sarbon.university.uz/site/contract?key=' . $link.'&type=2'))->setSize(120, 120)
-    ->setMargin(10);
+$qr = (new QrCode('https://qabul.sarbon.university.uz/site/contract?key=' . $link.'&type=2'))
+    ->setSize(120, 120)
+    ->setMargin(10)
+    ->setForegroundColor([1, 89, 101]);
 $img = $qr->writeDataUri();
 
 $lqr = (new QrCode('https://document.licenses.uz/certificate/uuid/57076f62-07b1-496f-8b2b-64789c3e7345/pdf?language=oz'))->setSize(100, 100)
-    ->setMargin(10);
+    ->setMargin(10)
+    ->setForegroundColor([1, 89, 101]);
 $limg = $lqr->writeDataUri();
 
 
