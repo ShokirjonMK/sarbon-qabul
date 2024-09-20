@@ -129,13 +129,6 @@ class SignupForm extends Model
                 }
             }
 
-            $domen = $_SERVER['HTTP_HOST'];
-            if ($domen == "edu.tpu.uz") {
-                $user->cons_id = 2;
-            } elseif ($domen == "cons.tpu.uz" || $domen == "tashkent.tpu.uz") {
-                $user->cons_id = 3;
-            }
-
             if ($user->save(false)) {
                 $newAuth = new AuthAssignment();
                 $newAuth->item_name = 'student';
@@ -150,18 +143,6 @@ class SignupForm extends Model
                 $newStudent->created_by = 0;
                 $newStudent->updated_by = 0;
                 $newStudent->save(false);
-
-                // crm ga uzatish
-                $result = $this->sendCrm($user , $domen);
-                if ($result['is_ok']) {
-                    $amo = $result['data'];
-                    $newStudent->lead_id = $amo->id;
-                    $newStudent->pipeline_id = $amo->pipelineId;
-                    $newStudent->status_id = $amo->statusId;
-                    $newStudent->save(false);
-                } else {
-                    $errors[] = $result['errors'];
-                }
             } else {
                 $errors[] = ['Student not saved.'];
             }
