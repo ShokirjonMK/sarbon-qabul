@@ -40,7 +40,7 @@ class ConstaltingSearch extends Constalting
      */
     public function search($params)
     {
-        $query = Constalting::find();
+        $query = Constalting::find()->where(['is_deleted' => 0]);
 
         // add conditions that should always apply here
 
