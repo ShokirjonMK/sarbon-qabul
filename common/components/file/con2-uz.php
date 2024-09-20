@@ -81,7 +81,7 @@ $limg = $lqr->writeDataUri();
     <tr>
         <td colspan="4" style="text-align: center">
             <b>
-                2024-2025 o‘quv yilida to‘lov asosida ta’lim xizmatlarini ko‘rsatish bo‘yicha <br>
+                To‘lov-kontrakt (Ikki tomonlama) asosida mutaxassis tayyorlashga <br>
                 <?= $code ?>  &nbsp;  <?= str_replace('.', '', $direction->code) ?> &nbsp; | &nbsp; <?= $contract->id ?> – sonli SHARTNOMA
             </b>
         </td>
@@ -97,8 +97,8 @@ $limg = $lqr->writeDataUri();
     <tr><td>&nbsp;</td></tr>
 
     <tr>
-        <td colspan="4">
-            <b>“SARBON UNIVERSITETI”</b> oliy ta’lim tashkiloti (keyingi o‘rinlarda “Universitet”) nomidan Ustav asosida ish yurituvchi direktor <b>SHARIPOV MUZAFFAR TOLIBJONOVICH</b> birinchi tomondan,
+        <td colspan="4" style="text-align: justify">
+            Vazirlar Mahkamasining “Oliy ta’lim muassasalariga o‘qishga qabul qilish, talabalar o‘qishini ko‘chirish, qayta tiklash va o‘qishdan chetlashtirish tartibi to‘g‘risidagi nizomlarni tasdiqlash haqida” 2017-yil 20-iyundagi 393-son qarori, O‘zbekiston Respublikasi oliy va o‘rta maxsus ta’lim vazirining 2012-yil 28-dekabrdagi 508-son buyrug‘i (ro‘yxat raqami 2431, 2013-yil 26-fevral) bilan tasdiqlangan Oliy va o‘rta maxsus, kasb-hunar ta’limi muassasalarida o‘qitishning to‘lov-shartnoma shakli va undan tushgan mablag‘larni taqsimlash tartibi to‘g‘risidagi Nizomga muvofiq, <b>SARBON UNIVERSITETI</b> oliy ta’lim tashkiloti (keyingi o‘rinlarda “Ta’lim muassasasi”) nomidan Ustav asosida ish yurituvchi direktor <b>SOBIRJONOV NODIRJON QODIRJONOVICH</b> birinchi tomondan, <b><?= $full_name ?></b> (keyingi o‘rinlarda “Ta’lim oluvchi”) ikkinchi tomondan, keyingi o‘rinlarda birgalikda “Tomonlar” deb ataluvchilar o‘rtasida mazkur shartnoma quyidagilar haqida tuzildi:
         </td>
     </tr>
 
@@ -106,25 +106,6 @@ $limg = $lqr->writeDataUri();
         <td>&nbsp;</td>
     </tr>
 
-    <tr>
-        <td colspan="4" style="text-align: center">
-            <b><?= $full_name ?></b>
-        </td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            (keyingi o‘rinlarda “Talaba”) ikkinchi tomondan, keyingi o‘rinlarda birgalikda “Tomonlar” deb ataluvchilar o‘rtasida mazkur shartnoma quyidagilar haqida tuzildi:
-        </td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
 
     <tr>
         <td colspan="4" style="text-align: center">
@@ -138,7 +119,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4">
-            <?= $joy ?> 1.1. Mazkur shartnomaga muvofiq Universitet Talabani quyida ko‘rsatilgan ta’lim yo‘nalishi va ta’lim shakli bo‘yicha oliy ta’limning davlat ta’lim standartlari asosida tasdiqlangan o‘quv reja va o‘quv dasturlari asosida o‘qitish majburiyatini oladi.
+            <?= $joy ?> 1.1. 1.1.	Ta’lim muassasasi ta’lim xizmatini ko‘rsatishni, Ta’lim oluvchi o‘qish uchun belgilangan to‘lovni o‘z vaqtida amalga oshirishni va tasdiqlangan o‘quv reja bo‘yicha darslarga to‘liq qatnashish va ta’lim olishni o‘z zimmalariga oladi. Ta’lim oluvchining ta’lim ma’lumotlari quyidagicha:
         </td>
     </tr>
 
@@ -147,7 +128,7 @@ $limg = $lqr->writeDataUri();
     </tr>
 
     <tr>
-        <td colspan="4" style="border: 1px solid #000000; padding: 5px;">
+        <td colspan="4" style="padding: 5px;">
             <table width="100%">
                 <tr>
                     <td>Ta’lim yo‘nalishi:</td>
