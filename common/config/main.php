@@ -20,5 +20,8 @@ return [
         'ikAmoCrm' => [
             'class' => 'common\components\AmoCrmClient',
         ],
+        'ikPdf' => [
+            'class' => 'common\components\Contract',
+        ],
     ],
 ];

@@ -5,6 +5,8 @@ namespace backend\controllers;
 use common\models\EduYearType;
 use common\models\LoginForm;
 use common\models\LoginForm2;
+use common\models\Student;
+use kartik\mpdf\Pdf;
 use Yii;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
@@ -57,6 +59,31 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+
+        $std = Student::findOne(2);
+        $pdf = Yii::$app->ikPdf;
+        $t = $pdf->contract($std);
+
+
+        $pdf = new Pdf([
+            'mode' => Pdf::MODE_UTF8,
+            'format' => Pdf::FORMAT_A4,
+            'marginLeft' => 25,
+            'orientation' => Pdf::ORIENT_PORTRAIT,
+            'destination' => Pdf::DEST_DOWNLOAD,
+            'content' => $t,
+            'cssInline' => 'body { font-family: Times, "Times New Roman", serif; }',
+            'filename' => date('YmdHis') . ".pdf",
+            'options' => [
+                'title' => 'Contract',
+                'subject' => 'Student Contract',
+                'keywords' => 'pdf, contract, student',
+            ],
+        ]);
+
+        return $pdf->render();
+
+
         $currentUser = Yii::$app->user->identity;
         $eduYearTypes = EduYearType::find()
             ->where(['status' => 1 , 'is_deleted' => 0])
