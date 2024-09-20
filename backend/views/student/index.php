@@ -169,9 +169,9 @@ $breadcrumbs['item'][] = [
                         ]); ?>
                     </div>
 
-                    <button class="b-btn b-primary" id="allExport">
-                        All Export
-                    </button>
+<!--                    <button class="b-btn b-primary" id="allExport">-->
+<!--                        All Export-->
+<!--                    </button>-->
 
                 </div>
 
