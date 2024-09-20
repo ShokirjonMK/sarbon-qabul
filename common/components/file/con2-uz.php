@@ -243,13 +243,13 @@ $limg = $lqr->writeDataUri();
         </tr>
 
         <tr>
-            <td style="padding-left: 30px;">
+            <td style="padding-left: 30px; text-align: justify">
                 •	O‘qitish uchun belgilangan to‘lov o‘z vaqtida amalga oshirgandan so‘ng, “Ta’lim oluvchi”ni buyruq asosida talabalikka qabul qilish.
             </td>
         </tr>
 
         <tr>
-            <td style="padding-left: 30px;">
+            <td style="padding-left: 30px; text-align: justify">
                 •	Ta’lim oluvchiga o‘qishi uchun O‘zbekiston Respublikasining “Ta’lim to‘g‘risida”gi Qonuni va “Ta’lim muassasasi” Ustavida nazarda tutilgan zarur shart-sharoitlarga muvofiq sharoitlarni yaratib berish.
             </td>
         </tr>
