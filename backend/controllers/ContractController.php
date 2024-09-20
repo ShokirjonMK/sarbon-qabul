@@ -79,7 +79,7 @@ class ContractController extends Controller
                     src: url("/path/to/times-new-roman.ttf") format("truetype");
                 }
                 body { 
-                    font-family: "Times New Roman", Times, serif; 
+                    font-family: "Times New Roman"; 
                     color: #000000;
                 }
             ',
