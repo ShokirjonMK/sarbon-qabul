@@ -133,6 +133,7 @@ if ($lang == 'ru') {
                                     ],
                                 ]) ?>
                             </li>
+
                         <?php else: ?>
                             <li>
                                 <a href="<?= Url::to(['site/index#ik_connection']) ?>">
