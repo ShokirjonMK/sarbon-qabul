@@ -207,16 +207,16 @@ $limg = $lqr->writeDataUri();
     </tr>
 
     <tr>
-        <td colspan="4">
+        <td colspan="4" style="text-align: justify">
             2.2. <?= $joy ?> Ushbu shartnoma bo‘yicha ta’lim oluvchini bir yillik o‘qitish uchun to‘lov 8,219,893.00 (sakkiz million ikki yuz o`n to`qqiz ming sakkiz yuz to`qson uch so'm) soʻmni tashkil etadi va quyidagi muddatlarda amalga oshiriladi:
             <br>Choraklarga bo‘lib to‘langanda quyidagi muddatlarda:
             <br>
-            <ul>
-                <li>
-                    <?= $joy ?><?= $joy ?>belgilangan to‘lov miqdorining kamida 25.00 foizini talabalikka tavsiya etilgan abiturientlar uchun 15.10.2024 gacha, ikkinchi va undan yuqori bosqich talabalar uchun 01.11.2024 gacha;
+            <ul style="padding-left: 50px;">
+                <li style="text-align: justify">
+                    belgilangan to‘lov miqdorining kamida 25.00 foizini talabalikka tavsiya etilgan abiturientlar uchun 15.10.2024 gacha, ikkinchi va undan yuqori bosqich talabalar uchun 01.11.2024 gacha;
                 </li>
-                <li>
-                    <?= $joy ?><?= $joy ?>belgilangan to‘lov miqdorining kamida 50.00 foizini 01.01.2025 gacha, 75.00 foizini 01.04.2025 gacha va
+                <li style="text-align: justify">
+                    belgilangan to‘lov miqdorining kamida 50.00 foizini 01.01.2025 gacha, 75.00 foizini 01.04.2025 gacha va
                     100.00 foizini 01.06.2025 gacha.
                 </li>
             </ul>
