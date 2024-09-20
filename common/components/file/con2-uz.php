@@ -142,22 +142,22 @@ $limg = $lqr->writeDataUri();
         <td colspan="4" style="padding: 5px;">
             <table width="100%">
 
-                <tr style="padding-bottom: 15px">
+                <tr style="padding-bottom: 18px;">
                     <td>Ta’lim bosqichi:<?= $joy ?></td>
                     <td><b>Bakalavr</b></td>
                 </tr>
 
-                <tr style="padding-bottom: 15px">
+                <tr style="padding-bottom: 18px;">
                     <td>Ta’lim shakli:<?= $joy ?></td>
                     <td><b><?= $direction->eduForm->name_uz ?></b></td>
                 </tr>
 
-                <tr style="padding-bottom: 15px">
+                <tr style="padding-bottom: 18px;">
                     <td>O‘qish muddati:<?= $joy ?></td>
                     <td><b><?= ikYear($direction->edu_duration) ?></b></td>
                 </tr>
 
-                <tr style="padding-bottom: 15px">
+                <tr style="padding-bottom: 18px;">
                     <td>O‘quv kursi:<?= $joy ?></td>
                     <?php if ($student->edu_type_id == 2) : ?>
                         <td><b><?= Course::findOne(['id' => ($student->course_id + 1)])->name_uz ?></b></td>

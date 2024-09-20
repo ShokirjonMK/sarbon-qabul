@@ -80,6 +80,11 @@ class ContractController extends Controller
                 'subject' => 'Student Contract',
                 'keywords' => 'pdf, contract, student',
             ],
+            'SetHeader' => ['<div style="width: 100%; display: flex; justify-content: space-between;">
+                            <span>SARBON</span>
+                            <span style="font-style: italic;">'. date('Y-m-d') . '</span>
+                        </div>'],
+            'SetHeaderOnAllPages' => false,
         ]);
 
         return $pdf->render();
