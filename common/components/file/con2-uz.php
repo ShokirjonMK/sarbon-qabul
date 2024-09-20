@@ -243,17 +243,80 @@ $limg = $lqr->writeDataUri();
         </tr>
 
         <tr>
-            <td  colspan="4" style="padding-left: 30px; text-align: justify">
+            <td  colspan="4" style="text-align: justify">
                 •	O‘qitish uchun belgilangan to‘lov o‘z vaqtida amalga oshirgandan so‘ng, “Ta’lim oluvchi”ni buyruq asosida talabalikka qabul qilish.
             </td>
         </tr>
 
         <tr>
-            <td  colspan="4" style="padding-left: 30px; text-align: justify">
+            <td  colspan="4" style="text-align: justify">
                 •	Ta’lim oluvchiga o‘qishi uchun O‘zbekiston Respublikasining “Ta’lim to‘g‘risida”gi Qonuni va “Ta’lim muassasasi” Ustavida nazarda tutilgan zarur shart-sharoitlarga muvofiq sharoitlarni yaratib berish.
             </td>
         </tr>
 
+        <tr>
+            <td  colspan="4" style="text-align: justify">
+                •	Ta’lim oluvchining huquq va erkinliklari, qonuniy manfaatlari hamda ta’lim muassasasi Ustaviga muvofiq professor-o‘qituvchilar tomonidan o‘zlarining funksional vazifalarini to‘laqonli bajarishini ta’minlash.
+            </td>
+        </tr>
+
+        <tr>
+            <td  colspan="4" style="text-align: justify">
+                •	Ta’lim oluvchini tahsil olayotgan ta’lim yo‘nalishi (mutaxassisligi) bo‘yicha tasdiqlangan o‘quv rejasi va dasturlariga muvofiq davlat ta’lim standarti talablari darajasida tayyorlash.
+            </td>
+        </tr>
+
+        <tr>
+            <td  colspan="4" style="text-align: justify">
+                •	O‘quv yili boshlanishida ta’lim oluvchini yangi o‘quv yili uchun belgilangan to‘lov miqdori to‘g‘risida o‘quv jarayoni boshlanishidan oldin xabardor qilish.
+            </td>
+        </tr>
+
+        <tr>
+            <td  colspan="4" style="text-align: justify">
+                •	Respublikada belgilangan Mehnatga haq to‘lashning eng kam miqdori yoki tariflar o‘zgarishi natijasida o‘qitish uchun belgilangan to‘lov miqdori o‘zgargan taqdirda ta’lim oluvchiga ta’limning qolgan muddati uchun to‘lov miqdori haqida xabar berish.
+            </td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <?= $joy ?> 3.2. <b>Ta’lim oluvchining majburiyatlari:</b>
+            </td>
+        </tr>
+
+        <tr>
+            <td  colspan="4" style="text-align: justify">
+                •	Shartnomaning 2.2. bandida belgilangan to‘lov summasini shu bandda ko‘rsatilgan muddatlarda to‘lab borish.
+            </td>
+        </tr>
+
+        <tr>
+            <td  colspan="4" style="text-align: justify">
+                •	Respublikada belgilangan Mehnatga haq to‘lashning eng kam miqdori yoki tariflar o‘zgarishi natijasida o‘qitish uchun belgilangan to‘lov miqdori o‘zgargan taqdirda, o‘qishning qolgan muddati uchun ta’lim muassasasiga haq to‘lash bo‘yicha bir oy muddat ichida shartnomaga qo‘shimcha bitim rasmiylashtirish va to‘lov farqini to‘lash.
+            </td>
+        </tr>
+
+        <tr>
+            <td  colspan="4" style="text-align: justify">
+                •	Ta’lim oluvchi o‘qitish uchun belgilangan to‘lov miqdorini to‘laganlik to‘g‘risidagi bank tasdiqnomasi va shartnomaning bir nusxasini o‘z vaqtida hujjatlarni rasmiylashtirish uchun ta’lim muassasasiga topshirish.
+            </td>
+        </tr>
+
+        <tr>
+            <td  colspan="4" style="text-align: justify">
+                •	Tahsil olayotgan ta’lim yo‘nalishining (mutaxassisligining) tegishli malaka tavsifnomasiga muvofiq kelajakda mustaqil faoliyat yuritishga zarur bo‘lgan barcha bilimlarni egallash, dars va mashg‘ulotlarga to‘liq qatnashish.
+            </td>
+        </tr>
+
+        <tr>
+            <td  colspan="4" style="text-align: justify">
+                •	Ta’lim muassasasi va talabalar turar joyining ichki nizomlariga qa’tiy rioya qilish, professoro‘ qituvchilar va xodimlarga hurmat bilan qarash, “Ta’lim muassasasi” obro‘siga putur yetkazadigan harakatlar qilmaslik, moddiy bazasini asrash, ziyon keltirmaslik, ziyon keltirganda o‘rnini qoplash.
+            </td>
+        </tr>
     </div>
 
 
