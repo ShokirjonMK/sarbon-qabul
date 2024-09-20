@@ -128,7 +128,7 @@ class Status
             1 => 'Test ishlamagan',
             2 => 'Testda',
             3 => 'Testdan o\'tdi',
-            4 => 'O\'tolmadi',
+            4 => 'Testdan o\'tolmadi',
             5 => 'Shartnoma olgan',
             6 => 'Shartnoma olmagan',
         ];
