@@ -637,7 +637,7 @@ $limg = $lqr->writeDataUri();
                     </tr>
 
                     <tr>
-                        <td colspan="2" style="vertical-align: top">
+                        <td colspan="2" style="vertical-align: top; line-height: 23px;">
                             <b>“SARBON UNIVERSITETI” oliy ta’lim tashkiloti</b> <br>
                             <b>Manzil:</b> Toshkent shahar, Olmazor tumani, Paxta MFY, Sag'bon ko'chasi. <br>
                             <b>H/R:</b> <?= $cons->h_r ?> <br>
@@ -647,7 +647,7 @@ $limg = $lqr->writeDataUri();
                             <b>STIR (INN):</b> 309341614 <br>
                             <b>Tel:</b> +998 78 888 22 88 <br>
                         </td>
-                        <td colspan="2" style="vertical-align: top">
+                        <td colspan="2" style="vertical-align: top; line-height: 23px;">
                             <b>F.I.Sh.:</b> <?= $full_name ?> <br>
                             <b>Pasport ma’lumotlari:</b> <?= $student->passport_serial.' '.$student->passport_number ?> <br>
                             <b>JShShIR:</b> <?= $student->passport_pin ?> <br>
