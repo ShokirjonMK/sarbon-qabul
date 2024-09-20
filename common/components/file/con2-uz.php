@@ -663,8 +663,10 @@ $limg = $lqr->writeDataUri();
                         <td colspan="2" style="vertical-align: top;">
                             <img src="<?= $img ?>" width="120px">
                         </td>
-                        <td colspan="2" style="vertical-align: top">
-                            <img src="<?= $limg ?>" width="120px"> <br>
+                        <td colspan="2" style="vertical-align: top;">
+                            <div style="width: 100%; text-align: right;">
+                                <img src="<?= $limg ?>" width="120px">
+                            </div>
                             <b>Litsenziya berilgan sana va raqami</b> <br>
                             14.09.2024 <b>№ 397374</b>
                         </td>
