@@ -87,7 +87,7 @@ $limg = $lqr->writeDataUri();
 
 ?>
 
-<table width="100%" style="font-family: 'Times New Roman'; font-size: 12px; border-collapse: collapse;">
+<table width="100%" style="font-family: 'Times New Roman'; font-size: 13px; border-collapse: collapse;">
 
     <tr>
         <td colspan="4" style="text-align: center">
@@ -108,7 +108,7 @@ $limg = $lqr->writeDataUri();
     <tr><td>&nbsp;</td></tr>
 
     <tr>
-        <td colspan="4" style="text-align: justify; line-height: 23px; line-height: 23px;">
+        <td colspan="4" style="text-align: justify; line-height: 23px;">
             <?= $joy ?> Vazirlar Mahkamasining “Oliy ta’lim muassasalariga o‘qishga qabul qilish, talabalar o‘qishini ko‘chirish, qayta tiklash va o‘qishdan chetlashtirish tartibi to‘g‘risidagi nizomlarni tasdiqlash haqida” 2017-yil 20-iyundagi 393-son qarori, O‘zbekiston Respublikasi oliy va o‘rta maxsus ta’lim vazirining 2012-yil 28-dekabrdagi 508-son buyrug‘i (ro‘yxat raqami 2431, 2013-yil 26-fevral) bilan tasdiqlangan Oliy va o‘rta maxsus, kasb-hunar ta’limi muassasalarida o‘qitishning to‘lov-shartnoma shakli va undan tushgan mablag‘larni taqsimlash tartibi to‘g‘risidagi Nizomga muvofiq, <b>SARBON UNIVERSITETI</b> oliy ta’lim tashkiloti (keyingi o‘rinlarda “Ta’lim muassasasi”) nomidan Ustav asosida ish yurituvchi direktor <b>SOBIRJONOV NODIRJON QODIRJONOVICH</b> birinchi tomondan, <b><?= $full_name ?></b> (keyingi o‘rinlarda “Ta’lim oluvchi”) ikkinchi tomondan, keyingi o‘rinlarda birgalikda “Tomonlar” deb ataluvchilar o‘rtasida mazkur shartnoma quyidagilar haqida tuzildi:
         </td>
     </tr>
@@ -129,7 +129,7 @@ $limg = $lqr->writeDataUri();
     </tr>
 
     <tr>
-        <td colspan="4">
+        <td colspan="4" style="text-align: justify; line-height: 23px;">
             <?= $joy ?> 1.1. Ta’lim muassasasi ta’lim xizmatini ko‘rsatishni, Ta’lim oluvchi o‘qish uchun belgilangan to‘lovni o‘z vaqtida amalga oshirishni va tasdiqlangan o‘quv reja bo‘yicha darslarga to‘liq qatnashish va ta’lim olishni o‘z zimmalariga oladi. Ta’lim oluvchining ta’lim ma’lumotlari quyidagicha:
         </td>
     </tr>
@@ -142,22 +142,22 @@ $limg = $lqr->writeDataUri();
         <td colspan="4" style="padding: 5px;">
             <table width="100%">
 
-                <tr>
+                <tr style="padding-bottom: 12.5px">
                     <td>Ta’lim bosqichi:<?= $joy ?></td>
                     <td><b>Bakalavr</b></td>
                 </tr>
 
-                <tr>
+                <tr style="padding-bottom: 12.5px">
                     <td>Ta’lim shakli:<?= $joy ?></td>
                     <td><b><?= $direction->eduForm->name_uz ?></b></td>
                 </tr>
 
-                <tr>
+                <tr style="padding-bottom: 12.5px">
                     <td>O‘qish muddati:<?= $joy ?></td>
                     <td><b><?= ikYear($direction->edu_duration) ?></b></td>
                 </tr>
 
-                <tr>
+                <tr style="padding-bottom: 12.5px">
                     <td>O‘quv kursi:<?= $joy ?></td>
                     <?php if ($student->edu_type_id == 2) : ?>
                         <td><b><?= Course::findOne(['id' => ($student->course_id + 1)])->name_uz ?></b></td>
