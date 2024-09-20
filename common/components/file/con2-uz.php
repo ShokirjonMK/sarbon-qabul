@@ -76,11 +76,11 @@ if ($student->edu_type_id == 1) {
     $contract->save(false);
 }
 
-$qr = (new QrCode('https://qabul.tpu.uz/site/contract?key=' . $link.'&type=2'))->setSize(120, 120)
+$qr = (new QrCode('https://qabul.sarbon.university.uz/site/contract?key=' . $link.'&type=2'))->setSize(120, 120)
     ->setMargin(10);
 $img = $qr->writeDataUri();
 
-$lqr = (new QrCode('https://license.gov.uz/registry/da127cfb-12a8-4dd6-b3f8-7516c1e9dd82'))->setSize(100, 100)
+$lqr = (new QrCode('https://document.licenses.uz/certificate/uuid/57076f62-07b1-496f-8b2b-64789c3e7345/pdf?language=oz'))->setSize(100, 100)
     ->setMargin(10);
 $limg = $lqr->writeDataUri();
 
@@ -585,7 +585,7 @@ $limg = $lqr->writeDataUri();
 
                     <tr>
                         <td colspan="4" style="text-align: center;">
-                            <b>IX. TOMONLARNING YURIDIK MANZILLARI VA BANK REKVIZITLARI</b>
+                            <b>VII.	TOMONLARNING REKVIZITLARI VA IMZOLARI</b>
                         </td>
                     </tr>
 
@@ -599,10 +599,10 @@ $limg = $lqr->writeDataUri();
 
                     <tr>
                         <td colspan="2">
-                            <b>Universitet</b>
+                            <b>7.1. Ta’lim muassasasi:</b>
                         </td>
                         <td colspan="2">
-                            <b>Talaba</b>
+                            <b>7.2. Ta’lim oluvchi:</b>
                         </td>
                     </tr>
 
@@ -613,46 +613,19 @@ $limg = $lqr->writeDataUri();
                     <tr>
                         <td colspan="2" style="vertical-align: top">
                             <b>“SARBON UNIVERSITETI” oliy ta’lim tashkiloti</b> <br>
-                            <b>Manzil:</b> Toshkent shahri, Yunusobod tumani, Posira MFY, Bog'ishamol ko'chasi, 220-uy <br>
+                            <b>Manzil:</b> Toshkent shahar, Olmazor tumani, Paxta MFY, Sag'bon ko'chasi. <br>
                             <b>H/R:</b> <?= $cons->h_r ?> <br>
-                            <b>Bank:</b> “KAPITALBANK” ATB Sirg’ali filiali <br>
-                            <b>Bank kodi (MFO):</b> 01042  <br>
-                            <b>IFUT (OKED):</b> 85420  <br>
-                            <b>STIR (INN):</b> 309477784 <br>
-                            <b>Tel:</b> +998 77 129-29-29 <br>
-                            <b>Tel:</b> +998 55 500-02-50 <br>
+                            <b>Bank:</b> “Trastbank” xususiy aksiyadorlik bankining “Raqamli” bank xizmatlari ofisi <br>
+                            <b>Bank kodi (MFO):</b> 00491  <br>
+                            <b>IFUT (OKED):</b> 64190  <br>
+                            <b>STIR (INN):</b> 309341614 <br>
+                            <b>Tel:</b> +998 78 888 22 88 <br>
                         </td>
                         <td colspan="2" style="vertical-align: top">
                             <b>F.I.Sh.:</b> <?= $full_name ?> <br>
                             <b>Pasport ma’lumotlari:</b> <?= $student->passport_serial.' '.$student->passport_number ?> <br>
                             <b>JShShIR:</b> <?= $student->passport_pin ?> <br>
-                            <b>Ro‘yxatdan o‘tgan tеlefon raqami: </b> <?= $student->user->username ?> <br>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>&nbsp;</td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2" style="padding-right: 20px">
-                            M.O‘.
-                        </td>
-                        <td style="text-align: right">
-                            <?= $full_name ?>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>&nbsp;</td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2">
-                            Direktor _________________________ SHARIPOV M.T.
-                        </td>
-                        <td colspan="2">
-                            Imzo: _________________________________________
+                            <b>Tеlefon raqami: </b> <?= $student->user->username ?> <br>
                         </td>
                     </tr>
 
