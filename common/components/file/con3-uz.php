@@ -14,6 +14,18 @@ use common\models\Constalting;
 /** @var Direction $direction */
 /** @var User $user */
 
+function ikYear($number) {
+    $years = floor($number);
+
+    $months = round(($number - $years) * 12);
+
+    if ($months == 12) {
+        $years++;
+        $months = 0;
+    }
+
+    return "$years yil $months oy";
+}
 $user = $student->user;
 $cons = Constalting::findOne($user->cons_id);
 $direction = $student->direction;
