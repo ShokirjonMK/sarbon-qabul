@@ -76,7 +76,7 @@ if ($student->edu_type_id == 1) {
     $contract->save(false);
 }
 
-$qr = (new QrCode('https://qabul.sarbon.university.uz/site/contract?key=' . $link.'&type=2'))
+$qr = (new QrCode('https://qabul.sarbon.university/site/contract?key=' . $link.'&type=2'))
     ->setSize(120, 120)
     ->setMargin(10)
     ->setForegroundColor(1, 89, 101);
@@ -86,7 +86,6 @@ $lqr = (new QrCode('https://document.licenses.uz/certificate/uuid/57076f62-07b1-
     ->setMargin(10)
     ->setForegroundColor(1, 89, 101);
 $limg = $lqr->writeDataUri();
-
 
 ?>
 
