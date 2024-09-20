@@ -179,7 +179,7 @@ class Test extends Model
         $model->save(false);
 
         if ($model->status == 3) {
-            $text = "Tabriklaymiz! Siz “SARBON UNIVERSITETI”ga talabalikka tavsiya etildingiz. To'lov shartnomasini yuklab olishni unutmang. Shartnomangizni https://sarbon.university sayti orqali yuklab oling. Aloqa markazi: 78 888 22 88. Rasmiy telegram kanal: https://t.me/sarbonuniversity";
+            $text = "Tabriklaymiz! Siz “SARBON UNIVERSITETI”ga talabalikka tavsiya etildingiz. To'lov shartnomasini yuklab olishni unutmang. Shartnomangizni https://qabul.sarbon.university sayti orqali yuklab oling. Aloqa markazi: 78 888 22 88. Rasmiy telegram kanal: https://t.me/sarbonuniversity";
             $phone = $student->user->username;
             Message::sendedSms($phone , $text);
         }
