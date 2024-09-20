@@ -578,7 +578,6 @@ $limg = $lqr->writeDataUri();
         <td colspan="4">
             <div>
                 <table width="100%">
-
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
@@ -640,118 +639,128 @@ $limg = $lqr->writeDataUri();
                         <td colspan="2" style="vertical-align: top">
                             <img src="<?= $limg ?>" width="120px"> <br>
                             <b>Litsenziya berilgan sana va raqami</b> <br>
-                            19.10.2022 <b>№ 043951</b>
+                            14.09.2024 <b>№ 397374</b>
                         </td>
                     </tr>
-
-
-
                 </table>
             </div>
         </td>
     </tr>
 
+
     <tr>
-        <td colspan="4" style="border: 1px solid #000000; padding: 10px;">
-            <b>SANA: </b> &nbsp; <?= $date ?> <br>
-            <b>INVOYS RAQAMI: &nbsp; </b> <?= $con2 ?> <br>
-            <b>KONTRAKT TO‘LOV MIQDORI: &nbsp; </b> <?= number_format((int)$contract->contract_price, 0, '', ' ') . ' (' . Contract::numUzStr($contract->contract_price) . ')' ?> <br>
+        <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="4">
             <table width="100%">
                 <tr>
-                    <td colspan="4">To‘lovni amalga oshirish usullari:</td>
-                </tr>
-                <tr>
-                    <td colspan="4">
-                        <?= $joy ?> Yuridik shaxslar va bank kassalari orqali. Bunda To‘lov maqsadida - Invoys raqam. JSHSHIR. Talabaning
-                        FISH tartibida yozilgan bo‘lishi talab etiladi
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-
-                <tr>
-                    <td colspan="4" style="padding: 5px; border: 2px solid red;">
+                    <td colspan="4" style="border: 1px solid #000000; padding: 10px;">
+                        <b>SANA: </b> &nbsp; <?= $date ?> <br>
+                        <b>INVOYS RAQAMI: &nbsp; </b> <?= $con2 ?> <br>
+                        <b>KONTRAKT TO‘LOV MIQDORI: &nbsp; </b> <?= number_format((int)$contract->contract_price, 0, '', ' ') . ' (' . Contract::numUzStr($contract->contract_price) . ')' ?> <br>
                         <table width="100%">
                             <tr>
-                                <td><?= $con2 ?> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;</td>
-                                <td><?= $student->passport_pin ?> &nbsp;&nbsp;&nbsp; |</td>
-                                <td class="2" style="text-align: center;"><?= $full_name ?></td>
+                                <td colspan="4">To‘lovni amalga oshirish usullari:</td>
                             </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <?= $joy ?> Yuridik shaxslar va bank kassalari orqali. Bunda To‘lov maqsadida - Invoys raqam. JSHSHIR. Talabaning
+                                    FISH tartibida yozilgan bo‘lishi talab etiladi
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="4" style="padding: 5px; border: 2px solid red;">
+                                    <table width="100%">
+                                        <tr>
+                                            <td><?= $con2 ?> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;</td>
+                                            <td><?= $student->passport_pin ?> &nbsp;&nbsp;&nbsp; |</td>
+                                            <td class="2" style="text-align: center;"><?= $full_name ?></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    To‘lov maqsadi belgilangan tartibda to‘ldirilmagan taqdirda to‘lovni qabul qilishga doir muammolar kelib chiqishi
+                                    mumkin. Shu sababli to‘lov qilish jarayonida to‘lov maqsadini belgilangan tartibda ko‘rsatilishi shart!
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" style="border-top: 2px double #000;">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="4"><b>To‘lovlarni amalgi oshirish uchun Universitetning bank hisob ma’lumotlari:</b></td>
+                            </tr>
+
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="4">
+                                    <table width="100%" style="border-collapse: collapse; border: 1px solid;">
+                                        <tr>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b>Qabul qiluvchi tashkilot nomi:</b></td>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b>“SARBON UNIVERSITETI” MCHJ</b></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b>Hisob raqami:</b></td>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b><?= $cons->h_r ?></b></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b>Bank kodi (MFO):</b></td>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b>00491</b></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b>Bank nomi:</b></td>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b>“Trastbank” xususiy aksiyadorlik bankining “Raqamli” bank xizmatlari ofisi</b></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b>STIR (INN):</b></td>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b>309341614</b></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b>IFUT (OKED):</b></td>
+                                            <td colspan="2" style="padding: 5px; border: 1px solid;"><b>64190</b></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
                         </table>
                     </td>
                 </tr>
-
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        To‘lov maqsadi belgilangan tartibda to‘ldirilmagan taqdirda to‘lovni qabul qilishga doir muammolar kelib chiqishi
-                        mumkin. Shu sababli to‘lov qilish jarayonida to‘lov maqsadini belgilangan tartibda ko‘rsatilishi shart!
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-
-                <tr>
-                    <td colspan="2" style="border-top: 2px double #000;">&nbsp;</td>
-                </tr>
-
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-
-                <tr>
-                    <td colspan="4"><b>To‘lovlarni amalgi oshirish uchun Universitetning bank hisob ma’lumotlari:</b></td>
-                </tr>
-
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-
-                <tr>
-                    <td colspan="4">
-
-                        <table width="100%" style="border-collapse: collapse; border: 1px solid;">
-                            <tr>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>Qabul qiluvchi tashkilot nomi:</b></td>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>“SARBON UNIVERSITETI” MCHJ</b></td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>Hisob raqami:</b></td>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b><?= $cons->h_r ?></b></td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>Bank kodi (MFO):</b></td>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>01042</b></td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>Bank nomi:</b></td>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>“KAPITALBANK” ATB Sirg’ali filiali</b></td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>STIR (INN):</b></td>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>309477784</b></td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>IFUT (OKED):</b></td>
-                                <td colspan="2" style="padding: 5px; border: 1px solid;"><b>85420</b></td>
-                            </tr>
-                        </table>
-
-                    </td>
-                </tr>
-
             </table>
         </td>
     </tr>
