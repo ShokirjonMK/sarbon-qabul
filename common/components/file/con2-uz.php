@@ -92,7 +92,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4">
-            <table width="100%" style="border-bottom: 2px solid #000000; padding-bottom: 5px;">
+            <table width="100%" style="border-bottom: 2px solid #000000; padding-bottom: 5px; font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
                 <tr>
                     <td colspan="2">
                         <b>SARBON UNIVERSITETI</b>
@@ -158,7 +158,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4" style="padding: 5px;">
-            <table width="100%">
+            <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
 
                 <tr style="padding-bottom: 18px;">
                     <td>Ta’lim bosqichi:<?= $joy ?></td>
@@ -601,7 +601,7 @@ $limg = $lqr->writeDataUri();
     <tr>
         <td colspan="4">
             <div>
-                <table width="100%">
+                <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
                     <tr>
                         <td>&nbsp;</td>
                     </tr>
@@ -698,7 +698,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4">
-            <table width="100%">
+            <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
                 <tr>
                     <td colspan="4" style="border: 1px solid #000000; padding: 10px;">
                         <b>SANA: </b> &nbsp; <?= $date ?> <br>
@@ -709,7 +709,7 @@ $limg = $lqr->writeDataUri();
                                 <td colspan="4">To‘lovni amalga oshirish usullari:</td>
                             </tr>
                             <tr>
-                                <td colspan="4">
+                                <td colspan="4" style="text-align: justify; line-height: 23px;">
                                     <?= $joy ?> Yuridik shaxslar va bank kassalari orqali. Bunda To‘lov maqsadida - Invoys raqam. JSHSHIR. Talabaning
                                     FISH tartibida yozilgan bo‘lishi talab etiladi
                                 </td>
@@ -736,7 +736,7 @@ $limg = $lqr->writeDataUri();
                             </tr>
 
                             <tr>
-                                <td>
+                                <td colspan="4" style="text-align: justify; line-height: 23px;">
                                     To‘lov maqsadi belgilangan tartibda to‘ldirilmagan taqdirda to‘lovni qabul qilishga doir muammolar kelib chiqishi
                                     mumkin. Shu sababli to‘lov qilish jarayonida to‘lov maqsadini belgilangan tartibda ko‘rsatilishi shart!
                                 </td>
@@ -755,7 +755,7 @@ $limg = $lqr->writeDataUri();
                             </tr>
 
                             <tr>
-                                <td colspan="4"><b>To‘lovlarni amalgi oshirish uchun Universitetning bank hisob ma’lumotlari:</b></td>
+                                <td colspan="4" style="text-align: justify; line-height: 23px;"><b>To‘lovlarni amalgi oshirish uchun Universitetning bank hisob ma’lumotlari:</b></td>
                             </tr>
 
                             <tr>
