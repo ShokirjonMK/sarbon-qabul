@@ -74,8 +74,7 @@ class ContractController extends Controller
             'destination' => Pdf::DEST_DOWNLOAD,
             'content' => $content,
             'cssInline' => '
-                body { 
-                    font-family: "Times New Roman"; 
+                body {
                     color: #000000;
                 }
             ',
