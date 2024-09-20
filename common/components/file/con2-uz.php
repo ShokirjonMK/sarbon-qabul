@@ -188,7 +188,7 @@ $limg = $lqr->writeDataUri();
 
                 <tr>
                     <td colspan="2">Ta’lim yo‘nalishi:<?= $joy ?></td>
-                    <td colspan="2"><b><?= str_replace('.', '', $direction->code).' '.$direction->name_uz ?></b></td>
+                    <td colspan="2"><b><?= str_replace('.', '', $direction->code).' - '.$direction->name_uz ?></b></td>
                 </tr>
 
             </table>
