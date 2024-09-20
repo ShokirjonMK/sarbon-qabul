@@ -127,9 +127,10 @@ class Status
         $data = [
             1 => 'Test ishlamagan',
             2 => 'Testda',
-            3 => 'Yakunladi',
-            4 => 'Shartnoma olgan',
-            5 => 'Shartnoma olmagan',
+            3 => 'Testdan o\'tdi',
+            4 => 'O\'tolmadi',
+            5 => 'Shartnoma olgan',
+            6 => 'Shartnoma olmagan',
         ];
         if ($id == null) {
             return $data;

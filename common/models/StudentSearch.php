@@ -95,7 +95,7 @@ class StudentSearch extends Student
                                     'status' => $this->status,
                                 ])
                         ]);
-                } elseif ($this->status == 4) {
+                } elseif ($this->status == 5) {
                     $query->andWhere(
                         ['in' , 'id' ,
                             Exam::find()->select('student_id')
@@ -104,7 +104,7 @@ class StudentSearch extends Student
                                     'status' => 3,
                                 ])->andWhere(['>' , 'down_time' , 0])
                         ]);
-                } elseif ($this->status == 5) {
+                } elseif ($this->status == 6) {
                     $query->andWhere(
                         ['in' , 'id' ,
                             Exam::find()->select('student_id')
