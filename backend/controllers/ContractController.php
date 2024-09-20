@@ -74,9 +74,12 @@ class ContractController extends Controller
             'destination' => Pdf::DEST_DOWNLOAD,
             'content' => $content,
             'cssInline' => '
-                body { 
-                    font-family: "Times New Roman"; 
+                 @font-face {
+                    font-family: "Times New Roman";
                     src: url("/path/to/times-new-roman.ttf") format("truetype");
+                }
+                body { 
+                    font-family: "Times New Roman", Times, serif; 
                     color: #000000;
                 }
             ',
