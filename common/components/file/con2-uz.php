@@ -111,8 +111,8 @@ $limg = $lqr->writeDataUri();
     <tr><td>&nbsp;</td></tr>
 
     <tr>
-        <td colspan="4" style="text-align: center">
-            <b style="line-height: 23px;">
+        <td colspan="4" style="text-align: center; line-height: 23px;">
+            <b>
                 To‘lov-kontrakt (Ikki tomonlama) asosida mutaxassis tayyorlashga <br>
                 KONTRAKT № <?= $code ?>/<?= str_replace('.', '', $direction->code) ?>/<?= $contract->id ?>
             </b>
@@ -163,33 +163,33 @@ $limg = $lqr->writeDataUri();
         <td colspan="4" style="padding: 5px;">
             <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
 
-                <tr style="padding-bottom: 18px;">
-                    <td>Ta’lim bosqichi:<?= $joy ?></td>
-                    <td><b>Bakalavr</b></td>
+                <tr>
+                    <td colspan="2" style="margin-bottom: 15px;">Ta’lim bosqichi:<?= $joy ?></td>
+                    <td colspan="2" style="margin-bottom: 15px;"><b>Bakalavr</b></td>
                 </tr>
 
-                <tr style="padding-bottom: 18px;">
-                    <td>Ta’lim shakli:<?= $joy ?></td>
-                    <td><b><?= $direction->eduForm->name_uz ?></b></td>
+                <tr>
+                    <td colspan="2" style="margin-bottom: 15px;">Ta’lim shakli:<?= $joy ?></td>
+                    <td colspan="2" style="margin-bottom: 15px;"><b><?= $direction->eduForm->name_uz ?></b></td>
                 </tr>
 
-                <tr style="padding-bottom: 18px;">
-                    <td>O‘qish muddati:<?= $joy ?></td>
-                    <td><b><?= ikYear($direction->edu_duration) ?></b></td>
+                <tr>
+                    <td colspan="2" style="margin-bottom: 15px;">O‘qish muddati:<?= $joy ?></td>
+                    <td colspan="2" style="margin-bottom: 15px;"><b><?= ikYear($direction->edu_duration) ?></b></td>
                 </tr>
 
-                <tr style="padding-bottom: 18px;">
-                    <td>O‘quv kursi:<?= $joy ?></td>
+                <tr>
+                    <td colspan="2" style="margin-bottom: 15px;">O‘quv kursi:<?= $joy ?></td>
                     <?php if ($student->edu_type_id == 2) : ?>
-                        <td><b><?= Course::findOne(['id' => ($student->course_id + 1)])->name_uz ?></b></td>
+                        <td colspan="2" style="margin-bottom: 15px;"><b><?= Course::findOne(['id' => ($student->course_id + 1)])->name_uz ?></b></td>
                     <?php else: ?>
-                        <td><b>1 kurs</b></td>
+                        <td colspan="2" style="margin-bottom: 15px;"><b>1 kurs</b></td>
                     <?php endif; ?>
                 </tr>
 
                 <tr>
-                    <td>Ta’lim yo‘nalishi:<?= $joy ?></td>
-                    <td><b><?= str_replace('.', '', $direction->code).' '.$direction->name_uz ?></b></td>
+                    <td colspan="2" style="margin-bottom: 15px;">Ta’lim yo‘nalishi:<?= $joy ?></td>
+                    <td colspan="2" style="margin-bottom: 15px;"><b><?= str_replace('.', '', $direction->code).' '.$direction->name_uz ?></b></td>
                 </tr>
 
             </table>
