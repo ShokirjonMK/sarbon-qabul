@@ -226,498 +226,103 @@ $limg = $lqr->writeDataUri();
     </tr>
 
     <div>
-        <tr>
-            <td colspan="4" style="text-align: center">
-                <b>III. TA’LIM TO‘LOVINING MIQDORI, TARTIBI VA TO‘LOV SHARTLARI</b>
-            </td>
-        </tr>
+        <table width="100%">
+            <tr>
+                <td colspan="4" style="text-align: center">
+                    <b>III. TA’LIM TO‘LOVINING MIQDORI, TARTIBI VA TO‘LOV SHARTLARI</b>
+                </td>
+            </tr>
 
-        <tr>
-            <td>&nbsp;</td>
-        </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
 
-        <tr>
-            <td colspan="4">
-                <?= $joy ?> 3.1. <b>Ta’lim muassasasi majburiyatlari:</b>
-            </td>
-        </tr>
+            <tr>
+                <td colspan="4">
+                    <?= $joy ?> 3.1. <b>Ta’lim muassasasi majburiyatlari:</b>
+                </td>
+            </tr>
 
-        <tr>
-            <td  colspan="4" style="text-align: justify">
-                •	O‘qitish uchun belgilangan to‘lov o‘z vaqtida amalga oshirgandan so‘ng, “Ta’lim oluvchi”ni buyruq asosida talabalikka qabul qilish.
-            </td>
-        </tr>
+            <tr>
+                <td  colspan="4" style="text-align: justify">
+                    •	O‘qitish uchun belgilangan to‘lov o‘z vaqtida amalga oshirgandan so‘ng, “Ta’lim oluvchi”ni buyruq asosida talabalikka qabul qilish.
+                </td>
+            </tr>
 
-        <tr>
-            <td  colspan="4" style="text-align: justify">
-                •	Ta’lim oluvchiga o‘qishi uchun O‘zbekiston Respublikasining “Ta’lim to‘g‘risida”gi Qonuni va “Ta’lim muassasasi” Ustavida nazarda tutilgan zarur shart-sharoitlarga muvofiq sharoitlarni yaratib berish.
-            </td>
-        </tr>
+            <tr>
+                <td  colspan="4" style="text-align: justify">
+                    •	Ta’lim oluvchiga o‘qishi uchun O‘zbekiston Respublikasining “Ta’lim to‘g‘risida”gi Qonuni va “Ta’lim muassasasi” Ustavida nazarda tutilgan zarur shart-sharoitlarga muvofiq sharoitlarni yaratib berish.
+                </td>
+            </tr>
 
-        <tr>
-            <td  colspan="4" style="text-align: justify">
-                •	Ta’lim oluvchining huquq va erkinliklari, qonuniy manfaatlari hamda ta’lim muassasasi Ustaviga muvofiq professor-o‘qituvchilar tomonidan o‘zlarining funksional vazifalarini to‘laqonli bajarishini ta’minlash.
-            </td>
-        </tr>
+            <tr>
+                <td  colspan="4" style="text-align: justify">
+                    •	Ta’lim oluvchining huquq va erkinliklari, qonuniy manfaatlari hamda ta’lim muassasasi Ustaviga muvofiq professor-o‘qituvchilar tomonidan o‘zlarining funksional vazifalarini to‘laqonli bajarishini ta’minlash.
+                </td>
+            </tr>
 
-        <tr>
-            <td  colspan="4" style="text-align: justify">
-                •	Ta’lim oluvchini tahsil olayotgan ta’lim yo‘nalishi (mutaxassisligi) bo‘yicha tasdiqlangan o‘quv rejasi va dasturlariga muvofiq davlat ta’lim standarti talablari darajasida tayyorlash.
-            </td>
-        </tr>
+            <tr>
+                <td  colspan="4" style="text-align: justify">
+                    •	Ta’lim oluvchini tahsil olayotgan ta’lim yo‘nalishi (mutaxassisligi) bo‘yicha tasdiqlangan o‘quv rejasi va dasturlariga muvofiq davlat ta’lim standarti talablari darajasida tayyorlash.
+                </td>
+            </tr>
 
-        <tr>
-            <td  colspan="4" style="text-align: justify">
-                •	O‘quv yili boshlanishida ta’lim oluvchini yangi o‘quv yili uchun belgilangan to‘lov miqdori to‘g‘risida o‘quv jarayoni boshlanishidan oldin xabardor qilish.
-            </td>
-        </tr>
+            <tr>
+                <td  colspan="4" style="text-align: justify">
+                    •	O‘quv yili boshlanishida ta’lim oluvchini yangi o‘quv yili uchun belgilangan to‘lov miqdori to‘g‘risida o‘quv jarayoni boshlanishidan oldin xabardor qilish.
+                </td>
+            </tr>
 
-        <tr>
-            <td  colspan="4" style="text-align: justify">
-                •	Respublikada belgilangan Mehnatga haq to‘lashning eng kam miqdori yoki tariflar o‘zgarishi natijasida o‘qitish uchun belgilangan to‘lov miqdori o‘zgargan taqdirda ta’lim oluvchiga ta’limning qolgan muddati uchun to‘lov miqdori haqida xabar berish.
-            </td>
-        </tr>
+            <tr>
+                <td  colspan="4" style="text-align: justify">
+                    •	Respublikada belgilangan Mehnatga haq to‘lashning eng kam miqdori yoki tariflar o‘zgarishi natijasida o‘qitish uchun belgilangan to‘lov miqdori o‘zgargan taqdirda ta’lim oluvchiga ta’limning qolgan muddati uchun to‘lov miqdori haqida xabar berish.
+                </td>
+            </tr>
 
-        <tr>
-            <td>&nbsp;</td>
-        </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
 
-        <tr>
-            <td colspan="4">
-                <?= $joy ?> 3.2. <b>Ta’lim oluvchining majburiyatlari:</b>
-            </td>
-        </tr>
+            <tr>
+                <td colspan="4">
+                    <?= $joy ?> 3.2. <b>Ta’lim oluvchining majburiyatlari:</b>
+                </td>
+            </tr>
 
-        <tr>
-            <td  colspan="4" style="text-align: justify">
-                •	Shartnomaning 2.2. bandida belgilangan to‘lov summasini shu bandda ko‘rsatilgan muddatlarda to‘lab borish.
-            </td>
-        </tr>
+            <tr>
+                <td  colspan="4" style="text-align: justify">
+                    •	Shartnomaning 2.2. bandida belgilangan to‘lov summasini shu bandda ko‘rsatilgan muddatlarda to‘lab borish.
+                </td>
+            </tr>
 
-        <tr>
-            <td  colspan="4" style="text-align: justify">
-                •	Respublikada belgilangan Mehnatga haq to‘lashning eng kam miqdori yoki tariflar o‘zgarishi natijasida o‘qitish uchun belgilangan to‘lov miqdori o‘zgargan taqdirda, o‘qishning qolgan muddati uchun ta’lim muassasasiga haq to‘lash bo‘yicha bir oy muddat ichida shartnomaga qo‘shimcha bitim rasmiylashtirish va to‘lov farqini to‘lash.
-            </td>
-        </tr>
+            <tr>
+                <td  colspan="4" style="text-align: justify">
+                    •	Respublikada belgilangan Mehnatga haq to‘lashning eng kam miqdori yoki tariflar o‘zgarishi natijasida o‘qitish uchun belgilangan to‘lov miqdori o‘zgargan taqdirda, o‘qishning qolgan muddati uchun ta’lim muassasasiga haq to‘lash bo‘yicha bir oy muddat ichida shartnomaga qo‘shimcha bitim rasmiylashtirish va to‘lov farqini to‘lash.
+                </td>
+            </tr>
 
-        <tr>
-            <td  colspan="4" style="text-align: justify">
-                •	Ta’lim oluvchi o‘qitish uchun belgilangan to‘lov miqdorini to‘laganlik to‘g‘risidagi bank tasdiqnomasi va shartnomaning bir nusxasini o‘z vaqtida hujjatlarni rasmiylashtirish uchun ta’lim muassasasiga topshirish.
-            </td>
-        </tr>
+            <tr>
+                <td  colspan="4" style="text-align: justify">
+                    •	Ta’lim oluvchi o‘qitish uchun belgilangan to‘lov miqdorini to‘laganlik to‘g‘risidagi bank tasdiqnomasi va shartnomaning bir nusxasini o‘z vaqtida hujjatlarni rasmiylashtirish uchun ta’lim muassasasiga topshirish.
+                </td>
+            </tr>
 
-        <tr>
-            <td  colspan="4" style="text-align: justify">
-                •	Tahsil olayotgan ta’lim yo‘nalishining (mutaxassisligining) tegishli malaka tavsifnomasiga muvofiq kelajakda mustaqil faoliyat yuritishga zarur bo‘lgan barcha bilimlarni egallash, dars va mashg‘ulotlarga to‘liq qatnashish.
-            </td>
-        </tr>
+            <tr>
+                <td  colspan="4" style="text-align: justify">
+                    •	Tahsil olayotgan ta’lim yo‘nalishining (mutaxassisligining) tegishli malaka tavsifnomasiga muvofiq kelajakda mustaqil faoliyat yuritishga zarur bo‘lgan barcha bilimlarni egallash, dars va mashg‘ulotlarga to‘liq qatnashish.
+                </td>
+            </tr>
 
-        <tr>
-            <td  colspan="4" style="text-align: justify">
-                •	Ta’lim muassasasi va talabalar turar joyining ichki nizomlariga qa’tiy rioya qilish, professoro‘ qituvchilar va xodimlarga hurmat bilan qarash, “Ta’lim muassasasi” obro‘siga putur yetkazadigan harakatlar qilmaslik, moddiy bazasini asrash, ziyon keltirmaslik, ziyon keltirganda o‘rnini qoplash.
-            </td>
-        </tr>
+            <tr>
+                <td  colspan="4" style="text-align: justify">
+                    •	Ta’lim muassasasi va talabalar turar joyining ichki nizomlariga qa’tiy rioya qilish, professoro‘ qituvchilar va xodimlarga hurmat bilan qarash, “Ta’lim muassasasi” obro‘siga putur yetkazadigan harakatlar qilmaslik, moddiy bazasini asrash, ziyon keltirmaslik, ziyon keltirganda o‘rnini qoplash.
+                </td>
+            </tr>
+        </table>
     </div>
 
 
-    <tr>
-        <td colspan="4" style="text-align: justify">
-            <?= $joy ?> 3.1. 2024-2025 o‘quv yili uchun shartnoma to‘lovi <?= number_format((int)$contract->contract_price, 0, '', ' ') .' so‘m'?> so‘mni tashkil etadi
-        </td>
-    </tr>
 
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 3.2. Universitet xizmatlarning narxini o‘zgartirish huquqini o‘zida saqlab qoladi. Bunday holatda qo‘shimcha
-            kelishuv tuziladi va Tomonlar yangi qiymatni hisobga olgan holda o‘zaro hisob-kitoblarni amalga oshirish majburiyatini
-            oladi.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 3.3. O‘qish uchun to‘lov quyidagi tartibda amalga oshiriladi:
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 3.3.1. 2024-yil 1-oktabrga qadar – 25 foizidan kam bo‘lmagan miqdorda.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 3.3.2. 2024-yil 15-dekabrga qadar – 50 foizidan kam bo‘lmagan miqdorda.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 3.3.3. 2025-yil 15-fevralga qadar – 75 foizidan kam bo‘lmagan miqdorda.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  3.3.4. 2025-yil 15-aprelga qadar – 3.1-bandda nazarda tutilgan ta’lim to‘lovining amalga oshirilmagan qismi
-            miqdorda.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 3.4. Buyurtmachi tomonidan shartnoma to‘lovini to‘lashda shartnomaning tartib raqami va sanasi, familiyasi, ismi
-            va sharifi hamda o‘quv kursi to‘lov topshiriqnomasida to‘liq ko‘rsatiladi. To‘lov kuni Universitetning bank hisob
-            raqamiga mablag‘ kelib tushgan kun hisoblanadi.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 3.5. Talaba tegishli fanlar bo‘yicha akademik qarzdorlikni qayta topshirish sharti bilan keyingi kurs (semestr)ga o‘tkazilgan taqdirda, keyingi semestr uchun shartnoma to‘lovi Talaba tomonidan akademik qarzdorlik belgilangan muddatda topshirilishiga qadar amalga oshiriladi.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 3.6. Talaba ushbu Shartnomaning amal qilish muddati davomida o‘quv darslarini o‘zlashtira olmagani, ichki tartib qoidalarini, odob-axloq qoidalarini yoki o‘quv jarayonini buzgani va unga nisbatan o‘qishini to‘xtatish yoki o‘qishdan chetlatish chorasi ko‘rilganligi, uni o‘qish uchun haq to‘lash bo‘yicha moliyaviy majburiyatlardan ozod etmaydi.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 3.7. Shartnoma Universitet tashabbusi bilan Talaba uning hatti-harakatlari (harakatsizligi) sababli talabalar safidan chetlashtirilsa, shartnoma bo‘yicha to‘langan mablag‘lar qaytarilmaydi.
-        </td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-    <tr>
-        <td colspan="4" style="text-align: center;">
-            <b>IV. SHARTNOMAGA O‘ZGARTIRISH KIRITISH VA UNI BEKOR QILISH TARTIBI</b>
-        </td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 4.1. Ushbu Shartnoma shartlari Tomonlar kelishuvi bilan yoki O‘zbekiston Respublikasi qonunchiligiga muvofiq o‘zgartirilishi mumkin. Shartnomaga kiritilgan barcha o‘zgartirish va qo‘shimchalar, agar ular yozma ravishda tuzilgan va Tomonlar yoki ularning vakolatli vakillari tomonidan imzolangan bo‘lsa, haqiqiy hisoblanadi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  4.2. Ushbu Shartnoma quyidagi hollarda bekor qilinishi mumkin:
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 4.2.1. Tomonlarning kelishuviga binoan;
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 4.2.2. Universitetning tashabbusiga ko‘ra bir tomonlama (2.1.6-bandda nazarda tutilgan hollarda);
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 4.2.3. sudning qonuniy kuchga kirgan qarori asosida;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  4.2.4. shartnoma muddati tugashi munosabati bilan;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 4.2.5. Talaba o‘qishni muvaffaqiyatli tamomlaganligi munosabati bilan;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  4.2.6. Universitet faoliyati tugatilgan taqdirda.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 4.3. Shartnomani Universitetning tashabbusiga ko‘ra bir tomonlama tartibda bekor qilinganida Buyurtmachining yuridik yoki elektron pochta manziliga tegishli xabar yuboriladi va shu bilan Buyurtmachi xabardor qilingan hisoblanadi.
-        </td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-    <tr>
-        <td colspan="4" style="text-align: center;">
-            <b>V. FORS-MAJOR</b>
-        </td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 5.1. Tomonlardan biri tarafidan shartnomani to‘liq yoki qisman bajarishni imkonsiz qiladigan holatlar, xususan, yong‘in, tabiiy ofat, urush, har qanday harbiy harakatlar, mavjud huquqiy hujjatlarni almashtirish va boshqa mumkin bo‘lgan tomonlarga bog‘liq bo‘lmagan fors-major holatlari shartnoma bo‘yicha majburiyatlarni bajarish muddatlari ushbu holatlarning amal qilish muddatiga mos ravishda uzaytiriladi.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 5.2. Ushbu shartnoma bo‘yicha o‘z majburiyatlarini bajarishga qodir bo‘lmagan tomon ikkinchi tomonni ushbu holatlarni bajarishiga to‘sqinlik qiladigan holatlar yuzaga kelganligi yoki bekor qilinganligi to‘g‘risida darhol xabardor qilishi shart.
-            <br>
-            <?= $joy ?> Xabarnoma shartnomada ko‘rsatilgan yuridik manzilga yuboriladi va jo‘natuvchi pochta bo‘limi tomonidan tasdiqlanadi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 5.3. Agar shartnoma tomonlariga bog‘liq bo‘lmagan tarzda sodir bo‘lgan har qanday hodisa, tabiiy ofatlar, urush yoki mamlakatdagi favqulodda holat, davlat hokimiyati organi tomonidan qabul qilingan qaror, uning ijrosi, uning yuzasidan amalga oshirilgan harakatlar (shular bilan cheklanmagan hodisalar) tufayli yuzaga kelgan bo‘lsa, bir tomon ikkinchi tomon oldida ushbu shartnomani bajarmaslik yoki bajarishni kechiktirish oqibatlari uchun javobgar bo‘lmaydi. Ijrosi shu tarzda to‘xtatilgan tomon bunday majburiyatlarni bajarish muddatini tegishli ravishda uzaytirish huquqiga ega bo‘ladi.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-    <tr>
-        <td colspan="4" style="text-align: center;">
-            <b>VI. TOMONLARNING JAVOBGARLIGI</b>
-        </td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 6.1. Talaba mol-mulk, jihozlar, o‘quv qurollari va hokazoga moddiy zarar yetkazgan taqdirda Universitet oldida to‘liq moddiy javobgarlikni o‘z zimmasiga oladi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 6.2. Ushbu shartnomaning 3.3-bandga muvofiq o‘qish uchun to‘lov kechiktirilgan taqdirda:
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 6.2.1. Talabaning Universitetga kirishi cheklanadi;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 6.2.2. Quyidagilar to‘xtatiladi:
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> - Universitet tomonidan akademik xizmatlar ko‘rsatilishi;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> - Talabani imtixonlarga kiritilishi;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> - har qanday akademik ma’lumotnomalar/sertifikatlar berish;
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 6.2.3. Talaba 2.1.6-bandga muvofiq talabalar safidan chiqarilishi mumkin.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  6.3. Universitet shartnoma to‘lovi manbalari uchun javobgarlikni o‘z zimmasiga olmaydi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  6.4. Universitet shartnoma to‘lovini amalga oshirishda yo‘l qo‘yilgan xatolar uchun javobgar bo‘lmaydi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  6.5. Talabaning o‘qishdan chetlashtirilishi yoki talabalar safidan chiqarilishi Buyurtmachi va Talabani ushbu shartnoma bo‘yicha Talabaga ko‘rsatilgan ta’lim xizmatlari uchun haq to‘lash hamda boshqa majburiyatlardan ozod etmaydi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 6.6. Tomonlarning ushbu Shartnomada nazarda tutilmagan javobgarlik choralari O‘zbekiston Respublikasining amaldagi qonunchiligi bilan belgilanadi.
-        </td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-    <tr>
-        <td colspan="4" style="text-align: center;">
-            <b>VII. QO‘SHIMCHA SHARTLAR</b>
-        </td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 7.1. Universitetning Talabani o‘qishga qabul qilish buyrug‘i Talaba tomonidan barcha kerakli hujjatlarni taqdim etish va shartnomaning 3.3.1-bandiga muvofiq to‘lovni amalga oshirish sharti bilan chiqariladi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 7.2. Talabaga Universitet tomonidan stipendiya to‘lanmaydi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  7.3. Mazkur Shartnomaning 1-bandida nazarda tutilgan majburiyatlar O‘zbekiston Respublikasining amaldagi qonunchiligi talablariga muvofiq, bevosita yoki onlayn tarzda taqdim etilishi mumkin. Akademik ta’lim xizmatlari onlayn tarzda taqdim etilgan taqdirda, Talaba texnik va telekommunikatsiya aloqalari holatining sifati uchun shaxsan javobgardir.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 7.4. Ushbu Shartnoma Tomonlar bir o‘quv yili uchun uning predmetida ko‘rsatilgan maqsadlar uchun o‘z majburiyatlarini to‘liq bajarguniga qadar, lekin 2025-yil 1-iyuldan kechikmagan muddatga qadar tuziladi. Shartnomaning amal qilish muddati tugaganligi qarzdor Tomonlarni o‘z zimmasidagi majburiyatlarini bajarishdan ozod qilmaydi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 7.5. O‘qish davrida Talaba yoki boshqa shaxsga rasmiy hujjatlarning asl nusxalari, shu jumladan o‘rta yoki o‘rta maxsus ta’lim muassasasining bitiruv hujjatlari (attestat/diplom/sertifikat) berilmaydi.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 7.6. Universitet Talabani ishga joylashtirish majburiyatini o‘z zimmasiga olmaydi.
-        </td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 7.7. Shartnoma to‘lovlari va ularni qaytarish bilan bog‘liq barcha bank xizmatlari Buyurtmachi yoki Talaba tomonidan to‘lanadi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 7.8. Universitet tomonidan ushbu shartnoma bo‘yicha mablag‘lar qaytarilishi lozim bo‘lgan hollarda mazkur mablag‘lar tegishli hujjat o‘z kuchiga kirgan paytdan boshlab 30 (o‘ttiz) kun ichida qaytariladi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 7.9. Ushbu Shartnomaga kiritilgan har qanday o‘zgartirish va/yoki qo‘shimchalar, agar ular tomonlar tomonidan yozma shaklda rasmiylashtirilgan, imzolangan/muhrlangan bo‘lsagina amal qiladi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 7.10. Tomonlar shartnomada Universitet faksimilesini tegishli imzo sifatida tan olishga kelishib oldilar.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 7.11. Ushbu shartnomadan kelib chiqadigan har qanday nizo yoki kelishmovchiliklarni tomonlar muzokaralar yo‘li bilan hal qilishga intiladi. Kelishuvga erishilmagan taqdirda, nizolar O‘zbekiston Respublikasi qonun hujjatlarida belgilangan tartibda Universitet joylashgan yerdagi sud tomonidan ko‘rib chiqiladi.
-        </td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-    <tr>
-        <td colspan="4" style="text-align: center;">
-            <b>VIII. YAKUNIY QOIDALAR</b>
-        </td>
-    </tr>
-
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 8.1. Ushbu shartnoma Tomonlar tomonidan imzolangan paytdan boshlab kuchga kiradi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 8.2. Buyurtmachi va Talaba shartnoma shartlaridan norozi bo‘lgan taqdirda 2024-yil 30-noyabrdan kechiktirmay murojaat qilishi lozim, bunda mazkur sanaga qadar Universitet bilan shartnoma tuzmagan Talaba o‘qishga qabul qilinmaydi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  8.3. O‘zbekiston Respublikasi Prezidentining tegishli farmoniga muvofiq mehnatga haq to‘lashning eng kam miqdori yoki bazaviy hisoblash miqdori o‘zgarganda, shartnoma to‘lovi miqdori navbatdagi semestr boshidan oshiriladi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?> 8.3. Mazkur shartnomani imzolanishi, o‘zgartirilishi, ijro etilishi, bekor qilinishi yuzasidan Tomonlar o‘rtasida yozishmalar shartnomada ko‘rsatilgan Tomonlarning rasmiy elektron pochta manzillari orqali amalga oshirilishi mumkin va Tomonlar bu tartibda yuborilgan xabarlarning yuridik kuchga ega ekanligini tan oladilar. Elektron pochta manzili o‘zgarganligi to‘g‘risida boshqa tomonni yozma ravishda xabardor qilmagan tomon bu bilan bog‘liq barcha xavflarni o‘z zimmasiga oladi.
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="4">
-            <?= $joy ?>  8.4. Ushbu Shartnoma o‘zbek tilida, uch asl nusxada, teng yuridik kuchga ega, har bir tomon uchun bir nusxadan tuzildi.
-        </td>
-    </tr>
 
     <tr>
         <td colspan="4">
