@@ -164,12 +164,8 @@ $limg = $lqr->writeDataUri();
             <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
 
                 <tr>
-                    <td colspan="2">Ta’lim bosqichi:<?= $joy ?></td>
+                    <td colspan="2" style="padding-bottom: 15px;">Ta’lim bosqichi:<?= $joy ?></td>
                     <td colspan="2"><b>Bakalavr</b></td>
-                </tr>
-
-                <tr>
-                    <td>&nbsp;</td>
                 </tr>
 
                 <tr>
@@ -178,16 +174,8 @@ $limg = $lqr->writeDataUri();
                 </tr>
 
                 <tr>
-                    <td>&nbsp;</td>
-                </tr>
-
-                <tr>
                     <td colspan="2">O‘qish muddati:<?= $joy ?></td>
                     <td colspan="2"><b><?= ikYear($direction->edu_duration) ?></b></td>
-                </tr>
-
-                <tr>
-                    <td>&nbsp;</td>
                 </tr>
 
                 <tr>
@@ -197,10 +185,6 @@ $limg = $lqr->writeDataUri();
                     <?php else: ?>
                         <td colspan="2"><b>1 kurs</b></td>
                     <?php endif; ?>
-                </tr>
-
-                <tr>
-                    <td>&nbsp;</td>
                 </tr>
 
                 <tr>
