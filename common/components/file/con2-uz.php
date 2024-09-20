@@ -436,6 +436,143 @@ $limg = $lqr->writeDataUri();
     </tr>
 
 
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: center">
+            <b>V. SHARTNOMANING AMAL QILISH MUDDATI, UNGA O‘ZGARTIRISH VA QO‘SHIMCHALAR KIRITISH HAMDA BEKOR QILISH TARTIBI</b>
+        </td>
+    </tr>
+
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            5.1. Ushbu shartnoma ikki tomonlama imzolangandan so‘ng kuchga kiradi hamda ta’lim xizmatlarini taqdim etish o‘quv yili tugagunga qadar amalda bo‘ladi.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            5.2. Ushbu shartnoma shartlariga ikkala tomon kelishuviga asosan tuzatish, o‘zgartirish va qo‘shimchalar kiritilishi  mumkin
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            5.3. Shartnomaga tuzatish, o‘zgartirish va qo‘shimchalar faqat yozma ravishda “Shartnomaga qo‘shimcha bitim” tarzida kiritiladi va imzolanadi.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            Shartnoma quyidagi hollarda bekor qilinishi mumkin:
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	Tomonlarning o‘zaro kelishuviga binoan.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	“Ta’lim oluvchi” talabalar safidan chetlashtirilganda “Ta’lim muassasasi” tashabbusi bilan bir tomonlama bekor qilinishi mumkin.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	Ta’lim muassasasi  tomonidan Ta’lim oluvchi tomonidan to’lov o’z vaqtida va to’liq amalga oshirilmaganda;
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            •	Tomonlardan biri o‘z majburiyatlarini bajarmaganda yoki lozim darajada bajarmaganda sud qarori asosida
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            5.5. Ta’lim muassasasi tugatilganda, ta’lim oluvchi bilan o‘zaro qayta hisob-kitob qilinadi.
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: center">
+            <b>VI. YAKUNIY QOIDALAR VA NIZOLARNI HAL QILISH TARTIBI</b>
+        </td>
+    </tr>
+
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            6.1. Ta’lim muassasasining Ta’lim oluvchini o‘qishga qabul qilish buyrug‘i Ta’lim oluvchi tomonidan barcha kerakli hujjatlarni taqdim etish va to‘lovni amalga oshirish sharti bilan chiqariladi.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            6.2. Ta’lim oluvchiga Ta’lim muassasasi tomonidan stipendiya to‘lanmaydi va Ta’lim muassasasi Ta’lim oluvchini ishga joylashtirish majburiyatini o‘z zimmasiga olmaydi.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            6.3. Ushbu shartnomani bajarish jarayonida kelib chiqishi mumkin bo‘lgan nizo va ziddiyatlar tomonlar o‘rtasida  muzokaralar olib borish yo‘li bilan hal etiladi.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            6.4. Muzokaralar olib borish yo‘li bilan nizoni hal etish imkoniyati bo‘lmagan taqdirda, tomonlar nizolarni hal etish uchun amaldagi qonunchilikka muvofiq Ta’lim muassasasi joylashgan yerdagi sudga murojaat etishlari mumkin.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            6.5. Ta’lim muassasasi tomonidan ushbu shartnoma bo‘yicha mablag‘lar qaytarilishi lozim bo‘lgan hollarda mazkur mablag‘lar tegishli hujjat o‘z kuchiga kirgan paytdan boshlab 30 (o‘ttiz) kun ichida qaytariladi.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            6.6. Ushbu Shartnomaga kiritilgan har qanday o‘zgartirish va/yoki qo‘shimchalar, agar ular tomonlar tomonidan yozma shaklda rasmiylashtirilgan, imzolangan/muhrlangan bo‘lsagina amal qiladi.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            6.7. “Ta’lim muassasasi” axborotlar va xabarnomalarni internetdagi veb-saytida, axborot tizimida yoki e’lonlar taxtasida e’lon joylashtirish orqali xabar berishi mumkin.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            6.8. Shartnoma 2 (ikki)  nusxada, tomonlarning har biri  uchun bir nusxadan tuzildi va ikkala nusxa ham  bir xil huquqiy kuchga ega.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: justify">
+            6.9. Ushbu Shartnomaga qo‘shimcha bitim kiritilgan taqdirda ushbu barcha kiritilgan qo‘shimcha bitimlar shartnomaning ajralmas qismi hisoblanadi.
+        </td>
+    </tr>
+
 
     <tr>
         <td colspan="4">
