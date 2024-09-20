@@ -164,22 +164,22 @@ $limg = $lqr->writeDataUri();
             <table width="100%" style="font-family: 'Times New Roman'; font-size: 14px; border-collapse: collapse;">
 
                 <tr>
-                    <td colspan="2" style="padding-bottom: 15px;">Ta’lim bosqichi:<?= $joy ?></td>
+                    <td colspan="2" style="padding-bottom: 14px;">Ta’lim bosqichi:<?= $joy ?></td>
                     <td colspan="2"><b>Bakalavr</b></td>
                 </tr>
 
                 <tr>
-                    <td colspan="2">Ta’lim shakli:<?= $joy ?></td>
+                    <td colspan="2"  style="padding-bottom: 14px;">Ta’lim shakli:<?= $joy ?></td>
                     <td colspan="2"><b><?= $direction->eduForm->name_uz ?></b></td>
                 </tr>
 
                 <tr>
-                    <td colspan="2">O‘qish muddati:<?= $joy ?></td>
+                    <td colspan="2"  style="padding-bottom: 14px;">O‘qish muddati:<?= $joy ?></td>
                     <td colspan="2"><b><?= ikYear($direction->edu_duration) ?></b></td>
                 </tr>
 
                 <tr>
-                    <td colspan="2">O‘quv kursi:<?= $joy ?></td>
+                    <td colspan="2"  style="padding-bottom: 14px;">O‘quv kursi:<?= $joy ?></td>
                     <?php if ($student->edu_type_id == 2) : ?>
                         <td colspan="2"><b><?= Course::findOne(['id' => ($student->course_id + 1)])->name_uz ?></b></td>
                     <?php else: ?>
