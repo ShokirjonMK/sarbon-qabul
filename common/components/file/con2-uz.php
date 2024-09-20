@@ -210,7 +210,6 @@ $limg = $lqr->writeDataUri();
         <td colspan="4" style="text-align: justify">
             <?= $joy ?> 2.2. Ushbu shartnoma bo‘yicha ta’lim oluvchini bir yillik o‘qitish uchun to‘lov 8,219,893.00 (sakkiz million ikki yuz o`n to`qqiz ming sakkiz yuz to`qson uch so'm) soʻmni tashkil etadi va quyidagi muddatlarda amalga oshiriladi:
             <br><?= $joy ?> Choraklarga bo‘lib to‘langanda quyidagi muddatlarda:
-            <br>
             <p><?= $joy ?>•	belgilangan to‘lov miqdorining kamida 25.00 foizini talabalikka tavsiya etilgan abiturientlar uchun 15.10.2024 gacha, ikkinchi va undan yuqori bosqich talabalar uchun 01.11.2024 gacha;</p>
             <p><?= $joy ?>•	belgilangan to‘lov miqdorining kamida 50.00 foizini 01.01.2025 gacha, 75.00 foizini 01.04.2025 gacha va 100.00 foizini 01.06.2025 gacha.</p>
         </td>
@@ -226,19 +225,40 @@ $limg = $lqr->writeDataUri();
         <td>&nbsp;</td>
     </tr>
 
-    <tr>
-        <td colspan="4" style="text-align: center">
-            <b>III. TA’LIM TO‘LOVINING MIQDORI, TARTIBI VA TO‘LOV SHARTLARI</b>
-        </td>
-    </tr>
+    <div>
+        <tr>
+            <td colspan="4" style="text-align: center">
+                <b>III. TA’LIM TO‘LOVINING MIQDORI, TARTIBI VA TO‘LOV SHARTLARI</b>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+                <?= $joy ?> 3.1. <b>Ta’lim muassasasi majburiyatlari:</b>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding-left: 30px;">
+                •	O‘qitish uchun belgilangan to‘lov o‘z vaqtida amalga oshirgandan so‘ng, “Ta’lim oluvchi”ni buyruq asosida talabalikka qabul qilish.
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding-left: 30px;">
+                •	Ta’lim oluvchiga o‘qishi uchun O‘zbekiston Respublikasining “Ta’lim to‘g‘risida”gi Qonuni va “Ta’lim muassasasi” Ustavida nazarda tutilgan zarur shart-sharoitlarga muvofiq sharoitlarni yaratib berish.
+            </td>
+        </tr>
+
+    </div>
+
 
     <tr>
-        <td>&nbsp;</td>
-    </tr>
-
-
-    <tr>
-        <td colspan="4">
+        <td colspan="4" style="text-align: justify">
             <?= $joy ?> 3.1. 2024-2025 o‘quv yili uchun shartnoma to‘lovi <?= number_format((int)$contract->contract_price, 0, '', ' ') .' so‘m'?> so‘mni tashkil etadi
         </td>
     </tr>
