@@ -92,7 +92,7 @@ class ContractController extends Controller
                 <span>' . date('Y-m-d') . '</span>
             </div>',
             ],
-            'SetHeaderOnAllPages' => false,
+            'SetHTMLHeaderOnAllPages' => false,
         ]);
 
         return $pdf->render();
