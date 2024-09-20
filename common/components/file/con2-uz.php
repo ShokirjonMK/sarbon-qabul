@@ -654,20 +654,20 @@ $limg = $lqr->writeDataUri();
 
                     <tr>
                         <td colspan="2" style="vertical-align: top">
-                            <b  style="padding-bottom: 15px">“SARBON UNIVERSITETI” oliy ta’lim tashkiloti</b> <br><br>
-                            <b  style="padding-bottom: 15px">Manzil:</b> Toshkent shahar, Olmazor tumani, Paxta MFY, Sag'bon ko'chasi. <br><br>
-                            <b  style="padding-bottom: 15px">H/R:</b> <?= $cons->h_r ?> <br><br>
-                            <b  style="padding-bottom: 15px">Bank:</b> “Trastbank” xususiy aksiyadorlik bankining “Raqamli” bank xizmatlari ofisi <br><br>
-                            <b  style="padding-bottom: 15px">Bank kodi (MFO):</b> 00491  <br><br>
-                            <b  style="padding-bottom: 15px">IFUT (OKED):</b> 64190  <br><br>
-                            <b  style="padding-bottom: 15px">STIR (INN):</b> 309341614 <br><br>
-                            <b  style="padding-bottom: 15px">Tel:</b> +998 78 888 22 88 <br>
+                            <b  style="display: block; margin-bottom: 13px;">“SARBON UNIVERSITETI” oliy ta’lim tashkiloti</b> <br>
+                            <b  style="display: block; margin-bottom: 13px;">Manzil:</b> Toshkent shahar, Olmazor tumani, Paxta MFY, Sag'bon ko'chasi. <br>
+                            <b  style="display: block; margin-bottom: 13px;">H/R:</b> <?= $cons->h_r ?> <br>
+                            <b  style="display: block; margin-bottom: 13px;">Bank:</b> “Trastbank” xususiy aksiyadorlik bankining “Raqamli” bank xizmatlari ofisi <br>
+                            <b  style="display: block; margin-bottom: 13px;">Bank kodi (MFO):</b> 00491  <br>
+                            <b  style="display: block; margin-bottom: 13px;">IFUT (OKED):</b> 64190  <br>
+                            <b  style="display: block; margin-bottom: 13px;">STIR (INN):</b> 309341614 <br>
+                            <b  style="display: block; margin-bottom: 13px;">Tel:</b> +998 78 888 22 88 <br>
                         </td>
                         <td colspan="2" style="vertical-align: top">
-                            <b  style="padding-bottom: 15px">F.I.Sh.:</b> <?= $full_name ?> <br><br>
-                            <b  style="padding-bottom: 15px">Pasport ma’lumotlari:</b> <?= $student->passport_serial.' '.$student->passport_number ?> <br><br>
-                            <b  style="padding-bottom: 15px">JShShIR:</b> <?= $student->passport_pin ?> <br><br>
-                            <b  style="padding-bottom: 15px">Tеlefon raqami: </b> <?= $student->user->username ?> <br>
+                            <b  style="display: block; margin-bottom: 13px;">F.I.Sh.:</b> <?= $full_name ?> <br>
+                            <b  style="display: block; margin-bottom: 13px;">Pasport ma’lumotlari:</b> <?= $student->passport_serial.' '.$student->passport_number ?> <br>
+                            <b  style="display: block; margin-bottom: 13px;">JShShIR:</b> <?= $student->passport_pin ?> <br>
+                            <b  style="display: block; margin-bottom: 13px;">Tеlefon raqami: </b> <?= $student->user->username ?> <br>
                         </td>
                     </tr>
 
