@@ -100,7 +100,7 @@ $breadcrumbs['item'][] = [
             'value' => function($model) {
                 $cons = $model->user->cons_id;
                 if ($cons == 1) {
-                    return "<a href='https://qabul.tpu.uz' class='badge-table-div active mt-2'> qabul.tpu.uz </a>";
+                    return "<a href='https://qabul.sarbon.university' class='badge-table-div active mt-2'> qabul.sarbon.university </a>";
                 } elseif ($cons == 2) {
                     return "<a href='https://edu.tpu.uz' class='badge-table-div active mt-2'> edu.tpu.uz </a>";
                 } elseif ($cons == 3) {

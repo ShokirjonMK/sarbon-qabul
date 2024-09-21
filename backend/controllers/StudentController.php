@@ -582,7 +582,7 @@ class StudentController extends Controller
         $writer = new Xlsx($spreadsheet);
         $writer->save($filePath);
 
-        return "https://qabul.tpu.uz/backend/web/ik/".$time.".xlsx";
+        return "https://qabul.sarbon.university/backend/web/ik/".$time.".xlsx";
     }
 
     public function actionExcelExport()
@@ -631,7 +631,7 @@ class StudentController extends Controller
         $filePath = Yii::getAlias('@backend/web/ik/'.$time.'.xlsx');
         $writer = new Xlsx($spreadsheet);
         $writer->save($filePath);
-        return "https://qabul.tpu.uz/backend/web/ik/".$time.".xlsx";
+        return "https://qabul.sarbon.university/backend/web/ik/".$time.".xlsx";
     }
 
 

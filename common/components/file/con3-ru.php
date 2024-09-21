@@ -64,7 +64,7 @@ if ($student->edu_type_id == 1) {
     $contract->save(false);
 }
 
-$qr = (new QrCode('https://qabul.tpu.uz/site/contract?key=' . $link.'&type=3'))->setSize(120, 120)
+$qr = (new QrCode('https://qabul.sarbon.university/site/contract?key=' . $link.'&type=3'))->setSize(120, 120)
     ->setMargin(10);
 $img = $qr->writeDataUri();
 
