@@ -29,7 +29,7 @@ class AppAsset extends AssetBundle
     ];
 
     public $js = [
-        '../editor/tinymce6/plugins/tiny_mce_wiris/integration/WIRISplugins.js?viewer=image',
+//        '../editor/tinymce6/plugins/tiny_mce_wiris/integration/WIRISplugins.js?viewer=image',
 //        '../editor/tinymce6/tinymce.min.js',
 //        '../editor/js/prism.js',
 //        '../editor/js/wirislib.js',

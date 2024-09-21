@@ -13,7 +13,7 @@ $this->title = 'Tizimga kirish';
     <div class="login_content">
         <div class="login_main">
             <div class="login_right">
-                <img src="/backend/web/edu-assets/image/edu-smart-image/shape.png" alt="" class="login_shape">
+                <img src="/frontend/web/images/sarbon_admin_login.svg" alt="" class="login_shape">
                 <div class="login_form">
                     <div>
                         <h4 class="login_title">Tizimga kirish</h4>
