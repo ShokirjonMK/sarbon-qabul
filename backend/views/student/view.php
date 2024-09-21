@@ -284,14 +284,14 @@ $cons = $model->user->cons;
                                         </div>
 
                                         <div class="d-flex gap-3 align-items-center mt-5">
-                                            <?= Html::a(Yii::t('app', 'Yangi suxbat natijasi'), ['student-operator-type/operator', 'id' => $model->id],
+                                            <?= Html::a(Yii::t('app', 'Yangi suhbat natijasi'), ['student-operator-type/operator', 'id' => $model->id],
                                                 [
                                                     'class' => 'sub_links',
                                                     "data-bs-toggle" => "modal",
                                                     "data-bs-target" => "#studentOperator",
                                                 ])
                                             ?>
-                                            <?= Html::a(Yii::t('app', 'Suxbat natijalari ro\'yxati'), ['student-operator-type/list', 'id' => $model->id],
+                                            <?= Html::a(Yii::t('app', 'suhbat natijalari ro\'yxati'), ['student-operator-type/list', 'id' => $model->id],
                                                 [
                                                     'class' => 'sub_links',
                                                     "data-bs-toggle" => "modal",
@@ -1083,7 +1083,7 @@ $cons = $model->user->cons;
             <div class="form-section">
                 <div class="form-section_item">
                     <div class="modal-header">
-                        <h1 class="modal-title" id="exampleModalLabel">Yangi suxbat natijasini kiriting</h1>
+                        <h1 class="modal-title" id="exampleModalLabel">Yangi suhbat natijasini kiriting</h1>
                         <p class="btn-close" data-bs-dismiss="modal" aria-label="Close"></p>
                     </div>
                     <div class="modal-body" id="studentOperatorBody">
@@ -1101,7 +1101,7 @@ $cons = $model->user->cons;
             <div class="form-section">
                 <div class="form-section_item">
                     <div class="modal-header">
-                        <h1 class="modal-title" id="exampleModalLabel">Jami suxbat natijasi</h1>
+                        <h1 class="modal-title" id="exampleModalLabel">Jami suhbat natijasi</h1>
                         <p class="btn-close" data-bs-dismiss="modal" aria-label="Close"></p>
                     </div>
                     <div class="modal-body" id="studentOperatorListBody">
