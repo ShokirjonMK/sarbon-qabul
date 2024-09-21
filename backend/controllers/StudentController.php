@@ -654,32 +654,11 @@ class StudentController extends Controller
             $t = true;
         }
         if ($t) {
-            if ($student->lead_id != null) {
-                $amoCrmClient = Yii::$app->ikAmoCrm;
-                $leadId = $student->lead_id;
-                $tags = [];
-                $message = '';
-                $customFields = [];
+            $studentUser = $student->user;
+            $studentUser->status = 5;
+            $studentUser->username = Yii::$app->security->generateRandomString(3).'_'.$studentUser->username;
+            $studentUser->save(false);
 
-                $updatedFields = [
-                    'pipelineId' => $student->pipeline_id,
-                    'statusId' => User::STEP_STATUS_8
-                ];
-
-                $amoCrmClient->updateLead($leadId, $updatedFields, $tags, $message, $customFields);
-            }
-            $student->student_operator_id = null;
-            $student->save(false);
-            StudentOperator::deleteAll(['student_id' => $student->id]);
-            StudentDtm::deleteAll(['student_id' => $student->id]);
-            StudentPerevot::deleteAll(['student_id' => $student->id]);
-            StudentOferta::deleteAll(['student_id' => $student->id]);
-            ExamStudentQuestions::deleteAll(['user_id' => $student->user_id]);
-            AuthAssignment::deleteAll(['user_id' => $student->user_id]);
-            ExamSubject::deleteAll(['user_id' => $student->user_id]);
-            Exam::deleteAll(['user_id' => $student->user_id]);
-            Student::deleteAll(['id' => $student->id]);
-            User::deleteAll(['id' => $student->user_id]);
             \Yii::$app->session->setFlash('success');
         } else {
             $errors[] = ["Ma'lumotni o'chirish imkonsiz!!!"];

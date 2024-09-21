@@ -197,7 +197,7 @@ $cons = $model->user->cons;
                                                     <?= $cons->name ?> &nbsp;&nbsp;
                                                     <?php
                                                         if ($cons->id == 1) {
-                                                            echo "<a href='https://qabul.tpu.uz'>qabul.sarbon.university</a>";
+                                                            echo "<a href='https://qabul.sarbon.university'>qabul.sarbon.university</a>";
                                                         }
                                                     ?>
                                                 </h6>

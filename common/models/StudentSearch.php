@@ -66,7 +66,7 @@ class StudentSearch extends Student
                 ->where(['step' => 5])
                 ->andWhere(['user_role' => 'student'])
                 ->andWhere(['cons_id' => $user->cons_id])
-                ->andWhere(['<>' , 'status' , 3])
+                ->andWhere(['<>' , 'status' , 5])
             ]);
 
 
@@ -212,7 +212,7 @@ class StudentSearch extends Student
                 ->where(['<' , 'step' , 5])
                 ->andWhere(['user_role' => 'student'])
                 ->andWhere(['cons_id' => $user->cons_id])
-                ->andWhere(['<>' , 'status' , 3])
+                ->andWhere(['<>' , 'status' , 5])
             ]);
 
 
@@ -310,7 +310,7 @@ class StudentSearch extends Student
             ->andWhere(['in' , 'user_id' , User::find()
                 ->select('id')
                 ->andWhere(['user_role' => 'student'])
-                ->andWhere(['<>' , 'status' , 3])
+                ->andWhere(['<>' , 'status' , 5])
 //                ->andWhere(['>' , 'created_at' , 1723306434])
 //                ->orderBy([
 //                    'created_at' => SORT_DESC,
