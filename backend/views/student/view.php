@@ -265,7 +265,7 @@ $cons = $model->user->cons;
 
                                         <div class="d-flex justify-content-between align-items-center mt-3">
                                             <div class="subject_box_left">
-                                                <p>Oxirgi xolati:</p>
+                                                <p>Oxirgi holati:</p>
                                             </div>
                                             <div class="subject_box_right">
                                                 <h6><?= $type ? $type->studentOperatorType->name : '--------' ?></h6>

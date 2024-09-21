@@ -99,7 +99,7 @@ class IkTestBotController extends Controller
 
     public function text1234()
     {
-        $textUz = "📑 \n\n🇺🇿\n Arizangiz yuborilgan. Ariza xolatini tekshirish uchun quyidagi havolani bosing!\n\n";
+        $textUz = "📑 \n\n🇺🇿\n Arizangiz yuborilgan. Ariza holatini tekshirish uchun quyidagi havolani bosing!\n\n";
         $textRu = "\n\n🇷🇺\n📑 Ваша заявка отправлена. Нажмите на ссылку ниже, чтобы проверить статус вашего заявления!\n\n ";
         $icon = "👇👇👇👇👇";
         return self::ikV2($textUz).self::ikV2($textRu).$icon;
