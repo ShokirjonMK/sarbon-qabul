@@ -202,6 +202,12 @@
 
 /*  ---===--- index page ---===--- */
 
+
+
+
+
+
+
 .mainPage {
     /*margin-top: -40px;*/
     background-image: url("/frontend/web/images/new_bino.jpg");
@@ -395,6 +401,47 @@
     display: none;
 }
 
+
+
+.head_mobile_index {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-image: url("/frontend/web/images/slid_ban.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head_mobile_index_item {
+    width: 100%;
+    height: 100%;
+    padding: 25px 0;
+    background: rgb(45,66,85);
+    background: linear-gradient(90deg, rgba(45,66,85,1) 11%, rgba(1,89,101,0.6026785714285714) 90%);
+}
+
+.sarbon_text {
+    margin-top: 80px;
+    width: 70%;
+}
+.sarbon_text p {
+    color: var(--red-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.sarbon_text h1 {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 15px;
+}
+.sarbon_text h1 span {
+    color: var(--red-color);
+    font-weight: bold;
+}
+
 .head_mobile {
     padding: 25px 0;
     display: block;
@@ -407,20 +454,7 @@
     background: rgb(1,89,101);
     background: linear-gradient(345deg, rgba(1,89,101,1) 0%, rgba(45,66,85,1) 100%);
 }
-.head_mobile:before {
-    /*content: '';*/
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*top: 0;*/
-    /*bottom: 0;*/
-    /*right: 0;*/
 
-    /*background: rgb(110,15,39);*/
-    /*background: linear-gradient(215deg, rgba(110,15,39,0.6699054621848739) 5%, rgba(45,66,85,1) 35%);*/
-
-    /*background: rgb(110,15,39);*/
-    /*background: linear-gradient(0deg, rgba(110,15,39,1) 0%, rgba(45,66,85,1) 2%);*/
-}
 
 .mb_head_left img {
     width: 180px;
