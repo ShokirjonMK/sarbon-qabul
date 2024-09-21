@@ -83,9 +83,6 @@ class IkBotController extends Controller
                                     'keyboard' => [
                                         [
                                             ['text' => self::getTranslateMessage("Qabul 2024", $lang_id)],
-                                            ['text' => self::getTranslateMessage("O‘qishni ko‘chirish", $lang_id)],
-                                        ],
-                                        [
                                             ['text' => self::getTranslateMessage("UZBMB natija", $lang_id)],
                                         ],
                                         [
@@ -107,7 +104,7 @@ class IkBotController extends Controller
                     if ($userOne->bot_status == 0) {
                         $userOne->bot_status = 1;
                         $userOne->save(false);
-                        $second_chat_id = -1002213280546;
+                        $second_chat_id = -1002417014650;
                         $telegram->sendMessage([
                             'chat_id' => $second_chat_id,
                             'text' => $mes,
@@ -155,7 +152,7 @@ class IkBotController extends Controller
                     if ($phoneKod != 998) {
                         return $telegram->sendMessage([
                             'chat_id' => $telegram_id,
-                            'text' => "⁉️⛔️ *Arizani faqat UZB telefon raqamlari berishi mumkin\\. Aloqa uchun\\: 771292929*",
+                            'text' => "⁉️⛔️ *Arizani faqat UZB telefon raqamlari berishi mumkin\\. Aloqa uchun\\: 788882288*",
                             'parse_mode' => 'MarkdownV2',
                             'reply_markup' => self::undoKeyboard($lang_id)
                         ]);
@@ -228,9 +225,6 @@ class IkBotController extends Controller
                                 'keyboard' => [
                                     [
                                         ['text' => self::getTranslateMessage("Qabul 2024", $lang_id)],
-                                        ['text' => self::getTranslateMessage("O‘qishni ko‘chirish", $lang_id)],
-                                    ],
-                                    [
                                         ['text' => self::getTranslateMessage("UZBMB natija", $lang_id)],
                                     ],
                                     [
@@ -303,9 +297,6 @@ class IkBotController extends Controller
                             'keyboard' => [
                                 [
                                     ['text' => self::getTranslateMessage("Qabul 2024", $lang_id)],
-                                    ['text' => self::getTranslateMessage("O‘qishni ko‘chirish", $lang_id)],
-                                ],
-                                [
                                     ['text' => self::getTranslateMessage("UZBMB natija", $lang_id)],
                                 ],
                                 [
@@ -517,7 +508,7 @@ class IkBotController extends Controller
                         if ($userOne->bot_status == 0) {
                             $userOne->bot_status = 1;
                             $userOne->save(false);
-                            $second_chat_id = -1002213280546;
+                            $second_chat_id = -1002417014650;
                             $telegram->sendMessage([
                                 'chat_id' => $second_chat_id,
                                 'text' => $mes,
@@ -619,7 +610,7 @@ class IkBotController extends Controller
                         if ($userOne->bot_status == 0) {
                             $userOne->bot_status = 1;
                             $userOne->save(false);
-                            $second_chat_id = -1002213280546;
+                            $second_chat_id = -1002417014650;
                             $telegram->sendMessage([
                                 'chat_id' => $second_chat_id,
                                 'text' => $mes,
@@ -708,7 +699,7 @@ class IkBotController extends Controller
                         if ($userOne->bot_status == 0) {
                             $userOne->bot_status = 1;
                             $userOne->save(false);
-                            $second_chat_id = -1002213280546;
+                            $second_chat_id = -1002417014650;
                             $telegram->sendMessage([
                                 'chat_id' => $second_chat_id,
                                 'text' => $mes,
@@ -790,7 +781,7 @@ class IkBotController extends Controller
                     if ($userOne->bot_status == 0) {
                         $userOne->bot_status = 1;
                         $userOne->save(false);
-                        $second_chat_id = -1002213280546;
+                        $second_chat_id = -1002417014650;
                         $telegram->sendMessage([
                             'chat_id' => $second_chat_id,
                             'text' => $mes,
@@ -857,7 +848,7 @@ class IkBotController extends Controller
             $examType = "\\- \\- \\- \\- \\-";
         }
 
-        $admin = "\n\n📌 _Arizangiz ko\\'rib chiqilib tez orada siz bilan 👩‍💻 operatorlarimiz bog\\'lanishadi\\. Aloqa uchun\\: 771292929_";
+        $admin = "\n\n📌 _Arizangiz ko\\'rib chiqilib tez orada siz bilan 👩‍💻 operatorlarimiz bog\\'lanishadi\\. Aloqa uchun\\: 788882288_";
         $sendSmsDate = "\n\n🕒 ️ _Yuborilgan vaqt\\: ". self::escapeMarkdownV2($userOne->confirm_date) ."_";
 
         $direc = $userOne->direction;
@@ -999,29 +990,15 @@ class IkBotController extends Controller
         ]);
     }
 
-    public static function getEduType()
-    {
-        return json_encode([
-            'keyboard' => [
-                [
-                    ['text' => "Qabul 2024"],
-                    ['text' => "O‘qishni ko‘chirish"],
-                ],
-                [
-                    ['text' => "🇬🇧󠁧󠁢󠁥󠁮󠁧󠁿English🇬🇧󠁧󠁢󠁥󠁮󠁧󠁿"],
-                ]
-            ], 'resize_keyboard' => true
-        ]);
-    }
 
     public static function getSelectEduType($type)
     {
         if ($type == 'Qabul 2024' || $type == 'Прием 2024 г.') {
             return ['is_ok' => true, 'id' => 1];
         }
-        if ($type == 'O‘qishni ko‘chirish' || $type == 'Перевод') {
-            return ['is_ok' => true, 'id' => 2];
-        }
+//        if ($type == 'O‘qishni ko‘chirish' || $type == 'Перевод') {
+//            return ['is_ok' => true, 'id' => 2];
+//        }
         if ($type == 'UZBMB natija' || $type == 'Результат УЗБМБ') {
             return ['is_ok' => true, 'id' => 3];
         }
