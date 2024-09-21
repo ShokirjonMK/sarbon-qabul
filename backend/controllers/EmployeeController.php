@@ -61,7 +61,7 @@ class EmployeeController extends Controller
     {
         $user = Yii::$app->user->identity;
         $role = $user->authItem;
-        $cons = Constalting::find();
+        $cons = Constalting::find()->where(['is_deleted' => 0]);
         $roles = AuthItem::find();
         if ($role->name == 'admin') {
             $cons = $cons->andWhere(['id' => $user->cons_id]);
@@ -108,7 +108,7 @@ class EmployeeController extends Controller
     {
         $user = Yii::$app->user->identity;
         $role = $user->authItem;
-        $cons = Constalting::find();
+        $cons = Constalting::find()->where(['is_deleted' => 0]);
         $roles = AuthItem::find();
         if ($role->name == 'admin') {
             $cons = $cons->andWhere(['id' => $user->cons_id]);
@@ -156,7 +156,7 @@ class EmployeeController extends Controller
 
         $curUser = Yii::$app->user->identity;
         $role = $curUser->authItem;
-        $cons = Constalting::find();
+        $cons = Constalting::find()->where(['is_deleted' => 0]);
         $roles = AuthItem::find();
         if ($role->name == 'admin') {
             $cons = $cons->andWhere(['id' => $curUser->cons_id]);
