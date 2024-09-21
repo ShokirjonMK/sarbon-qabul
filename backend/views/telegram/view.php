@@ -132,7 +132,7 @@ $breadcrumbs['item'][] = [
 
                                     <div class="col-md-3 col-12">
                                         <div class="view-info-right">
-                                            <p>Imtixon turi</p>
+                                            <p>imtihon turi</p>
                                             <h6>
                                                 <?php if ($model->exam_type == 0) : ?>
                                                     Online

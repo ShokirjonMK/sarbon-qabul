@@ -50,7 +50,7 @@ class AddBall extends Model
         }
 
         if ($examSubject->student->exam_type == 0) {
-            $errors[] = ['Ball faqat offline imtixon uchun ariza berganlarga qo\'yiladi.'];
+            $errors[] = ['Ball faqat offline imtihon uchun ariza berganlarga qo\'yiladi.'];
         } else {
             $exam = $examSubject->exam;
             $directionSubject = $examSubject->directionSubject;

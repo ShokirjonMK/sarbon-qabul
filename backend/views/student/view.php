@@ -230,7 +230,7 @@ $cons = $model->user->cons;
                                                     "data-bs-target" => "#studentUserEdite",
                                                 ])
                                             ?>
-                                            <?= Html::a(Yii::t('app', 'SMS habar yuborish'), ['send-sms', 'id' => $model->id],
+                                            <?= Html::a(Yii::t('app', 'SMS xabar yuborish'), ['send-sms', 'id' => $model->id],
                                                 [
                                                     'class' => 'sub_links',
                                                     "data-bs-toggle" => "modal",
@@ -462,7 +462,7 @@ $cons = $model->user->cons;
                                         <?= Html::a("<span>Test o'chirish</span><i class='fa-solid fa-trash'></i>", ['test-delete', 'id' => $exam->id],
                                             [
                                                 'data' => [
-                                                    'confirm' => Yii::t('app', 'Rostdan imtixonni o\'chirmoqchimisiz?'),
+                                                    'confirm' => Yii::t('app', 'Rostdan imtihonni o\'chirmoqchimisiz?'),
                                                     'method' => 'post',
                                                 ],
                                             ])
@@ -575,7 +575,7 @@ $cons = $model->user->cons;
                                 <?php elseif ($model->edu_type_id == 1) : ?>
                                     <div class="col-md-4 col-12">
                                         <div class="view-info-right">
-                                            <p>Imtixon turi</p>
+                                            <p>imtihon turi</p>
                                             <h6>
                                                 <?php if ($model->exam_type == 0) : ?>
                                                     Online

@@ -81,11 +81,11 @@ if (count($directions) > 0) {
     <div class="form-group">
         <?= $form->field($model, 'exam_type')->widget(Select2::classname(), [
             'data' => Status::examStatus(),
-            'options' => ['placeholder' => 'Imtixon shakli ...'],
+            'options' => ['placeholder' => 'imtihon shakli ...'],
             'pluginOptions' => [
                 'allowClear' => true
             ],
-        ])->label('Imtixon shakli <span>*</span>');; ?>
+        ])->label('imtihon shakli <span>*</span>');; ?>
     </div>
 
     <div class="d-flex justify-content-center mb-3 mt-3">

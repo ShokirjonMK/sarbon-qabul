@@ -436,7 +436,7 @@ class IkBotController extends Controller
                     if ($userOne->eduYearType->edu_type_id == 1) {
                         return $telegram->sendMessage([
                             'chat_id' => $telegram_id,
-                            'text' => "🔘 *Imtixon turini tanlang\\!*",
+                            'text' => "🔘 *imtihon turini tanlang\\!*",
                             'parse_mode' => 'MarkdownV2',
                             'reply_markup' => json_encode([
                                 'keyboard' => [
@@ -530,7 +530,7 @@ class IkBotController extends Controller
                     } else {
                         return $telegram->sendMessage([
                             'chat_id' => $telegram_id,
-                            'text' => "⁉️⛔️ *Imtixon turi noto\\‘g‘ri yuborildi\\. Qaytadan yuboring\\!*",
+                            'text' => "⁉️⛔️ *imtihon turi noto\\‘g‘ri yuborildi\\. Qaytadan yuboring\\!*",
                             'parse_mode' => 'MarkdownV2',
                             'reply_markup' => json_encode([
                                 'keyboard' => [
@@ -857,7 +857,7 @@ class IkBotController extends Controller
         $code = "🔸 *Yo\\'nalish kodi\\:* " . self::escapeMarkdownV2(str_replace('.', '', $direc->code)) . "\n";
         $edTy = "♦️ *Qabul turi\\:* " . self::escapeMarkdownV2($direc->eduType->name_uz) . "\n";
         $edFo = "🔹 *Ta\\'lim shakli\\:* " . self::escapeMarkdownV2($direc->eduForm->name_uz) . "\n";
-        $im_type = "▫️ *Imtixon turi\\:* ".$examType."\n";
+        $im_type = "▫️ *imtihon turi\\:* ".$examType."\n";
         $edLa = "🇺🇿 *Ta\\'lim tili\\:* ". self::escapeMarkdownV2($direc->language->name_uz);
         $mes = $ariza . $full_name . $pass . $birthday. $phone . $hr . $d . $code . $edTy . $edFo . $im_type . $edLa. $admin . $sendSmsDate;
 

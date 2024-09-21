@@ -475,7 +475,7 @@ class Telegram extends \yii\db\ActiveRecord
 
         $text = "_Qayta ariza berishingiz mumkin\\._ \n\n";
 
-        $aloqa = "👩‍💻 _Aloqa uchun\\: 771292929_";
+        $aloqa = "👩‍💻 _Aloqa uchun\\: 788882288_";
 
         $chat_id = $model->chat_id;
         $username= $model->username;

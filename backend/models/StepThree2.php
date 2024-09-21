@@ -202,7 +202,7 @@ class StepThree2 extends Model
                 '900687' => $student->eduForm->name_uz, // Ta'lim shakli
                 '900689' => $student->language->name_uz, // Ta'lim tili
                 '900691' => $student->direction->name_uz, // Ta'lim yo'nalishi
-                '900739' => $examTYpe, // Imtixon shakli
+                '900739' => $examTYpe, // imtihon shakli
             ];
 
             $updatedLead = $amoCrmClient->updateLead($leadId, $updatedFields, $tags, $message, $customFields);

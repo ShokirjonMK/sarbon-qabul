@@ -30,7 +30,7 @@ class SettingController extends Controller
 
     public function actionIk0()
     {
-        $text = 'Hurmatli abituriyent! \n\t\n Sizni “SARBON UNIVERSITETI”ga talabalikka tavsiya etilganingiz bilan tabriklaymiz! \n\t\n  To\'lov shartnomasini https://qabul.sarbon.university qabul tizimi orqali yuklab olishingiz mumkin. Shoshiling! bizda o\'quv jarayonlari kunduzgi va kechki taʼlim shakli talabalari uchun 9-sentyabrdan, sirtqi taʼlim shakli talabalari uchun 16-sentyabrdan boshlanadi.  \n\t\n Manzil: Toshkent sh., Olmazor t., Xastimom MFY, Zarqaynar ko\'chasi, 10-uy. \n Aloqa markazi: 77 129 29 29 \n So\'ngi yangiliklar rasmiy telegram kanalimizda: https://t.me/perfect_university';
+        $text = 'Hurmatli abituriyent! \n\t\n Sizni “SARBON UNIVERSITETI”ga talabalikka tavsiya etilganingiz bilan tabriklaymiz! \n\t\n  To\'lov shartnomasini https://qabul.sarbon.university qabul tizimi orqali yuklab olishingiz mumkin. Shoshiling! bizda o\'quv jarayonlari kunduzgi va kechki taʼlim shakli talabalari uchun 9-sentyabrdan, sirtqi taʼlim shakli talabalari uchun 16-sentyabrdan boshlanadi.  \n\t\n Manzil: Toshkent sh., Olmazor t., Xastimom MFY, Zarqaynar ko\'chasi, 10-uy. \n Aloqa markazi: 78 888 22 88 \n So\'ngi yangiliklar rasmiy telegram kanalimizda: https://t.me/perfect_university';
         $phone = '+998 (94) 505-52-50';
         Message::sendedSms($phone , $text);
     }
@@ -44,7 +44,7 @@ class SettingController extends Controller
                 ->andWhere(['<>' , 'file_status' , 3])
             ])->all();
 
-        $text = 'Hurmatli abituriyent! \n\t\n Sizni “SARBON UNIVERSITETI”ga talabalikka tavsiya etilganingiz bilan tabriklaymiz! \n\t\n  To\'lov shartnomasini https://qabul.sarbon.university qabul tizimi orqali yuklab olishingiz mumkin. Shoshiling! bizda o\'quv jarayonlari kunduzgi va kechki taʼlim shakli talabalari uchun 9-sentyabrdan, sirtqi taʼlim shakli talabalari uchun 16-sentyabrdan boshlanadi.  \n\t\n Manzil: Toshkent sh., Olmazor t., Xastimom MFY, Zarqaynar ko\'chasi, 10-uy. \n Aloqa markazi: 77 129 29 29 \n So\'ngi yangiliklar rasmiy telegram kanalimizda: https://t.me/perfect_university';
+        $text = 'Hurmatli abituriyent! \n\t\n Sizni “SARBON UNIVERSITETI”ga talabalikka tavsiya etilganingiz bilan tabriklaymiz! \n\t\n  To\'lov shartnomasini https://qabul.sarbon.university qabul tizimi orqali yuklab olishingiz mumkin. Shoshiling! bizda o\'quv jarayonlari kunduzgi va kechki taʼlim shakli talabalari uchun 9-sentyabrdan, sirtqi taʼlim shakli talabalari uchun 16-sentyabrdan boshlanadi.  \n\t\n Manzil: Toshkent sh., Olmazor t., Xastimom MFY, Zarqaynar ko\'chasi, 10-uy. \n Aloqa markazi: 78 888 22 88 \n So\'ngi yangiliklar rasmiy telegram kanalimizda: https://t.me/perfect_university';
 
         if (count($students)) {
             $i = 0;
@@ -65,7 +65,7 @@ class SettingController extends Controller
                 ->andWhere(['<>' , 'file_status' , 3])
             ])->all();
 
-        $text = 'Hurmatli abituriyent! \n\t\n Sizni “SARBON UNIVERSITETI”ga talabalikka tavsiya etilganingiz bilan tabriklaymiz! \n\t\n  To\'lov shartnomasini https://qabul.sarbon.university qabul tizimi orqali yuklab olishingiz mumkin. Shoshiling! bizda o\'quv jarayonlari kunduzgi va kechki taʼlim shakli talabalari uchun 9-sentyabrdan, sirtqi taʼlim shakli talabalari uchun 16-sentyabrdan boshlanadi.  \n\t\n Manzil: Toshkent sh., Olmazor t., Xastimom MFY, Zarqaynar ko\'chasi, 10-uy. \n Aloqa markazi: 77 129 29 29 \n So\'ngi yangiliklar rasmiy telegram kanalimizda: https://t.me/perfect_university';
+        $text = 'Hurmatli abituriyent! \n\t\n Sizni “SARBON UNIVERSITETI”ga talabalikka tavsiya etilganingiz bilan tabriklaymiz! \n\t\n  To\'lov shartnomasini https://qabul.sarbon.university qabul tizimi orqali yuklab olishingiz mumkin. Shoshiling! bizda o\'quv jarayonlari kunduzgi va kechki taʼlim shakli talabalari uchun 9-sentyabrdan, sirtqi taʼlim shakli talabalari uchun 16-sentyabrdan boshlanadi.  \n\t\n Manzil: Toshkent sh., Olmazor t., Xastimom MFY, Zarqaynar ko\'chasi, 10-uy. \n Aloqa markazi: 78 888 22 88 \n So\'ngi yangiliklar rasmiy telegram kanalimizda: https://t.me/perfect_university';
 
         if (count($students)) {
             $i = 0;
@@ -85,7 +85,7 @@ class SettingController extends Controller
                 ->andWhere(['is_deleted' => 0])
             ])->all();
 
-        $text = 'Hurmatli abituriyent! \n\t\n Sizni “SARBON UNIVERSITETI”ga talabalikka tavsiya etilganingiz bilan tabriklaymiz! \n\t\n  To\'lov shartnomasini https://qabul.sarbon.university qabul tizimi orqali yuklab olishingiz mumkin. Shoshiling! bizda o\'quv jarayonlari kunduzgi va kechki taʼlim shakli talabalari uchun 9-sentyabrdan, sirtqi taʼlim shakli talabalari uchun 16-sentyabrdan boshlanadi.  \n\t\n Manzil: Toshkent sh., Olmazor t., Xastimom MFY, Zarqaynar ko\'chasi, 10-uy. \n Aloqa markazi: 77 129 29 29 \n So\'ngi yangiliklar rasmiy telegram kanalimizda: https://t.me/perfect_university';
+        $text = 'Hurmatli abituriyent! \n\t\n Sizni “SARBON UNIVERSITETI”ga talabalikka tavsiya etilganingiz bilan tabriklaymiz! \n\t\n  To\'lov shartnomasini https://qabul.sarbon.university qabul tizimi orqali yuklab olishingiz mumkin. Shoshiling! bizda o\'quv jarayonlari kunduzgi va kechki taʼlim shakli talabalari uchun 9-sentyabrdan, sirtqi taʼlim shakli talabalari uchun 16-sentyabrdan boshlanadi.  \n\t\n Manzil: Toshkent sh., Olmazor t., Xastimom MFY, Zarqaynar ko\'chasi, 10-uy. \n Aloqa markazi: 78 888 22 88 \n So\'ngi yangiliklar rasmiy telegram kanalimizda: https://t.me/perfect_university';
 
         if (count($students)) {
             $i = 0;
@@ -113,7 +113,7 @@ class SettingController extends Controller
                 $seria = $row[1];
                 $number = (int)$row[2];
                 $directionId = $row[3];
-                $imtixon_turi = $row[4];
+                $imtihon_turi = $row[4];
                 $invois = $row[5];
                 $entered = $row[6];
                 $con_type = $row[7];
@@ -199,7 +199,7 @@ class SettingController extends Controller
                                     $newStudent->edu_year_form_id = $direaction->edu_year_form_id;
                                     $newStudent->edu_form_id = $direaction->edu_form_id;
                                     $newStudent->language_id = $direaction->language_id;
-                                    $newStudent->exam_type = $imtixon_turi;
+                                    $newStudent->exam_type = $imtihon_turi;
 
                                     if ($direaction->oferta == 1) {
                                         $oferta = new StudentOferta();

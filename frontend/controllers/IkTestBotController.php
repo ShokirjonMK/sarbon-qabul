@@ -170,7 +170,7 @@ class IkTestBotController extends Controller
 
     public function textPhoneError()
     {
-        $phone = '+998771292929';
+        $phone = '+998788882288';
         $phone = self::ikV2($phone);
         $text = "⁉️⛔️\n\n🇺🇿\nBOT faqat UZB telefon raqamlari uchun xizmat qiladi\\. \n*Aloqa uchun\\: ".$phone."*\n\n🇷🇺\nБОТ работает только для номеров УЗБ\\. \n*Для общения\\: ".$phone."*";
         return $text;

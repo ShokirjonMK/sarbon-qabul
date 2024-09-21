@@ -207,7 +207,7 @@ $limg = $lqr->writeDataUri();
                 &nbsp;&nbsp;&nbsp;&nbsp;2.1.4. Talabadan o‘rnatilgan tartibda tegishli hujjatlarni talab qilish va ular taqdim etilmagan holda
                 shartnoma to‘lovi amalga oshirilganidan qat’i nazar, Talabani o‘qishga qabul qilish yoki keyingi kursga
                 o‘tkazish to‘g‘risidagi Universitet rektorining buyrug‘iga kiritmaslik.<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;2.1.5. Universitetning ichki hujjatlarida belgilangan hollarda Talabani imtixonga kiritmaslik.
+                &nbsp;&nbsp;&nbsp;&nbsp;2.1.5. Universitetning ichki hujjatlarida belgilangan hollarda Talabani imtihonga kiritmaslik.
                 <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;2.1.6. Talaba quyidagi qilmishlardan birini sodir etgan taqdirda Universitet Buyurtmachini xabardor
                 qilgan holda shartnomani bir tomonlama bekor qilish huquqiga ega:
@@ -215,8 +215,8 @@ $limg = $lqr->writeDataUri();
                 &nbsp;&nbsp;&nbsp;&nbsp;a) ijtimoiy tarmoqlarda Universitet faoliyati to‘g‘risida ataylab yolg‘on ma’lumotlar tarqatganda,
                 shuningdek, professor-o‘qituvchilar va ma’muriy xodimlarga hurmatsizlik bilan munosabatda bo‘lganda;
                 <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;b) hujjatlarni qalbakilashtirish, shu jumladan, imtixon savollariga javoblarni hamda shu kabi boshqa
-                materiallarni imtixonga olib kirish, imtixon paytida ulardan foydalanish yoki boshqa talabalarga tarqatish;
+                &nbsp;&nbsp;&nbsp;&nbsp;b) hujjatlarni qalbakilashtirish, shu jumladan, imtihon savollariga javoblarni hamda shu kabi boshqa
+                materiallarni imtihonga olib kirish, imtihon paytida ulardan foydalanish yoki boshqa talabalarga tarqatish;
                 <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;c) Universitet tovar belgisi/logotipidan Universitetning yozma ruxsatisiz (turli xil buyumlar, kiyimkechaklar tayyorlash uchun va hokazo) foydalanish;
                 <br>
@@ -507,7 +507,7 @@ $limg = $lqr->writeDataUri();
                     &nbsp;&nbsp;&nbsp;&nbsp;6.2.1. Talabaning Universitetga kirishi cheklanadi;<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;6.2.2. Quyidagilar to‘xtatiladi:<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;- Universitet tomonidan akademik xizmatlar ko‘rsatilishi;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;- Talabani imtixonlarga kiritilishi;                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;- Talabani imtihonlarga kiritilishi;                    <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;- har qanday akademik ma’lumotnomalar/sertifikatlar berish;<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;6.2.3. Talaba 2.1.6-bandga muvofiq talabalar safidan chiqarilishi mumkin.
                     <br>

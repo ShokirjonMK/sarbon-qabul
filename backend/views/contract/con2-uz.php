@@ -243,7 +243,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4">
-            <?= $joy ?> 2.1.5. Universitetning ichki hujjatlarida belgilangan hollarda Talabani imtixonga kiritmaslik.
+            <?= $joy ?> 2.1.5. Universitetning ichki hujjatlarida belgilangan hollarda Talabani imtihonga kiritmaslik.
         </td>
     </tr>
 
@@ -264,7 +264,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4">
-            <?= $joy ?> b) hujjatlarni qalbakilashtirish, shu jumladan, imtixon savollariga javoblarni hamda shu kabi boshqa materiallarni imtixonga olib kirish, imtixon paytida ulardan foydalanish yoki boshqa talabalarga tarqatish;
+            <?= $joy ?> b) hujjatlarni qalbakilashtirish, shu jumladan, imtihon savollariga javoblarni hamda shu kabi boshqa materiallarni imtihonga olib kirish, imtihon paytida ulardan foydalanish yoki boshqa talabalarga tarqatish;
         </td>
     </tr>
 
@@ -854,7 +854,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4">
-            <?= $joy ?> - Talabani imtixonlarga kiritilishi;
+            <?= $joy ?> - Talabani imtihonlarga kiritilishi;
         </td>
     </tr>
 

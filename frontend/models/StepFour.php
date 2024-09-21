@@ -138,7 +138,7 @@ class StepFour extends Model
                 // '900687' => null, // Ta'lim shakli
                 // '900689' => null, // Ta'lim tili
                 // '900691' => null, // Ta'lim yo'nalishi
-                // '900739' => null, // Imtixon shakli
+                // '900739' => null, // imtihon shakli
             ];
 
             $updatedLead = $amoCrmClient->updateLead($leadId, $updatedFields, $tags, $message, $customFields);
