@@ -40,7 +40,7 @@ class StudentOperatorTypeSearch extends StudentOperatorType
      */
     public function search($params)
     {
-        $query = StudentOperatorType::find();
+        $query = StudentOperatorType::find()->where(['is_deleted' => 0]);
 
         // add conditions that should always apply here
 

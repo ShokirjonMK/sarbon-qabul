@@ -43,6 +43,32 @@ $breadcrumbs['item'][] = [
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
             'name',
+            [
+                'class' => ActionColumn::className(),
+                'contentOptions' => ['date-label' => 'Harakatlar' , 'class' => 'd-flex justify-content-around'],
+                'header'=> 'Harakatlar',
+                'buttons'  => [
+                    'view'   => function () {
+                        return false;
+                    },
+                    'update' => function () {
+                        return false;
+                    },
+                    'delete' => function ($url, $model) {
+                        $userRole = Yii::$app->user->identity->user_role;
+                        if ($userRole == 'supper_admin') {
+                            $url = Url::to(['delete', 'id' => $model->id]);
+                            return Html::a('<i class="fa fa-trash"></i>', $url, [
+                                'title'        => 'delete',
+                                'class' => 'tableIcon',
+                                'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
+                                'data-method'  => 'post',
+                            ]);
+                        }
+                        return false;
+                    },
+                ]
+            ],
         ],
     ]); ?>
 
