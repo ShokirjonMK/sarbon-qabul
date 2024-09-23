@@ -236,7 +236,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4" style="text-align: justify; line-height: 23px;">
-            2.2. Ushbu shartnoma bo‘yicha ta’lim oluvchini bir yillik o‘qitish uchun to‘lov 8,219,893.00 (sakkiz million ikki yuz o`n to`qqiz ming sakkiz yuz to`qson uch so'm) soʻmni tashkil etadi va quyidagi muddatlarda amalga oshiriladi:
+            2.2. Ushbu shartnoma bo‘yicha ta’lim oluvchini bir yillik o‘qitish uchun to‘lov <?= number_format((int)$contract->contract_price, 0, '', ' ') ?> ( <?= Contract::numUzStr($contract->contract_price) ?> soʻm ) soʻmni tashkil etadi va quyidagi muddatlarda amalga oshiriladi:
         </td>
     </tr>
 
