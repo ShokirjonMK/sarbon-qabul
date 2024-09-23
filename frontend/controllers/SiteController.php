@@ -4,10 +4,13 @@ namespace frontend\controllers;
 
 use common\components\AmoCrmClient;
 use common\components\AmoCrmSettings;
+use common\models\Exam;
 use common\models\Flayer;
 use common\models\Languages;
 use common\models\Std;
 use common\models\Student;
+use common\models\StudentDtm;
+use common\models\StudentPerevot;
 use common\models\Target;
 use common\models\User;
 use common\models\Verify;
@@ -18,6 +21,7 @@ use frontend\models\StepOne;
 use frontend\models\StepSecond;
 use frontend\models\StepThree;
 use frontend\models\VerifyEmailForm;
+use kartik\mpdf\Pdf;
 use Yii;
 use yii\base\InvalidArgumentException;
 use yii\web\BadRequestHttpException;
@@ -301,4 +305,62 @@ class SiteController extends Controller
         }
         throw new NotFoundHttpException();
     }
+
+    public function actionContract($key , $type)
+    {
+        $student = null;
+        $query = Exam::findOne(['contract_link' => $key , 'is_deleted' => 0]);
+        if (!$query) {
+            $query = StudentDtm::findOne(['contract_link' => $key , 'is_deleted' => 0]);
+            if (!$query) {
+                $query = StudentPerevot::findOne(['contract_link' => $key , 'is_deleted' => 0]);
+            }
+        }
+
+        if ($query) {
+            $student = $query->student;
+
+            $action = '';
+            if ($type == 2) {
+                $action = 'con2-uz';
+            } elseif ($type == 3) {
+                $action = 'con3-uz';
+            } else {
+                $errors[] = ['Type not\'g\'ri tanlandi!'];
+                Yii::$app->session->setFlash('error' , $errors);
+                return $this->redirect(['site/index']);
+            }
+
+            $pdf = Yii::$app->ikPdf;
+            $content = $pdf->contract($student , $action);
+
+            $pdf = new Pdf([
+                'mode' => Pdf::MODE_UTF8,
+                'format' => Pdf::FORMAT_A4,
+                'marginLeft' => 25,
+                'orientation' => Pdf::ORIENT_PORTRAIT,
+                'destination' => Pdf::DEST_DOWNLOAD,
+                'content' => $content,
+                'cssInline' => '
+                body {
+                    color: #000000;
+                }
+            ',
+                'filename' => date('YmdHis') . ".pdf",
+                'options' => [
+                    'title' => 'Contract',
+                    'subject' => 'Student Contract',
+                    'keywords' => 'pdf, contract, student',
+                ],
+            ]);
+
+            return $pdf->render();
+        } else {
+            $errors[] = ['Shartnoma topilmadi.'];
+            Yii::$app->session->setFlash('error' , $errors);
+            return $this->redirect(['site/index']);
+        }
+    }
+
+
 }
