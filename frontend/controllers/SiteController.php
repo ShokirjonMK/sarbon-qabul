@@ -309,11 +309,11 @@ class SiteController extends Controller
     public function actionContract($key , $type)
     {
         $student = null;
-        $query = Exam::findOne(['contract_link' => $key , 'is_deleted' => 0]);
+        $query = Exam::findOne(['contract_link' => $key , 'is_deleted' => 0 , 'status' => 3]);
         if (!$query) {
-            $query = StudentDtm::findOne(['contract_link' => $key , 'is_deleted' => 0]);
+            $query = StudentDtm::findOne(['contract_link' => $key , 'is_deleted' => 0 , 'file_status' => 2]);
             if (!$query) {
-                $query = StudentPerevot::findOne(['contract_link' => $key , 'is_deleted' => 0]);
+                $query = StudentPerevot::findOne(['contract_link' => $key , 'is_deleted' => 0 , 'file_status' => 2]);
             }
         }
 
