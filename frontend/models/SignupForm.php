@@ -129,6 +129,17 @@ class SignupForm extends Model
                 }
             }
 
+            $domen = $_SERVER['HTTP_HOST'];
+            if ($domen == "edu.sarbon.university") {
+                $user->cons_id = 5;
+            } elseif ($domen == "tashkent.sarbon.university") {
+                $user->cons_id = 4;
+            } elseif ($domen == "talim.sarbon.university") {
+                $user->cons_id = 6;
+            } elseif ($domen == "uz.sarbon.university") {
+                $user->cons_id = 7;
+            }
+
             if ($user->save(false)) {
                 $newAuth = new AuthAssignment();
                 $newAuth->item_name = 'student';
