@@ -25,7 +25,7 @@ class Message extends \yii\db\ActiveRecord
     public static function sendSms($phone, $text)
     {
         $phone = preg_replace("/[^0-9]/", "", $phone);
-        $text = 'SARBON UNIVERSITETI  - tasdiqlash kodi: '. $text;
+        $text = 'SARBON UNIVERSITETI tizimiga kirish uchun tasdiqlash kodi:'. $text;
         $data = '{
                 "messages":
                     [
@@ -101,7 +101,7 @@ class Message extends \yii\db\ActiveRecord
         $response = curl_exec($curl);
         $err = curl_error($curl);
         curl_close($curl);
-        return $phone." --- ".$response;
+        return $response;
     }
 
 }
