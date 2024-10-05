@@ -46,7 +46,7 @@ class TelegramSearch extends Telegram
     {
         $user = \Yii::$app->user->identity;
         $query = Telegram::find()
-            ->where(['is_deleted' => 0 , 'cons_id' => $user->cons_id]);
+            ->where(['is_deleted' => 0]);
 
         // add conditions that should always apply here
 
