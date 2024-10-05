@@ -76,7 +76,6 @@ class TelegramSearch extends Telegram
             $query->andFilterWhere(['<=', 'confirm_date', date("Y-m-d H:i:s", strtotime($this->end_date))]);
         }
 
-
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
