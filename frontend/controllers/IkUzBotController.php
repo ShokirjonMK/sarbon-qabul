@@ -106,7 +106,7 @@ class IkUzBotController extends Controller
                     if ($userOne->bot_status == 0) {
                         $userOne->bot_status = 1;
                         $userOne->save(false);
-                        $second_chat_id = -1002417014650;
+                        $second_chat_id = -1002335501961;
                         $telegram->sendMessage([
                             'chat_id' => $second_chat_id,
                             'text' => $mes,
@@ -510,7 +510,7 @@ class IkUzBotController extends Controller
                         if ($userOne->bot_status == 0) {
                             $userOne->bot_status = 1;
                             $userOne->save(false);
-                            $second_chat_id = -1002417014650;
+                            $second_chat_id = -1002335501961;
                             $telegram->sendMessage([
                                 'chat_id' => $second_chat_id,
                                 'text' => $mes,
@@ -612,7 +612,7 @@ class IkUzBotController extends Controller
                         if ($userOne->bot_status == 0) {
                             $userOne->bot_status = 1;
                             $userOne->save(false);
-                            $second_chat_id = -1002417014650;
+                            $second_chat_id = -1002335501961;
                             $telegram->sendMessage([
                                 'chat_id' => $second_chat_id,
                                 'text' => $mes,
@@ -701,7 +701,7 @@ class IkUzBotController extends Controller
                         if ($userOne->bot_status == 0) {
                             $userOne->bot_status = 1;
                             $userOne->save(false);
-                            $second_chat_id = -1002417014650;
+                            $second_chat_id = -1002335501961;
                             $telegram->sendMessage([
                                 'chat_id' => $second_chat_id,
                                 'text' => $mes,
@@ -783,7 +783,7 @@ class IkUzBotController extends Controller
                     if ($userOne->bot_status == 0) {
                         $userOne->bot_status = 1;
                         $userOne->save(false);
-                        $second_chat_id = -1002417014650;
+                        $second_chat_id = -1002335501961;
                         $telegram->sendMessage([
                             'chat_id' => $second_chat_id,
                             'text' => $mes,
