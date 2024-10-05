@@ -117,7 +117,8 @@ class TelegramController extends Controller
     public function actionDeleteCanel($id)
     {
         $model = $this->findModel($id);
-        $model->bot_status = 5;
+        $model->bot_status = 3;
+        $model->is_deleted = 10;
         $model->save(false);
         return $this->redirect(['index']);
     }
@@ -129,7 +130,7 @@ class TelegramController extends Controller
         $user = Yii::$app->user->identity;
 
         if ($user->user_role == "supper_admin" || $user->user_role == "admin") {
-            $model->is_deleted = 1;
+            $model->is_deleted = 5;
             $model->save(false);
         } else {
             $errors[] = ["Ma'lumotni o'chirish imkonsiz!!!"];
@@ -150,7 +151,8 @@ class TelegramController extends Controller
 
     protected function findModel($id)
     {
-        if (($model = Telegram::findOne(['id' => $id , 'is_deleted' => 0])) !== null) {
+        $user = Yii::$app->user->identity;
+        if (($model = Telegram::findOne(['id' => $id , 'is_deleted' => 0 , 'cons_id' => $user->cons_id])) !== null) {
             return $model;
         }
 

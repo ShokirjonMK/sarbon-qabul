@@ -11,6 +11,7 @@ use Yii;
  * @property string|null $chat_id
  * @property int|null $step
  * @property int|null $lang_id
+ * @property int|null $cons_id
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string|null $middle_name
@@ -57,7 +58,7 @@ class Telegram extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['step', 'lang_id', 'gender', 'edu_year_type_id', 'edu_year_form_id', 'direction_id', 'language_id', 'direction_course_id', 'exam_type', 'is_deleted' , 'bot_status'], 'integer'],
+            [['step', 'time', 'cons_id', 'lang_id', 'gender', 'edu_year_type_id', 'edu_year_form_id', 'direction_id', 'language_id', 'direction_course_id', 'exam_type', 'is_deleted' , 'bot_status'], 'integer'],
             [['chat_id', 'first_name', 'last_name', 'middle_name', 'phone', 'passport_serial', 'passport_number', 'passport_pin', 'birthday', 'passport_issued_date', 'passport_given_date', 'passport_given_by', 'edu_name', 'edu_direction' , 'confirm_date' , 'username'], 'string', 'max' => 255],
             [['direction_course_id'], 'exist', 'skipOnError' => true, 'targetClass' => DirectionCourse::class, 'targetAttribute' => ['direction_course_id' => 'id']],
             [['direction_id'], 'exist', 'skipOnError' => true, 'targetClass' => Direction::class, 'targetAttribute' => ['direction_id' => 'id']],
@@ -172,6 +173,7 @@ class Telegram extends \yii\db\ActiveRecord
                     $user->status = 10;
                     $user->step = 1;
                     $user->chat_id = $model->chat_id;
+                    $user->cons_id = $model->cons_id;
 
                     if ($user->save(false)) {
                         $newAuth = new AuthAssignment();
@@ -398,9 +400,6 @@ class Telegram extends \yii\db\ActiveRecord
                     }
                     $user->save(false);
                 } else {
-
-
-
                     if ($userFind->chat_id == null) {
                         $userFind->chat_id = $model->chat_id;
                         $userFind->save(false);
@@ -447,10 +446,8 @@ class Telegram extends \yii\db\ActiveRecord
         ])->andWhere(['<>' , 'id' , $model->id])->all();
 
         foreach ($telegrams as $v) {
-            TelegramOferta::deleteAll(['telegram_id' => $v->id]);
-            TelegramPerevot::deleteAll(['telegram_id' => $v->id]);
-            TelegramDtm::deleteAll(['telegram_id' => $v->id]);
-            $v->delete();
+            $v->is_deleted = 15;
+            $v->save(false);
         }
 
         $telegrams = Telegram::find()
@@ -459,10 +456,8 @@ class Telegram extends \yii\db\ActiveRecord
             ])->andWhere(['<>' , 'id' , $model->id])->all();
 
         foreach ($telegrams as $v) {
-            TelegramOferta::deleteAll(['telegram_id' => $v->id]);
-            TelegramPerevot::deleteAll(['telegram_id' => $v->id]);
-            TelegramDtm::deleteAll(['telegram_id' => $v->id]);
-            $v->delete();
+            $v->is_deleted = 15;
+            $v->save(false);
         }
     }
 
