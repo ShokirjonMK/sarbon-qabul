@@ -7,6 +7,7 @@ use yii\grid\ActionColumn;
 use yii\grid\GridView;
 use yii\widgets\LinkPager;
 use kartik\export\ExportMenu;
+use common\models\Constalting;
 
 /** @var yii\web\View $this */
 /** @var common\models\TelegramSearch $searchModel */
@@ -77,6 +78,20 @@ $breadcrumbs['item'][] = [
                 return "<div class='badge-table-div active'><span>". $model->step ." - qadam</span></div>";
             },
         ],
+
+        [
+            'attribute' => 'Hamkor',
+            'contentOptions' => ['date-label' => 'Hamkor'],
+            'format' => 'raw',
+            'value' => function($model) {
+                $sarbon = Constalting::findOne($model->cons_id);
+                if ($sarbon) {
+                    return "<div class='badge-table-div active'><span>". $sarbon->name ."</span></div>";
+                }
+                return "<div class='badge-table-div active'><span> --- </span></div>";
+            },
+        ],
+
         [
             'attribute' => 'Status',
             'contentOptions' => ['date-label' => 'Status'],
