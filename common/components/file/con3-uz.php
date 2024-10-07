@@ -124,7 +124,7 @@ $limg = $lqr->writeDataUri();
     <tr>
         <td colspan="4" style="text-align: center; line-height: 23px;">
             <b>
-                To‘lov-kontrakt (Ikki tomonlama) asosida mutaxassis tayyorlashga <br>
+                To‘lov-kontrakt (uch tomonlama) asosida mutaxassis tayyorlashga <br>
                 KONTRAKT № <?= $code ?>/<?= str_replace('.', '', $direction->code) ?>/<?= $contract->id ?>
             </b>
         </td>
@@ -662,7 +662,7 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4" style="text-align: justify; line-height: 23px;">
-            6.8. Shartnoma 2 (ikki)  nusxada, tomonlarning har biri  uchun bir nusxadan tuzildi va ikkala nusxa ham  bir xil huquqiy kuchga ega.
+            6.8. Shartnoma 3 (uch)  nusxada, tomonlarning har biri  uchun bir nusxadan tuzildi va ikkala nusxa ham  bir xil huquqiy kuchga ega.
         </td>
     </tr>
 
