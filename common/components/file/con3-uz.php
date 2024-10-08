@@ -147,8 +147,8 @@ $limg = $lqr->writeDataUri();
             2013-yil 26-fevral) bilan tasdiqlangan Oliy va o‘rta maxsus, kasb-hunar ta’limi muassasalarida o‘qitishning to‘lov-shartnoma
             shakli va undan tushgan mablag‘larni taqsimlash tartibi to‘g‘risidagi Nizomga muvofiq, <b>SARBON UNIVERSITETI</b> oliy ta’lim
             tashkiloti (keyingi o‘rinlarda “Ta’lim muassasasi”) nomidan Ustav asosida ish yurituvchi
-            direktor <b>SOBIRJONOV NODIRJON QODIRJONOVICH</b> birinchi tomondan, (keyingi o‘rinlarda “<b>Buyurtmachi</b>”) nomidan
-            ______ _______ _______ asosida ish yurituvchi ________ ________ ________ ________ ________ ________ ________ ________
+            direktor <b>SOBIRJONOV NODIRJON QODIRJONOVICH</b> birinchi tomondan,  _______ ________ ________ _______ ________ _________ ________ _________ _________
+            (keyingi o‘rinlarda “<b>Buyurtmachi</b>”) nomidan ______ _______ _______ _______ _______ asosida ish yurituvchi ________ ________ ________ ________ ________ yoki fuqaro ________ ________ ________
             <b><?= $full_name ?></b> (keyingi o‘rinlarda “<b>Ta’lim oluvchi</b>”) ikkinchi tomondan, keyingi o‘rinlarda birgalikda “Tomonlar” deb ataluvchilar o‘rtasida mazkur shartnoma quyidagilar haqida tuzildi:
         </td>
     </tr>
