@@ -451,8 +451,9 @@
     /*background-position: top;*/
     /*background-size: cover;*/
     /*background-repeat: no-repeat;*/
-    background: rgb(1,89,101);
-    background: linear-gradient(345deg, rgba(1,89,101,1) 0%, rgba(45,66,85,1) 100%);
+    background: rgb(45,66,85);
+    background: linear-gradient(90deg, rgba(45,66,85,1) 9%, rgba(1,89,101,1) 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);;
 }
 
 
@@ -921,6 +922,61 @@
 }
 
 
+.main2 {
+    width: 100%;
+    height: 85vh;
+    background-image: url("/frontend/web/images/building.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+.main2_item {
+    width: 100%;
+    height: 100%;
+    background: rgb(45,66,85);
+    background: linear-gradient(90deg, rgba(45,66,85,0.80) 9%, rgba(1,89,101,0.70) 100%);
+}
+
+.main2_item_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main2_item_box_left {
+    width: 60%;
+}
+.main2_item_box_left h2 {
+    color: #fff;
+    text-align: center;
+
+}
+/*.main2_item_box_right {*/
+/*    width: 48%;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    gap: 20px;*/
+/*}*/
+.main2_item_box_right_1 {
+    width: 180px;
+    height: 380px;
+    border: 1px solid var(--red-color);
+    border-radius: 100px;
+    padding: 2px;
+}
+.main2_item_box_right_2 {
+    width: 220px;
+    height: 500px;
+    border: 1px solid var(--red-color);
+    border-radius: 100px;
+    padding: 2px;
+}
+
+
+
+
 
 
 
@@ -1053,6 +1109,12 @@
     .banner-link,
     .top50 {
         margin-top: 30px;
+    }
+    .main2_item_box_left {
+        width: 100%;
+    }
+    .main2 {
+        height: 100vh;
     }
 }
 @media screen and (max-width: 700px) {
