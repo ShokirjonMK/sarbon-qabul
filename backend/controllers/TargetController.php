@@ -148,7 +148,7 @@ class TargetController extends Controller
     protected function findModel($id)
     {
         $userConsId = \Yii::$app->user->identity->cons_id;
-        if (($model = Target::findOne(['id' => $id , 'cons_id' => $userConsId])) !== null) {
+        if (($model = Target::findOne(['id' => $id])) !== null) {
             return $model;
         }
 
