@@ -150,7 +150,7 @@ $limg = $lqr->writeDataUri();
             direktor <b>SOBIRJONOV NODIRJON QODIRJONOVICH</b> birinchi tomondan,
             <table width="100%">
                 <tr>
-                    <td colspan="4">__________________________________________________________________________________ _____________________</td>
+                    <td colspan="4">__________________________________________________________________________________</td>
                 </tr>
             </table>
             (keyingi o‘rinlarda “Buyurtmachi”) nomidan _____________________________________________________ asosida ish yurituvchi _______________________ __________________________ yoki fuqaro
