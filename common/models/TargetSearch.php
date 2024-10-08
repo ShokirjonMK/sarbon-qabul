@@ -41,7 +41,7 @@ class TargetSearch extends Target
     public function search($params)
     {
         $user = \Yii::$app->user->identity;
-        $query = Target::find()->where(['is_deleted' => 0]);
+        $query = Target::find()->where(['cons_id' => $user->cons_id,'is_deleted' => 0]);
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
