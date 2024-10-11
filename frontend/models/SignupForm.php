@@ -144,6 +144,10 @@ class SignupForm extends Model
                 $user->cons_id = 9;
             } elseif ($domen == "mahalla.sarbon.university") {
                 $user->cons_id = 10;
+            } elseif ($domen == "c-cons.sarbon.university") {
+                $user->cons_id = 11;
+            } elseif ($domen == "s-lion.sarbon.university") {
+                $user->cons_id = 12;
             }
 
             if ($user->save(false)) {
