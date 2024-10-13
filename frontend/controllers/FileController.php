@@ -335,9 +335,9 @@ class FileController extends Controller
 
         $action = '';
         if ($type == 2) {
-            $action = 'con2-uz';
+            $action = 'con2';
         } elseif ($type == 3) {
-            $action = 'con3-uz';
+            $action = 'con3';
         } else {
             $errors[] = ['Type not\'g\'ri tanlandi!'];
             Yii::$app->session->setFlash('error' , $errors);
