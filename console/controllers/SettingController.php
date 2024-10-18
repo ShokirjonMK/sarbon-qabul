@@ -173,22 +173,30 @@ class SettingController extends Controller
     {
         $transaction = Yii::$app->db->beginTransaction();
         $errors = [];
-        $inputFileName = __DIR__ . '/excels/ped.xlsx';
+        $inputFileName = __DIR__ . '/excels/10.10.2024 (2).xlsx';
         $spreadsheet = IOFactory::load($inputFileName);
         $data = $spreadsheet->getActiveSheet()->toArray();
 
-        $direction = 'Psixologiya';
-        $text = 'Hurmatli abituriyent! \n\t\n Siz Sarbon unversiteti '.$direction.' yo\'nalishi talabasi bo\'lish imkoniyati bor! \n\t\n Imkoniyatni qo’ldan boy bermang! \n Quyidagi havola orqali ro‘yxatdan o‘ting. \n http://tashkent.sarbon.university \n\t\n Ma’lumot uchun: +998788882288';
+//        $direction = 'Psixologiya';
+//        $text = 'Hurmatli abituriyent! \n\t\n Siz Sarbon unversiteti '.$direction.' yo\'nalishi talabasi bo\'lish imkoniyati bor! \n\t\n Imkoniyatni qo’ldan boy bermang! \n Quyidagi havola orqali ro‘yxatdan o‘ting. \n http://tashkent.sarbon.university \n\t\n Ma’lumot uchun: +998788882288';
 
-        $bt = 0;
-        foreach ($data as $key => $row) {
-            if ($key != 0) {
-                $phone = $row[0];
-                $result = Message::sendedSms($phone , $text);
-                $bt++;
-                echo $result." - ".$bt."\n";
-            }
-        }
+        $text1 = 'Hurmatli abituriyent! \n\t\n Toshkent shahrida yangi tashkil etilgan Sarbon universiteti oʻz faoliyatini boshladi. \n Qabul davom etmoqda. Quyida yoʻnalishlar bilan tanishing: \n https://telegra.ph/Yonalishlar-10-12 \n\t\n Qabul: https://t.me/SarbonUzQabulBot \n Aloqa markazi: 99 232 80 20';
+
+        $phone = '+998945055250';
+        $result = Message::sendedSms($phone , $text1);
+
+        dd($result);
+//        $bt = 0;
+//        foreach ($data as $key => $row) {
+//            if ($row[0] > 0) {
+//                $phone = $row[0];
+//                $result = Message::sendedSms($phone , $text1);
+//                $bt++;
+//                echo $result." - ".$bt."\n";
+//            } else {
+//                break;
+//            }
+//        }
 
 
         if (count($errors) == 0) {
@@ -205,17 +213,18 @@ class SettingController extends Controller
     {
         $transaction = Yii::$app->db->beginTransaction();
         $errors = [];
-        $inputFileName = __DIR__ . '/excels/ozbek.xlsx';
+        $inputFileName = __DIR__ . '/excels/10.10.2024 (3).xlsx';
         $spreadsheet = IOFactory::load($inputFileName);
         $data = $spreadsheet->getActiveSheet()->toArray();
 
-        $direction = 'Filologiya va tillarni oʻqitish: Oʻzbek tili';
-        $text = 'Hurmatli abituriyent! \n\t\n Siz Sarbon unversiteti '.$direction.' yo\'nalishi talabasi bo\'lish imkoniyati bor! \n\t\n Imkoniyatni qo’ldan boy bermang! \n Quyidagi havola orqali ro‘yxatdan o‘ting. \n http://tashkent.sarbon.university \n\t\n Ma’lumot uchun: +998788882288';
+        $direction = 'Iqtisodiyot';
+        $text = 'Hurmatli abituriyent! \n\t\n Siz Sarbon unversiteti '.$direction.' yo\'nalishi talabasi bo\'lish imkoniyati bor! \n\t\n Imkoniyatni qo’ldan boy bermang! \n Quyidagi havola orqali ro‘yxatdan o‘ting. \n https://t.me/SarbonUzQabulBot \n\t\n Ma’lumot uchun: +998992328020';
+
 
         $bt = 0;
         foreach ($data as $key => $row) {
             if ($key != 0) {
-                $phone = $row[0];
+                $phone = '+998'.$row[0];
                 $result = Message::sendedSms($phone , $text);
                 $bt++;
                 echo $result." - ".$bt."\n";

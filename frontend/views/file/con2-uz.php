@@ -642,20 +642,20 @@ $limg = $lqr->writeDataUri();
 
     <tr>
         <td colspan="4">
-            <?= $joy ?> 3.3.1. 2024-yil 1-oktabrga qadar – 25 foizidan kam bo‘lmagan miqdorda.
+            <?= $joy ?> 3.3.1. 2024-yil 15-noyabrga qadar – 25 foizidan kam bo‘lmagan miqdorda.
         </td>
     </tr>
 
 
     <tr>
         <td colspan="4">
-            <?= $joy ?> 3.3.2. 2024-yil 15-dekabrga qadar – 50 foizidan kam bo‘lmagan miqdorda.
+            <?= $joy ?> 3.3.2. 2024-yil 25-dekabrga qadar – 50 foizidan kam bo‘lmagan miqdorda.
         </td>
     </tr>
 
     <tr>
         <td colspan="4">
-            <?= $joy ?> 3.3.3. 2025-yil 15-fevralga qadar – 75 foizidan kam bo‘lmagan miqdorda.
+            <?= $joy ?> 3.3.3. 2025-yil 1-martga qadar – 75 foizidan kam bo‘lmagan miqdorda.
         </td>
     </tr>
 
