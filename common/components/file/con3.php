@@ -339,12 +339,12 @@ $limg = $lqr->writeDataUri();
     <tr>
         <td colspan="2" style="text-align: justify; vertical-align: top; border: 1px solid #000;">
             Choraklarga bo‘lib to‘langanda quyidagi muddatlarda: <br>
-            - belgilangan to‘lov miqdorining kamida 25.00 foizini talabalikka tavsiya etilgan abiturientlar uchun 15.10.2024 gacha, ikkinchi va undan yuqori bosqich talabalar uchun 01.11.2024 gacha; <br>
+            - belgilangan to‘lov miqdorining kamida 25.00 foizini talabalikka tavsiya etilgan abiturientlar uchun 15.11.2024 gacha, ikkinchi va undan yuqori bosqich talabalar uchun 25.11.2024 gacha; <br>
             - belgilangan to‘lov miqdorining kamida 50.00 foizini 01.01.2025 gacha, 75.00 foizini 01.04.2025 gacha va 100.00 foizini 01.06.2025 gacha.
         </td>
         <td colspan="2" style="text-align: justify; vertical-align: top; border: 1px solid #000;">
             При оплате по кварталам в следующие сроки: <br>
-            - не менее 25%　от установленной суммы абитуриентами, рекомендованными к зачислению, до 15.10.2024, для студентов второго и последующих курсов - до 01.11.2024;<br>
+            - не менее 25%　от установленной суммы абитуриентами, рекомендованными к зачислению, до 15.11.2024, для студентов второго и последующих курсов - до 25.11.2024;<br>
             - не менее 50% от установленной суммы до 01.01.2025, 75% до 01.04.2025, и 100% до 01.06.2025.
         </td>
     </tr>
