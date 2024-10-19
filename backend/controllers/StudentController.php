@@ -89,16 +89,16 @@ class StudentController extends Controller
         ]);
     }
 
-    public function actionAll()
-    {
-        $searchModel = new StudentSearch();
-        $dataProvider = $searchModel->all($this->request->queryParams);
-
-        return $this->render('all', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
-    }
+//    public function actionAll()
+//    {
+//        $searchModel = new StudentSearch();
+//        $dataProvider = $searchModel->all($this->request->queryParams);
+//
+//        return $this->render('all', [
+//            'searchModel' => $searchModel,
+//            'dataProvider' => $dataProvider,
+//        ]);
+//    }
 
     public function actionSendSms($id)
     {

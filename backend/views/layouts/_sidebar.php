@@ -222,12 +222,12 @@ function getActiveTwo($cont, $act)
                     </a>
                 </li>
 
-                <li class="sidebar_li">
-                    <a href="<?= Url::to(['student/all']) ?>" class="sidebar_li_link">
-                        <i class="i-n fa-solid fa-graduation-cap"></i>
-                        <span>Ariza izlash</span>
-                    </a>
-                </li>
+<!--                <li class="sidebar_li">-->
+<!--                    <a href="--><?php //= Url::to(['student/all']) ?><!--" class="sidebar_li_link">-->
+<!--                        <i class="i-n fa-solid fa-graduation-cap"></i>-->
+<!--                        <span>Ariza izlash</span>-->
+<!--                    </a>-->
+<!--                </li>-->
 
                 <li class="sidebar_li">
                     <a href="<?= Url::to(['telegram/index']) ?>" class="sidebar_li_link">
