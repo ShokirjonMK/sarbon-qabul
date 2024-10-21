@@ -78,6 +78,19 @@ class StudentController extends Controller
         ]);
     }
 
+    public function actionIkAll($id)
+    {
+        $edu_type = $this->eduTypeFindModel($id);
+        $searchModel = new StudentSearch();
+        $dataProvider = $searchModel->search2($this->request->queryParams, $edu_type);
+
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+            'edu_type' => $edu_type
+        ]);
+    }
+
     public function actionUserStep()
     {
         $searchModel = new StudentSearch();
