@@ -66,7 +66,30 @@ $breadcrumbs['item'][] = [
             'contentOptions' => ['date-label' => 'Tel raqam'],
             'format' => 'raw',
             'value' => function($model) {
-                return $model->user->username;
+                $user = Yii::$app->user->identity;
+                if ($user->cons_id == 5) {
+                    $domen = 'edu';
+                } elseif ($user->cons_id == 4) {
+                    $domen = 'tashkent';
+                } elseif ($user->cons_id == 6) {
+                    $domen = 'talim';
+                } elseif ($user->cons_id == 7) {
+                    $domen = 'uz';
+                } elseif ($user->cons_id == 8) {
+                    $domen = 'sam';
+                } elseif ($user->cons_id == 9) {
+                    $domen = 'uzedu';
+                } elseif ($user->cons_id == 10) {
+                    $domen = 'mahalla';
+                } elseif ($user->cons_id == 11) {
+                    $domen = 'c-cons';
+                } elseif ($user->cons_id == 12) {
+                    $domen = 's-lion';
+                } else {
+                    $domen = 'qabul';
+                }
+                $text = "<br><div class='badge-table-div active mt-2'>".$domen.".sarbon.university</div>";
+                return $model->user->username.$text;
             },
         ],
         [

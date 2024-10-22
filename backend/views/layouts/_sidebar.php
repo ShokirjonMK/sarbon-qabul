@@ -73,178 +73,208 @@ function getActiveTwo($cont, $act)
                         <span>Bosh sahifa</span>
                     </a>
                 </li>
-                <li class="sidebar_li">
-                    <a href="<?= Url::to(['target/index']) ?>" class="sidebar_li_link">
-                        <i class="i-n fa-solid fa-arrows-down-to-people"></i>
-                        <span>Target</span>
-                    </a>
-                </li>
 
-                <?php if ($role->name == 'supper_admin' || $role->name == 'admin') : ?>
+                <?php if ($user->id == 323231111111) :  ?>
 
                     <li class="sidebar_li sidebar_drop">
                         <a href="javascript: void(0);" class="sidebar_li_link">
                             <i class="i-n fa-solid fa-graduation-cap"></i>
                             <span>
+                                Arizalar
+                            </span>
+                            <i class="icon-n fa-solid fa-chevron-right"></i>
+                        </a>
+                        <div class="menu_drop">
+                            <ul class="sub_menu_ul">
+                                <?php if (count($eduYearTypes) > 0) : ?>
+                                    <?php foreach ($eduYearTypes as $eduYearType) : ?>
+                                        <li class="sub_menu_li">
+                                            <a href="<?= Url::to(['student/index' , 'id' => $eduYearType->id]) ?>">
+                                                <?= $eduYearType->eduType->name_uz ?>
+                                            </a>
+                                        </li>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </ul>
+                        </div>
+                    </li>
+
+                <?php else:  ?>
+
+                    <li class="sidebar_li">
+                        <a href="<?= Url::to(['target/index']) ?>" class="sidebar_li_link">
+                            <i class="i-n fa-solid fa-arrows-down-to-people"></i>
+                            <span>Target</span>
+                        </a>
+                    </li>
+
+                    <?php if ($role->name == 'supper_admin' || $role->name == 'admin') : ?>
+
+                        <li class="sidebar_li sidebar_drop">
+                            <a href="javascript: void(0);" class="sidebar_li_link">
+                                <i class="i-n fa-solid fa-graduation-cap"></i>
+                                <span>
                             Ta'lim jarayoni
                         </span>
-                            <i class="icon-n fa-solid fa-chevron-right"></i>
-                        </a>
-                        <div class="menu_drop">
-                            <ul class="sub_menu_ul">
-                                <li class="sub_menu_li">
-                                    <a href="<?= Url::to(['drift/index']) ?>" class="<?= getActiveSubMenu('', '') ?>">
-                                        Yo'nalishlar
-                                    </a>
-                                </li>
-                                <li class="sub_menu_li">
-                                    <a href="<?= Url::to(['std/index']) ?>">
-                                        Talabalar
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="sidebar_li">
-                        <a href="<?= Url::to(['employee/index']) ?>" class="sidebar_li_link">
-                            <i class="i-n fa-solid fa-user-group"></i>
-                            <span>Xodimlar</span>
-                        </a>
-                    </li>
-                <?php endif; ?>
-
-                <?php if ($role->name == 'supper_admin') : ?>
-                    <li class="sidebar_li">
-                        <a href="<?= Url::to(['constalting/index']) ?>" class="sidebar_li_link">
-                            <i class="i-n fa-solid fa-handshake"></i>
-                            <span>Hamkorlar</span>
-                        </a>
-                    </li>
-
-                    <li class="sidebar_li">
-                        <a href="<?= Url::to(['subjects/index']) ?>" class="sidebar_li_link <?= getActiveTwo( 'subjects', 'index'); ?>">
-                            <i class="i-n fa-solid fa-book"></i>
-                            <span>Fanlar</span>
-                        </a>
-                    </li>
-
-                    <li class="sidebar_li">
-                        <a href="<?= Url::to(['edu-year/index']) ?>" class="sidebar_li_link">
-                            <i class="i-n fa-solid fa-calendar-days"></i>
-                            <span>Ta'lim yillari</span>
-                        </a>
-                    </li>
-
-                    <li class="sidebar_li sidebar_drop">
-                        <a href="javascript: void(0);" class="sidebar_li_link">
-                            <i class="i-n fa-solid fa-graduation-cap"></i>
-                            <span>
-                            Ta'lim shakillari
-                        </span>
-                            <i class="icon-n fa-solid fa-chevron-right"></i>
-                        </a>
-                        <div class="menu_drop">
-                            <ul class="sub_menu_ul">
-                                <li class="sub_menu_li">
-                                    <a href="<?= Url::to(['edu-form/index']) ?>" class="<?= getActiveSubMenu('', '') ?>">
-                                        Ta'lim shakillari
-                                    </a>
-                                </li>
-                                <li class="sub_menu_li">
-                                    <a href="<?= Url::to(['edu-year-form/index']) ?>">
-                                        Yil bo'yicha
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li class="sidebar_li sidebar_drop">
-                        <a href="javascript: void(0);" class="sidebar_li_link">
-                            <i class="i-n fa-solid fa-graduation-cap"></i>
-                            <span>
-                            Qabul turlari
-                        </span>
-                            <i class="icon-n fa-solid fa-chevron-right"></i>
-                        </a>
-                        <div class="menu_drop">
-                            <ul class="sub_menu_ul">
-                                <li class="sub_menu_li">
-                                    <a href="<?= Url::to(['edu-type/index']) ?>" class="<?= getActiveSubMenu('', '') ?>">
-                                        Qabul turlari
-                                    </a>
-                                </li>
-                                <li class="sub_menu_li">
-                                    <a href="<?= Url::to(['edu-year-type/index']) ?>">
-                                        Yil bo'yicha
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                <?php endif; ?>
-
-                <li class="sidebar_li">
-                    <a href="<?= Url::to(['direction/index']) ?>" class="sidebar_li_link">
-                        <i class="i-n fa-solid fa-bars-staggered"></i>
-                        <span>Yo'nalishlar</span>
-                    </a>
-                </li>
-
-                <li class="sidebar_li sidebar_drop">
-                    <a href="javascript: void(0);" class="sidebar_li_link">
-                        <i class="i-n fa-solid fa-graduation-cap"></i>
-                        <span>
-                            Arizalar
-                        </span>
-                        <i class="icon-n fa-solid fa-chevron-right"></i>
-                    </a>
-                    <div class="menu_drop">
-                        <ul class="sub_menu_ul">
-                            <?php if (count($eduYearTypes) > 0) : ?>
-                                <?php foreach ($eduYearTypes as $eduYearType) : ?>
+                                <i class="icon-n fa-solid fa-chevron-right"></i>
+                            </a>
+                            <div class="menu_drop">
+                                <ul class="sub_menu_ul">
                                     <li class="sub_menu_li">
-                                        <a href="<?= Url::to(['student/index' , 'id' => $eduYearType->id]) ?>">
-                                            <?= $eduYearType->eduType->name_uz ?>
+                                        <a href="<?= Url::to(['drift/index']) ?>" class="<?= getActiveSubMenu('', '') ?>">
+                                            Yo'nalishlar
                                         </a>
                                     </li>
-                                <?php endforeach; ?>
-                            <?php endif; ?>
-                        </ul>
-                    </div>
-                </li>
+                                    <li class="sub_menu_li">
+                                        <a href="<?= Url::to(['std/index']) ?>">
+                                            Talabalar
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
 
-                <li class="sidebar_li">
-                    <a href="<?= Url::to(['student/user-step']) ?>" class="sidebar_li_link">
-                        <i class="i-n fa-solid fa-graduation-cap"></i>
-                        <span>Chala arizalar</span>
-                    </a>
-                </li>
+                        <li class="sidebar_li">
+                            <a href="<?= Url::to(['employee/index']) ?>" class="sidebar_li_link">
+                                <i class="i-n fa-solid fa-user-group"></i>
+                                <span>Xodimlar</span>
+                            </a>
+                        </li>
+                    <?php endif; ?>
 
-<!--                <li class="sidebar_li">-->
-<!--                    <a href="--><?php //= Url::to(['student/all']) ?><!--" class="sidebar_li_link">-->
-<!--                        <i class="i-n fa-solid fa-graduation-cap"></i>-->
-<!--                        <span>Ariza izlash</span>-->
-<!--                    </a>-->
-<!--                </li>-->
+                    <?php if ($role->name == 'supper_admin') : ?>
+                        <li class="sidebar_li">
+                            <a href="<?= Url::to(['constalting/index']) ?>" class="sidebar_li_link">
+                                <i class="i-n fa-solid fa-handshake"></i>
+                                <span>Hamkorlar</span>
+                            </a>
+                        </li>
 
-                <li class="sidebar_li">
-                    <a href="<?= Url::to(['telegram/index']) ?>" class="sidebar_li_link">
-                        <i class="i-n fa-brands fa-telegram"></i>
-                        <span>Telegram bot</span>
-                    </a>
-                </li>
+                        <li class="sidebar_li">
+                            <a href="<?= Url::to(['subjects/index']) ?>" class="sidebar_li_link <?= getActiveTwo( 'subjects', 'index'); ?>">
+                                <i class="i-n fa-solid fa-book"></i>
+                                <span>Fanlar</span>
+                            </a>
+                        </li>
 
-                <?php if ($role->name == 'supper_admin' || $role->name == 'admin') : ?>
+                        <li class="sidebar_li">
+                            <a href="<?= Url::to(['edu-year/index']) ?>" class="sidebar_li_link">
+                                <i class="i-n fa-solid fa-calendar-days"></i>
+                                <span>Ta'lim yillari</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar_li sidebar_drop">
+                            <a href="javascript: void(0);" class="sidebar_li_link">
+                                <i class="i-n fa-solid fa-graduation-cap"></i>
+                                <span>
+                            Ta'lim shakillari
+                        </span>
+                                <i class="icon-n fa-solid fa-chevron-right"></i>
+                            </a>
+                            <div class="menu_drop">
+                                <ul class="sub_menu_ul">
+                                    <li class="sub_menu_li">
+                                        <a href="<?= Url::to(['edu-form/index']) ?>" class="<?= getActiveSubMenu('', '') ?>">
+                                            Ta'lim shakillari
+                                        </a>
+                                    </li>
+                                    <li class="sub_menu_li">
+                                        <a href="<?= Url::to(['edu-year-form/index']) ?>">
+                                            Yil bo'yicha
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="sidebar_li sidebar_drop">
+                            <a href="javascript: void(0);" class="sidebar_li_link">
+                                <i class="i-n fa-solid fa-graduation-cap"></i>
+                                <span>
+                            Qabul turlari
+                        </span>
+                                <i class="icon-n fa-solid fa-chevron-right"></i>
+                            </a>
+                            <div class="menu_drop">
+                                <ul class="sub_menu_ul">
+                                    <li class="sub_menu_li">
+                                        <a href="<?= Url::to(['edu-type/index']) ?>" class="<?= getActiveSubMenu('', '') ?>">
+                                            Qabul turlari
+                                        </a>
+                                    </li>
+                                    <li class="sub_menu_li">
+                                        <a href="<?= Url::to(['edu-year-type/index']) ?>">
+                                            Yil bo'yicha
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    <?php endif; ?>
+
                     <li class="sidebar_li">
-                        <a href="<?= Url::to(['student-operator-type/index']) ?>" class="sidebar_li_link">
-                            <i class="i-n fa-solid fa-quote-right"></i>
-                            <span>Student Type</span>
+                        <a href="<?= Url::to(['direction/index']) ?>" class="sidebar_li_link">
+                            <i class="i-n fa-solid fa-bars-staggered"></i>
+                            <span>Yo'nalishlar</span>
                         </a>
                     </li>
-                <?php endif; ?>
 
+                    <li class="sidebar_li sidebar_drop">
+                        <a href="javascript: void(0);" class="sidebar_li_link">
+                            <i class="i-n fa-solid fa-graduation-cap"></i>
+                            <span>
+                            Arizalar
+                        </span>
+                            <i class="icon-n fa-solid fa-chevron-right"></i>
+                        </a>
+                        <div class="menu_drop">
+                            <ul class="sub_menu_ul">
+                                <?php if (count($eduYearTypes) > 0) : ?>
+                                    <?php foreach ($eduYearTypes as $eduYearType) : ?>
+                                        <li class="sub_menu_li">
+                                            <a href="<?= Url::to(['student/index' , 'id' => $eduYearType->id]) ?>">
+                                                <?= $eduYearType->eduType->name_uz ?>
+                                            </a>
+                                        </li>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="sidebar_li">
+                        <a href="<?= Url::to(['student/user-step']) ?>" class="sidebar_li_link">
+                            <i class="i-n fa-solid fa-graduation-cap"></i>
+                            <span>Chala arizalar</span>
+                        </a>
+                    </li>
+
+                    <!--                <li class="sidebar_li">-->
+                    <!--                    <a href="--><?php //= Url::to(['student/all']) ?><!--" class="sidebar_li_link">-->
+                    <!--                        <i class="i-n fa-solid fa-graduation-cap"></i>-->
+                    <!--                        <span>Ariza izlash</span>-->
+                    <!--                    </a>-->
+                    <!--                </li>-->
+
+                    <li class="sidebar_li">
+                        <a href="<?= Url::to(['telegram/index']) ?>" class="sidebar_li_link">
+                            <i class="i-n fa-brands fa-telegram"></i>
+                            <span>Telegram bot</span>
+                        </a>
+                    </li>
+
+                    <?php if ($role->name == 'supper_admin' || $role->name == 'admin') : ?>
+                        <li class="sidebar_li">
+                            <a href="<?= Url::to(['student-operator-type/index']) ?>" class="sidebar_li_link">
+                                <i class="i-n fa-solid fa-quote-right"></i>
+                                <span>Student Type</span>
+                            </a>
+                        </li>
+                    <?php endif; ?>
+
+
+                <?php endif;  ?>
             </ul>
         </div>
 

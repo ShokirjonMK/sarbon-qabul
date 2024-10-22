@@ -196,10 +196,29 @@ $cons = $model->user->cons;
                                                 <h6>
                                                     <?= $cons->name ?> &nbsp;&nbsp;
                                                     <?php
-                                                        if ($cons->id == 1) {
-                                                            echo "<a href='https://qabul.sarbon.university'>qabul.sarbon.university</a>";
-                                                        }
+                                                    if ($cons->id == 5) {
+                                                        $domen = 'edu';
+                                                    } elseif ($cons->id == 4) {
+                                                        $domen = 'tashkent';
+                                                    } elseif ($cons->id == 6) {
+                                                        $domen = 'talim';
+                                                    } elseif ($cons->id == 7) {
+                                                        $domen = 'uz';
+                                                    } elseif ($cons->id == 8) {
+                                                        $domen = 'sam';
+                                                    } elseif ($cons->id == 9) {
+                                                        $domen = 'uzedu';
+                                                    } elseif ($cons->id == 10) {
+                                                        $domen = 'mahalla';
+                                                    } elseif ($cons->id == 11) {
+                                                        $domen = 'c-cons';
+                                                    } elseif ($cons->id == 12) {
+                                                        $domen = 's-lion';
+                                                    } else {
+                                                        $domen = 'qabul';
+                                                    }
                                                     ?>
+                                                    <a href='https://<?= $domen ?>.sarbon.university'><?= $domen ?>.sarbon.university</a>
                                                 </h6>
                                             </div>
                                         </div>
