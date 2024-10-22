@@ -49,6 +49,36 @@ $link = '';
 $con2 = '';
 $startDate = strtotime('2024-09-20 00:00:00');
 $lastDate = strtotime('2024-09-30 00:00:00');
+
+$hr = $cons->h_r;
+$inn = '309341614';
+$mfo = '00491';
+$oked = '64190';
+$adresUz = '“Trastbank” xususiy aksiyadorlik bankining “Raqamli” bank xizmatlari ofisi';
+$adresRu = 'Частный акционерный банк “Трастбанк”, офис цифровых банковских услуг';
+
+$dCode = str_replace('.', '', $direction->code);
+$arrayCodes = [
+    0 => 60410100,
+    1 => 60410500,
+    2 => 60410600,
+    3 => 60410200,
+    4 => 60411200,
+    5 => 60410900,
+    6 => 60730100,
+    7 => 60730300,
+    8 => 60411100,
+    9 => 60420200,
+];
+if (in_array($dCode, $arrayCodes)) {
+    $hr = '2020 8000 4055 0277 8001';
+    $inn = '309 341 614';
+    $mfo = '01036';
+    $oked = '85420';
+    $adresUz = '«Ipak yoʻli bank» Sagʻbon filiali';
+    $adresRu = '«Ipak yoʻli bank» Сагбонский филиал';
+}
+
 if ($student->edu_type_id == 1) {
     $contract = Exam::findOne([
         'direction_id' => $direction->id,
@@ -732,11 +762,11 @@ $limg = $lqr->writeDataUri();
             <b>Manzil:</b> Toshkent shahar, Olmazor tumani, Paxta
             MFY, Sag'bon ko'chasi, 290-uy. <br>
             Bank rekvizitlari:<br>
-            <b>H/R: </b> <?= $cons->h_r ?> <br>
-            <b>Bank: </b> “Trastbank” xususiy aksiyadorlik bankining “Raqamli” bank xizmatlari ofisi    <br>
-            <b>Bank kodi (MFO): </b> 00491<br>
-            <b>IFUT (OKED): </b> 64190 <br>
-            <b>STIR (INN): </b> 309341614 <br>
+            <b>H/R: </b> <?= $hr ?> <br>
+            <b>Bank: </b> <?= $adresUz ?>    <br>
+            <b>Bank kodi (MFO): </b> <?= $mfo ?><br>
+            <b>IFUT (OKED): </b> <?= $oked ?> <br>
+            <b>STIR (INN): </b> <?= $inn ?> <br>
             <b>Telefon: </b> +998 78 888 22 88 <br>
             <img src="<?= $img ?>" width="120px">
         </td>
@@ -744,11 +774,11 @@ $limg = $lqr->writeDataUri();
             7.1. Образовательное учреждение: <b>SARBON UNIVERSITETI</b> <br>
             <b>Адрес: </b> г. Ташкент, район Олмазор, махалля Пахта, ул. Сагбон, дом 290. <br>
             Банковские реквизиты:<br>
-            <b>Расчетный счет: </b> <?= $cons->h_r ?> <br>
-            <b>Банк:  </b> Частный акционерный банк “Трастбанк”, офис цифровых банковских услуг <br>
-            <b>Код банка (МФО):  </b> 00491<br>
-            <b>ИФУТ (ОКЭД):  </b> 64190 <br>
-            <b>ИНН: </b> 309341614 <br>
+            <b>Расчетный счет: </b> <?= $hr ?> <br>
+            <b>Банк:  </b> <?= $adresRu ?>  <br>
+            <b>Код банка (МФО):  </b> <?= $mfo ?><br>
+            <b>ИФУТ (ОКЭД):  </b> <?= $oked ?> <br>
+            <b>ИНН: </b> <?= $inn ?> <br>
             <b>Тел: </b> +998 78 888 22 88 <br>
             <img src="<?= $limg ?>" width="120px"> <br>
         </td>
