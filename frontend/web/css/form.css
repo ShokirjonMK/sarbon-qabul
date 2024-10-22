@@ -266,7 +266,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: url("/frontend/web/images/login_banner.jpg");
+    background-image: url("/frontend/web/images/login_ban.JPG");
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -279,7 +279,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(237 , 242, 251, 0.45);
+    background: linear-gradient(90deg, rgba(45, 66, 85, 0.70) 9%, rgba(1, 89, 101, 0.60) 100%);
 }
 .mainBoxPageItem {
     width: 550px;
