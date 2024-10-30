@@ -663,8 +663,6 @@ class StudentController extends Controller
                     $t = true;
                 }
             }
-        } else {
-            $t = true;
         }
         if ($t) {
             $studentUser = $student->user;
