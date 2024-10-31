@@ -466,35 +466,10 @@ class StudentSearch extends Student
     public function all($params)
     {
         $query = Student::find()
-            ->where(['is_deleted' => 0])
             ->andWhere(['in' , 'user_id' , User::find()
                 ->select('id')
                 ->andWhere(['user_role' => 'student'])
-                ->andWhere(['status' => 10])
-            ])
-            ->andWhere(['in', 'id', StudentDtm::find()
-                ->select('student_id')
-                ->where([
-                    'file_status' => 2,
-                    'status' => 1,
-                    'is_deleted' => 0,
-                ])
-            ])
-            ->andWhere(['in', 'id', StudentPerevot::find()
-                ->select('student_id')
-                ->where([
-                    'file_status' => 2,
-                    'status' => 1,
-                    'is_deleted' => 0,
-                ])
-            ])
-            ->andWhere(['in', 'id', Exam::find()
-                ->select('student_id')
-                ->where([
-                    'status' => 3,
-                ])
-                ->andWhere(['>', 'down_time', 0])
-            ]);
+                ->andWhere(['<>' , 'status' , 5])]);
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
