@@ -98,24 +98,24 @@ $breadcrumbs['item'][] = [
             'contentOptions' => ['date-label' => 'DOMEN'],
             'format' => 'raw',
             'value' => function($model) {
-                $user = Yii::$app->user->identity;
-                if ($user->cons_id == 5) {
+                $consId = $model->user->cons_id;
+                if ($consId == 5) {
                     $domen = 'edu';
-                } elseif ($user->cons_id == 4) {
+                } elseif ($consId == 4) {
                     $domen = 'tashkent';
-                } elseif ($user->cons_id == 6) {
+                } elseif ($consId == 6) {
                     $domen = 'talim';
-                } elseif ($user->cons_id == 7) {
+                } elseif ($consId == 7) {
                     $domen = 'uz';
-                } elseif ($user->cons_id == 8) {
+                } elseif ($consId == 8) {
                     $domen = 'sam';
-                } elseif ($user->cons_id == 9) {
+                } elseif ($consId == 9) {
                     $domen = 'uzedu';
-                } elseif ($user->cons_id == 10) {
+                } elseif ($consId == 10) {
                     $domen = 'mahalla';
-                } elseif ($user->cons_id == 11) {
+                } elseif ($consId == 11) {
                     $domen = 'c-cons';
-                } elseif ($user->cons_id == 12) {
+                } elseif ($consId == 12) {
                     $domen = 's-lion';
                 } else {
                     $domen = 'qabul';
