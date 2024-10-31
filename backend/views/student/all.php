@@ -98,16 +98,30 @@ $breadcrumbs['item'][] = [
             'contentOptions' => ['date-label' => 'DOMEN'],
             'format' => 'raw',
             'value' => function($model) {
-                $cons = $model->user->cons_id;
-                if ($cons == 1) {
-                    return "<a href='https://qabul.sarbon.university' class='badge-table-div active mt-2'> qabul.sarbon.university </a>";
-                } elseif ($cons == 2) {
-                    return "<a href='https://edu.tpu.uz' class='badge-table-div active mt-2'> edu.tpu.uz </a>";
-                } elseif ($cons == 3) {
-                    return "<a href='https://cons.tpu.uz' class='badge-table-div active mt-2'> cons.tpu.uz </a>";
+                $user = Yii::$app->user->identity;
+                if ($user->cons_id == 5) {
+                    $domen = 'edu';
+                } elseif ($user->cons_id == 4) {
+                    $domen = 'tashkent';
+                } elseif ($user->cons_id == 6) {
+                    $domen = 'talim';
+                } elseif ($user->cons_id == 7) {
+                    $domen = 'uz';
+                } elseif ($user->cons_id == 8) {
+                    $domen = 'sam';
+                } elseif ($user->cons_id == 9) {
+                    $domen = 'uzedu';
+                } elseif ($user->cons_id == 10) {
+                    $domen = 'mahalla';
+                } elseif ($user->cons_id == 11) {
+                    $domen = 'c-cons';
+                } elseif ($user->cons_id == 12) {
+                    $domen = 's-lion';
                 } else {
-                    return "<a href='#' class='badge-table-div active mt-2'> ----- </a>";
+                    $domen = 'qabul';
                 }
+                $text = $domen."sarbon.university";
+                return "<a href='https://".$text."' class='badge-table-div active'> ".$text." </a>";
             },
         ],
         [
