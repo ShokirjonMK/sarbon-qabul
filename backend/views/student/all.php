@@ -120,7 +120,7 @@ $breadcrumbs['item'][] = [
                 } else {
                     $domen = 'qabul';
                 }
-                $text = $domen."sarbon.university";
+                $text = $domen.".sarbon.university";
                 return "<a href='https://".$text."' class='badge-table-div active'> ".$text." </a>";
             },
         ],
