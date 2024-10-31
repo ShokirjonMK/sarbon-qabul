@@ -102,16 +102,20 @@ class StudentController extends Controller
         ]);
     }
 
-//    public function actionAll()
-//    {
-//        $searchModel = new StudentSearch();
-//        $dataProvider = $searchModel->all($this->request->queryParams);
-//
-//        return $this->render('all', [
-//            'searchModel' => $searchModel,
-//            'dataProvider' => $dataProvider,
-//        ]);
-//    }
+    public function actionAll()
+    {
+        $user = Yii::$app->user->identity;
+        if ($user->id != 1) {
+            return $this->redirect(['site/index']);
+        }
+        $searchModel = new StudentSearch();
+        $dataProvider = $searchModel->all($this->request->queryParams);
+
+        return $this->render('all', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
+    }
 
     public function actionSendSms($id)
     {

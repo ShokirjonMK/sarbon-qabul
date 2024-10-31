@@ -75,7 +75,10 @@ class ConstaltingController extends Controller
 
     public function actionReplace($id)
     {
-        $user = \Yii::$app->user->identity;
+        $user = Yii::$app->user->identity;
+        if ($user->id == 1) {
+            return $this->redirect(['site/index']);
+        }
         $model = $this->findModel($id);
         $user->cons_id = $model->id;
         $user->save(false);
