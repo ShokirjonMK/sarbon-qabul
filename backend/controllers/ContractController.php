@@ -5,6 +5,7 @@ namespace backend\controllers;
 use common\models\Direction;
 use common\models\Exam;
 use common\models\Message;
+use common\models\StudentDtm;
 use common\models\StudentPerevot;
 use common\models\StudentPerevotSearch;
 use common\models\User;
@@ -102,6 +103,19 @@ class ContractController extends Controller
                     ->where([
                         'student_id' => $student->id,
                         'status' => 3,
+                    ])
+                    ->andWhere(['>' , 'down_time' , 0])
+                    ->exists();
+                if ($exam) {
+                    $t++;
+                }
+            } elseif ($student->edu_type_id == 3) {
+                $exam = StudentDtm::find()
+                    ->where([
+                        'student_id' => $student->id,
+                        'file_status' => 2,
+                        'status' => 1,
+                        'is_deleted' => 0
                     ])
                     ->andWhere(['>' , 'down_time' , 0])
                     ->exists();
