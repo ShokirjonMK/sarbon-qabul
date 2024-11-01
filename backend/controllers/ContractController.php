@@ -80,4 +80,31 @@ class ContractController extends Controller
 
         return $pdf->render();
     }
+
+
+    public function actionIk11()
+    {
+        $student = Student::find()
+            ->andWhere([
+                'in' ,
+                'user_id' ,
+                User::find()
+                    ->select('id')
+                    ->where(['step' => 5 , 'status' => 10])
+                    ->andWhere(['user_role' => 'student'])
+            ])
+            ->andWhere([
+                'in' ,
+                'id' ,
+                Exam::find()->select('student_id')
+                    ->where([
+                        'edu_form_id' => 2,
+                        'status' => 3,
+                    ])
+                    ->andWhere(['>' , 'down_time' , 0])
+            ])
+            ->all();
+
+        dd(count($student));
+    }
 }
