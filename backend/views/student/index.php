@@ -61,7 +61,7 @@ $breadcrumbs['item'][] = [
                 if ($model->user->step == 1) {
                     return "---- ---- ----";
                 }
-                return $model->last_name.' '.$model->first_name.' '.$model->middle_name. " | ".$model->passport_serial.' '.$model->passport_number;
+                return $model->last_name.' '.$model->first_name.' '.$model->middle_name. " | ".$model->passport_serial.' '.$model->passport_number. " | ".$model->passport_pin;
             },
         ],
         [
