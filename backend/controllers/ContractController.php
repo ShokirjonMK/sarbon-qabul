@@ -84,7 +84,8 @@ class ContractController extends Controller
 
     public function actionIk11()
     {
-        $student = Student::find()
+        $students = Student::find()
+            ->where(['edu_form_id' => 2])
             ->andWhere([
                 'in' ,
                 'user_id' ,
@@ -92,19 +93,24 @@ class ContractController extends Controller
                     ->select('id')
                     ->where(['step' => 5 , 'status' => 10])
                     ->andWhere(['user_role' => 'student'])
-            ])
-            ->andWhere([
-                'in' ,
-                'id' ,
-                Exam::find()->select('student_id')
+            ])->all();
+
+        $t = 0;
+        foreach ($students as $student) {
+            if ($student->edu_type_id == 1) {
+                $exam = Exam::find()
                     ->where([
-                        'edu_form_id' => 2,
+                        'student_id' => $student->id,
                         'status' => 3,
                     ])
                     ->andWhere(['>' , 'down_time' , 0])
-            ])
-            ->all();
+                    ->exists();
+                if ($exam) {
+                    $t++;
+                }
+            }
+        }
 
-        dd(count($student));
+        dd($t);
     }
 }
