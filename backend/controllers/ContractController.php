@@ -10,6 +10,8 @@ use common\models\StudentPerevot;
 use common\models\StudentPerevotSearch;
 use common\models\User;
 use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -96,7 +98,14 @@ class ContractController extends Controller
                     ->andWhere(['user_role' => 'student'])
             ])->all();
 
+        $spreadsheet = new Spreadsheet();
+        $sheet = $spreadsheet->getActiveSheet();
+
+        $sheet->setCellValue('A1', 'phone');
+
+
         $c = 0;
+        $row = 2;
         foreach ($students as $student) {
             $t = false;
             if ($student->edu_type_id == 1) {
@@ -125,10 +134,17 @@ class ContractController extends Controller
                 }
             }
             if ($t) {
-                $c++;
+                $sheet->setCellValue('A' . $row, $student->user->username);
+                $row++;
             }
         }
 
-        dd($c);
+        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        header('Content-Disposition: attachment; filename="students.xlsx"');
+        header('Cache-Control: max-age=0');
+
+        $writer = new Xlsx($spreadsheet);
+        $writer->save('php://output');
+        exit;
     }
 }
