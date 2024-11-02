@@ -96,8 +96,9 @@ class ContractController extends Controller
                     ->andWhere(['user_role' => 'student'])
             ])->all();
 
-        $t = 0;
+        $c = 0;
         foreach ($students as $student) {
+            $t = false;
             if ($student->edu_type_id == 1) {
                 $exam = Exam::find()
                     ->where([
@@ -107,7 +108,7 @@ class ContractController extends Controller
                     ->andWhere(['>' , 'down_time' , 0])
                     ->exists();
                 if ($exam) {
-                    $t++;
+                    $t = true;
                 }
             } elseif ($student->edu_type_id == 3) {
                 $exam = StudentDtm::find()
@@ -120,11 +121,14 @@ class ContractController extends Controller
                     ->andWhere(['>' , 'down_time' , 0])
                     ->exists();
                 if ($exam) {
-                    $t++;
+                    $t = true;
                 }
+            }
+            if ($t) {
+                $c++;
             }
         }
 
-        dd($t);
+        dd($c);
     }
 }
