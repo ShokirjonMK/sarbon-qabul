@@ -105,9 +105,6 @@ class StudentController extends Controller
     public function actionAll()
     {
         $user = Yii::$app->user->identity;
-        if ($user->id != 1) {
-            return $this->redirect(['site/index']);
-        }
         $searchModel = new StudentSearch();
         $dataProvider = $searchModel->all($this->request->queryParams);
 
