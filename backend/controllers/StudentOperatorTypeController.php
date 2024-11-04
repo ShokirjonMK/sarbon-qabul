@@ -184,6 +184,9 @@ class StudentOperatorTypeController extends Controller
     protected function findModelStudent($id)
     {
         if (($model = Student::findOne(['id' => $id])) !== null) {
+            if (isRole('supper_admin')) {
+                return $model;
+            }
             $user = \Yii::$app->user->identity;
             if ($user->cons_id == $model->user->cons_id) {
                 return $model;
