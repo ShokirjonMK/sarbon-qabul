@@ -31,6 +31,21 @@ use common\models\Target;
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="form-group">
+                        <?= $form->field($model, 'first_name') ?>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group">
+                        <?= $form->field($model, 'last_name') ?>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group">
+                        <?= $form->field($model, 'middle_name') ?>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="form-group">
                         <?= $form->field($model, 'username')
                             ->widget(\yii\widgets\MaskedInput::class, [
                                 'mask' => '+\9\9\8 (99) 999-99-99',
