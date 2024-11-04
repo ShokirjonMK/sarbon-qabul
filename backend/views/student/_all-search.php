@@ -31,17 +31,17 @@ use common\models\Target;
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="form-group">
-                        <?= $form->field($model, 'first_name') ?>
+                        <?= $form->field($model, 'first_name')->label('Ism') ?>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="form-group">
-                        <?= $form->field($model, 'last_name') ?>
+                        <?= $form->field($model, 'last_name')->label('Familya') ?>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="form-group">
-                        <?= $form->field($model, 'middle_name') ?>
+                        <?= $form->field($model, 'middle_name')->label('Otasini ismi') ?>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
