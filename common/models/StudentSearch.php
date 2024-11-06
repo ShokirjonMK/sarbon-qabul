@@ -60,7 +60,7 @@ class StudentSearch extends Student
     {
         $user = Yii::$app->user->identity;
 
-        if ($user->id == 323231111111) {
+        if (isRole('supper_admin')) {
             $query = Student::find()
                 ->where(['edu_year_type_id' => $edu_type->id])
                 ->andWhere(['in' , 'user_id' , User::find()
