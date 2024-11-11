@@ -148,7 +148,7 @@ $user = Yii::$app->user->identity;
             <div class="d-flex justify-content-between align-items-center">
                 <p><b>Jami soni: &nbsp; <?= $dataProvider->totalCount ?></b></p>
 
-<!--                --><?php //if ($user->id != 1) : ?>
+                <?php if ($user->id != 1) : ?>
                     <div class="page_export">
                         <?php echo ExportMenu::widget([
                             'dataProvider' => $dataProvider,
@@ -156,7 +156,7 @@ $user = Yii::$app->user->identity;
                             'asDropdown' => false,
                         ]); ?>
                     </div>
-<!--                --><?php //endif; ?>
+                <?php endif; ?>
 
             </div>
         </div>
