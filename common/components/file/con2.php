@@ -368,7 +368,7 @@ $limg = $lqr->writeDataUri();
     <tr>
         <td colspan="2" style="text-align: justify; vertical-align: top; border: 1px solid #000;">
             Choraklarga bo‘lib to‘langanda quyidagi muddatlarda: <br>
-            - belgilangan to‘lov miqdorining kamida 25.00 foizini talabalikka tavsiya etilgan abiturientlar uchun 15.11.2024 gacha, ikkinchi va undan yuqori bosqich talabalar uchun 25.11.2024 gacha; <br>
+            - belgilangan to‘lov miqdorining kamida 25.00 foizini talabalikka tavsiya etilgan abiturientlar uchun 01.12.2024 gacha, ikkinchi va undan yuqori bosqich talabalar uchun 01.12.2024 gacha; <br>
             - belgilangan to‘lov miqdorining kamida 50.00 foizini 01.01.2025 gacha, 75.00 foizini 01.04.2025 gacha va 100.00 foizini 01.06.2025 gacha.
         </td>
         <td colspan="2" style="text-align: justify; vertical-align: top; border: 1px solid #000;">
@@ -809,6 +809,12 @@ $limg = $lqr->writeDataUri();
         </td>
         <td colspan="1" style="text-align: left; vertical-align: top; border: 1px solid #000; ">
             <?= $student->user->username ?>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="4" style="text-align: left; vertical-align: top; border: 1px solid #000; ">
+
         </td>
     </tr>
 
