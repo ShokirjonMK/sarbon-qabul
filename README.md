@@ -1,1 +1,1 @@
-# tpu-qabul-yii
+# sarbon-qabul-yii
