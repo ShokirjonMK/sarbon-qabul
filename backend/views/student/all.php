@@ -116,7 +116,7 @@ $user = Yii::$app->user->identity;
                         'is_deleted' => 0
                     ]);
                     if ($exam) {
-                        return $exam->contract_second." - ".$exam->contract_third;
+                        return $exam->contract_second." - ".$exam->contract_third." { ".$exam->id." }";
                     }
                 } elseif ($model->edu_type_id == 3) {
                     $exam = StudentDtm::findOne([
@@ -126,7 +126,7 @@ $user = Yii::$app->user->identity;
                         'is_deleted' => 0
                     ]);
                     if ($exam) {
-                        return $exam->contract_second." - ".$exam->contract_third;
+                        return $exam->contract_second." - ".$exam->contract_third." { ".$exam->id." }";
                     }
                 }
                 return "----";
