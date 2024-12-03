@@ -48,26 +48,7 @@ $user = Yii::$app->user->identity;
                 if ($model->user->step == 1) {
                     return "---- ---- ----";
                 }
-                return $model->last_name.' '.$model->first_name.' '.$model->middle_name. " | ".$model->passport_serial.' '.$model->passport_number;
-            },
-        ],
-        [
-            'attribute' => 'Pasport ma\'lumoti',
-            'contentOptions' => ['date-label' => 'F.I.O'],
-            'format' => 'raw',
-            'value' => function($model) {
-                if ($model->user->step == 1) {
-                    return "-- -------";
-                }
-                return $model->passport_serial.' | '.$model->passport_number;
-            },
-        ],
-        [
-            'attribute' => 'Pasport pin',
-            'contentOptions' => ['date-label' => 'pin'],
-            'format' => 'raw',
-            'value' => function($model) {
-                return $model->passport_pin;
+                return $model->last_name.' '.$model->first_name.' '.$model->middle_name. " | ".$model->passport_serial.' '.$model->passport_number." | ".$model->passport_pin;
             },
         ],
         [
