@@ -8,6 +8,7 @@ use yii\grid\GridView;
 use common\models\Status;
 use kartik\export\ExportMenu;
 use yii\widgets\LinkPager;
+use common\models\Exam;
 
 
 /** @var yii\web\View $this */
@@ -100,6 +101,35 @@ $user = Yii::$app->user->identity;
                     return "-------";
                 }
                 return "<div><div>". date("Y-m-d H:i:s" , $model->user->step_confirm_time) ."</div></div>";
+            },
+        ],
+        [
+            'attribute' => 'Shartnoma raqam',
+            'contentOptions' => ['date-label' => 'Shartnoma raqam'],
+            'format' => 'raw',
+            'value' => function($model) {
+                if ($model->edu_type_id == 1) {
+                    $exam = Exam::findOne([
+                        'student_id' => $model->id,
+                        'direction_id' => $model->direction_id,
+                        'status' => 3,
+                        'is_deleted' => 0
+                    ]);
+                    if ($exam) {
+                        return $exam->contract_second." - ".$exam->contract_third;
+                    }
+                } elseif ($model->edu_type_id == 3) {
+                    $exam = StudentDtm::findOne([
+                        'student_id' => $model->id,
+                        'direction_id' => $model->direction_id,
+                        'file_status' => 2,
+                        'is_deleted' => 0
+                    ]);
+                    if ($exam) {
+                        return $exam->contract_second." - ".$exam->contract_third;
+                    }
+                }
+                return "----";
             },
         ],
         [

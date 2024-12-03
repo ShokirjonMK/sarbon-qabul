@@ -23,6 +23,8 @@ class StudentSearch extends Student
     public $end_date;
     public $target_id;
     public $user_status;
+    public $nomer2;
+    public $nomer3;
 
 
     /**
@@ -149,6 +151,9 @@ class StudentSearch extends Student
                     ]);
             }
         }
+
+
+
 
         if ($this->start_date != null) {
             $query->andWhere(
