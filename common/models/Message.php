@@ -25,7 +25,7 @@ class Message extends \yii\db\ActiveRecord
     public static function sendSms($phone, $text)
     {
         $phone = preg_replace("/[^0-9]/", "", $phone);
-        $text = 'SARBON UNIVERSITETI tizimiga kirish uchun tasdiqlash kodi:'. $text;
+        $text = 'Tasdiqlash kodi:'. $text;
         $data = '{
                 "messages":
                     [
@@ -52,7 +52,7 @@ class Message extends \yii\db\ActiveRecord
             CURLOPT_CUSTOMREQUEST => "POST",
             CURLOPT_POSTFIELDS => $data,
             CURLOPT_HTTPHEADER => array(
-                "Authorization: Basic ".base64_encode("sarbonuniversiteti:3z3Q|X|w!a&^"),
+                "Authorization: Basic ".base64_encode("tgfu:M40KH237PwM]"),
                 "cache-control: no-cache",
                 "content-type: application/json",
             ),
@@ -66,6 +66,7 @@ class Message extends \yii\db\ActiveRecord
 
     public static function sendedSms($phone, $text)
     {
+        return true;
         $phone = preg_replace("/[^0-9]/", "", $phone);
         $data = '{
                 "messages":
@@ -93,7 +94,7 @@ class Message extends \yii\db\ActiveRecord
             CURLOPT_CUSTOMREQUEST => "POST",
             CURLOPT_POSTFIELDS => $data,
             CURLOPT_HTTPHEADER => array(
-                "Authorization: Basic ".base64_encode("sarbonuniversiteti:3z3Q|X|w!a&^"),
+                "Authorization: Basic ".base64_encode("tgfu:M40KH237PwM]"),
                 "cache-control: no-cache",
                 "content-type: application/json",
             ),
