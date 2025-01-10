@@ -85,10 +85,11 @@ $user = Yii::$app->user->identity;
             },
         ],
         [
-            'attribute' => 'Shartnoma raqam',
-            'contentOptions' => ['date-label' => 'Shartnoma raqam'],
+            'attribute' => 'Invoise',
+            'contentOptions' => ['date-label' => 'Invoise'],
             'format' => 'raw',
             'value' => function($model) {
+                $cons = $model->user->cons;
                 if ($model->edu_type_id == 1) {
                     $exam = Exam::findOne([
                         'student_id' => $model->id,
@@ -97,7 +98,7 @@ $user = Yii::$app->user->identity;
                         'is_deleted' => 0
                     ]);
                     if ($exam) {
-                        return $exam->contract_second." - ".$exam->contract_third." { QABUL: ".$exam->id." }";
+                        return $exam->contract_second." - ".$exam->contract_third;
                     }
                 } elseif ($model->edu_type_id == 3) {
                     $exam = StudentDtm::findOne([
@@ -107,7 +108,37 @@ $user = Yii::$app->user->identity;
                         'is_deleted' => 0
                     ]);
                     if ($exam) {
-                        return $exam->contract_second." - ".$exam->contract_third." { DTM: ".$exam->id." }";
+                        return $exam->contract_second." - ".$exam->contract_third;
+                    }
+                }
+                return "----";
+            },
+        ],
+        [
+            'attribute' => 'Shartnoma raqam',
+            'contentOptions' => ['date-label' => 'Shartnoma raqam'],
+            'format' => 'raw',
+            'value' => function($model) {
+                $cons = $model->user->cons;
+                if ($model->edu_type_id == 1) {
+                    $exam = Exam::findOne([
+                        'student_id' => $model->id,
+                        'direction_id' => $model->direction_id,
+                        'status' => 3,
+                        'is_deleted' => 0
+                    ]);
+                    if ($exam) {
+                        return "<div class='badge-table-div active'> ".$cons->code."Q2/".$model->direction->code."/".$exam->id." </div><div class='badge-table-div active mt-1'> ".$cons->code."Q3/".$model->direction->code."/".$exam->id." </div>";
+                    }
+                } elseif ($model->edu_type_id == 3) {
+                    $exam = StudentDtm::findOne([
+                        'student_id' => $model->id,
+                        'direction_id' => $model->direction_id,
+                        'file_status' => 2,
+                        'is_deleted' => 0
+                    ]);
+                    if ($exam) {
+                        return "<div class='badge-table-div active'> ".$cons->code."D2/".$model->direction->code."/".$exam->id." </div><div class='badge-table-div active mt-1'> ".$cons->code."D2/".$model->direction->code."/".$exam->id." </div>";
                     }
                 }
                 return "----";
