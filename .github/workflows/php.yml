@@ -25,4 +25,3 @@ jobs:
           cd /home/apps/sarbon-qabul
           git reset --hard
           git pull origin main
-          #docker compose exec php bash -c "php yii migrate"
