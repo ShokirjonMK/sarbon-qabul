@@ -145,6 +145,64 @@ $user = Yii::$app->user->identity;
             },
         ],
         [
+            'attribute' => 'Shartnoma sanasi',
+            'contentOptions' => ['date-label' => 'Shartnoma raqam'],
+            'format' => 'raw',
+            'value' => function($model) {
+                if ($model->edu_type_id == 1) {
+                    $exam = Exam::findOne([
+                        'student_id' => $model->id,
+                        'direction_id' => $model->direction_id,
+                        'status' => 3,
+                        'is_deleted' => 0
+                    ]);
+                    if ($exam) {
+                        return date("Y-m-d H:i:s" , $exam->confirm_date);
+                    }
+                } elseif ($model->edu_type_id == 3) {
+                    $exam = StudentDtm::findOne([
+                        'student_id' => $model->id,
+                        'direction_id' => $model->direction_id,
+                        'file_status' => 2,
+                        'is_deleted' => 0
+                    ]);
+                    if ($exam) {
+                        return date("Y-m-d H:i:s" , $exam->confirm_date);
+                    }
+                }
+                return "----";
+            },
+        ],
+        [
+            'attribute' => 'Shartnoma summasi',
+            'contentOptions' => ['date-label' => 'Shartnoma raqam'],
+            'format' => 'raw',
+            'value' => function($model) {
+                if ($model->edu_type_id == 1) {
+                    $exam = Exam::findOne([
+                        'student_id' => $model->id,
+                        'direction_id' => $model->direction_id,
+                        'status' => 3,
+                        'is_deleted' => 0
+                    ]);
+                    if ($exam) {
+                        return number_format((int)$exam->contract_price, 0, '', ' ');
+                    }
+                } elseif ($model->edu_type_id == 3) {
+                    $exam = StudentDtm::findOne([
+                        'student_id' => $model->id,
+                        'direction_id' => $model->direction_id,
+                        'file_status' => 2,
+                        'is_deleted' => 0
+                    ]);
+                    if ($exam) {
+                        return number_format((int)$exam->contract_price, 0, '', ' ');
+                    }
+                }
+                return "----";
+            },
+        ],
+        [
             'attribute' => 'DOMEN',
             'contentOptions' => ['date-label' => 'DOMEN'],
             'format' => 'raw',
